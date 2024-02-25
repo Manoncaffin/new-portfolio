@@ -1,0 +1,714 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MAX-WIDTH 767PX --------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+@media screen and (max-width: 767px) {
+
+    html,
+    body {
+        background-color: rgb(249, 247, 236);
+    }
+
+    body {
+        font-family: "Larsseit", Arial, sans-serif;
+        font-size: 1.5rem;
+        color: black;
+        min-width: 100vw;
+        min-height: 100vh;
+        overflow-x: hidden;
+        height: 100vh;
+
+        p {
+            margin: 0;
+        }
+    }
+
+
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    /* ---------- INDEX - PAGE DE CHARGEMENT ------------- */
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    .loading {
+        padding-top: 200px;
+    }
+
+    #name {
+        justify-content: center;
+        font-family: "Bianzhidai", "Larsseit", "Arial", sans-serif;
+        color: black;
+        font-size: 5vmax;
+        font-weight: 600;
+    }
+
+    #loader {
+        font-family: "Bianzhidai", "Larsseit", "Arial", sans-serif;
+        color: black;
+        font-size: 5vmax;
+        font-weight: 600;
+    }
+
+
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    /* ------------- HEADER - NAVBAR PROJET -------------- */
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    .navbar {
+        padding-top: 25px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-bottom: 1px solid black;
+        height: 90px;
+        background-color: rgba(249, 247, 236, 0.827);
+    }
+
+    /* .second-navbar {
+        margin-top: 50px;
+    } 
+
+    .navbar-item {
+        margin-right: 20px;
+    }
+
+    .list-choose {
+        margin-top: 50px;
+        padding: 0;
+    } */
+
+    .infos-name, .infos-nav {
+        font-size: 2.5rem;
+        font-family: "Larsseit", "Arial", sans-serif;
+    }
+
+
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    /* ----------------- PAGE PROJETS -------------------- */
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    .section {
+        /* margin-top: 90px; */
+        padding: 0;
+    }
+
+    .col {
+        padding: 15px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .col:nth-child(1) {
+        background-color: #ffd700;
+    }
+
+    .col:nth-child(2) {
+        background-color: #d6b4f36a;
+    }
+
+    .col:nth-child(3) {
+        background-color: #0026ffb1;
+    }
+
+    .col:nth-child(4) {
+        background-color: #edd9686a;
+    }
+
+    .col:nth-child(5) {
+        background-color: #ff00f2;
+    }
+
+    .col:nth-child(6) {
+        background-color: #e85d37;
+    }
+
+    .col:nth-child(7) {
+        background-color: #f6adf4;
+    }
+
+    .col:nth-child(8) {
+        background-color: #81edf1;
+    }
+
+    .photo-gray img {
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+    }
+
+    .photo-gray img:hover {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+    }
+
+    .titre {
+        font-family: "Bianzhidai", "Pinic", Arial, sans-serif;
+        font-size: 1.6rem;
+    }
+
+    .swipe-text {
+        display: inline-block;
+        position: relative;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .swipe-text:hover {
+        transform: translateX(10px);
+    }
+
+
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    /* ------------------ PAGE PROJETS ------------------- */
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    .scroll-container {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .content {
+        width: 100%;
+        /* margin-left: 60px; */
+    }
+
+    .titre-project {
+        font-family: "Bianzhidai";
+        font-size: 1.4rem;
+        padding-left: 15px;
+    }
+
+    .text-project-one {
+        margin-top: 90px;
+        /* margin-bottom: 5px; */
+        background-color: #e85d37;
+    }
+
+    .text-project-two {
+        margin-top: 90px;
+        /* margin-bottom: 5px; */
+        background-color:#f6adf4;
+    }
+
+    .text-project-three {
+        margin-top: 90px;
+        background-color: #b1eff1;
+    }
+
+    .section-project-one {
+        background-color: #e85d37;
+        margin-top: 90px;
+    }
+
+    .section-project-two {
+        background-color:#f6adf4;
+        margin-top: 90px;
+    }
+
+    .section-project-three {
+        background-color: #b1eff1;
+        margin-top: 90px;
+    }    
+
+
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    /*-------------------- PAGE INFOS ---------------------*/
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    .popup {
+        display: none;
+    }
+
+    .popup-mobile {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 2px;
+    }
+
+    .popup-mobile button {
+        display: block;
+        padding-top: 20px;
+    }
+
+    a {
+        line-height: 1;
+    }
+
+    #contact {
+        background-color: #f3d841;
+        height: 100%;
+    }
+
+    .textTotal {
+        margin-top: 110px;
+    }
+
+    #contact p {
+        color: black;
+    }
+
+    #contact a {
+        color: black;
+        margin: 0;
+    }
+
+    .text-contact {
+        font-size: 2rem;
+        font-family: "Larsseit", Arial, sans-serif;
+    }
+
+    .text-mail,
+    .text-tel {
+        font-size: 2rem;
+        font-family: "Larsseit", Arial, sans-serif;
+        display: inline-block;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+    }
+
+    .text-mail:hover {
+        text-decoration: underline 2px black;
+    }
+
+    .text-tel:hover {
+        text-decoration: underline 2px black;
+    }
+
+    .text-link,
+    .text-link-two {
+        font-size: 2rem;
+        font-family: "Larsseit", Arial, sans-serif;
+        text-decoration: none;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .text-link span,
+    .text-link-two span {
+        display: block;
+        transform: rotate(0deg);
+        transition: transform 0.3s ease;
+    }
+
+    .text-link:hover span {
+        transform: rotate(0deg);
+    }
+
+    .text-link:hover,
+    .text-link-two:hover {
+        text-decoration: underline 2px black;
+    }
+
+    .text-link-two:hover span {
+        transform: rotate(0deg);
+    }
+
+    .text-about {
+        font-size: 1.21rem;
+        font-family: "Larsseit", Arial, sans-serif;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .text-infos {
+        font-size: 1rem;
+        font-family: "Larsseit", Arial, sans-serif;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    /* défilement de la page du bas vers le haut */
+    .slide-in {
+        animation: slideIn 0.5s ease-out;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateY(100%);
+        }
+
+        to {
+            transform: translateY(0%);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ----------- MEDIA MIN-WIDTH 768PX ----------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+
+    html,
+    body {
+        background-color: rgb(249, 247, 236);
+    }
+
+    body {
+        font-family: "Larsseit", Arial, sans-serif;
+        font-size: 1.8rem;
+        min-width: 100vw;
+        min-height: 100vh;
+        overflow-x: hidden;
+        height: 100vh;
+        color: black;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 90px;
+        padding: 0;
+    }
+
+    .col {
+        flex: 1;
+        min-width: 50%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .col:nth-child(1) {
+        background-color: #ffd700;
+    }
+
+    .col:nth-child(2) {
+        background-color: #d6b4f36a;
+    }
+
+    .col:nth-child(3) {
+        background-color: #004cffde;
+    }
+
+    .col:nth-child(4) {
+        background-color: #edd9686a;
+    }
+
+    .col:nth-child(5) {
+        background-color: #c4e9b7;
+    }
+
+    .col:nth-child(6) {
+        background-color: #e85d37;
+    }
+
+    .col:nth-child(7) {
+        background-color: #f6adf4;
+    }
+
+    .col:nth-child(8) {
+        background-color: #b1eff1;
+    }
+
+    .photo-gray img {
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+    }
+
+    .photo-gray img:hover {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+    }
+
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    /* ----------- PAGE DE CHARGEMENT - INDEX ----------- */
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    #loading {
+        padding-top: 200px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #name {
+        font-family: "Bianzhidai", "Larsseit", "Arial", sans-serif;
+        color: black;
+        font-size: 5vmax;
+    }
+
+    #loader {
+        font-family: "Bianzhidai", "Larsseit", "Arial", sans-serif;
+        color: black;
+        font-size: 5vmax;
+    }
+
+
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    /* ----------- HEADER - NAVBAR PAGE PROJET ----------- */
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    .navbar {
+        padding-top: 25px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid black;
+        height: 90px;
+        background-color: rgba(249, 247, 236, 0.827);
+    }
+
+    .infos-name {
+        font-size: 2.3rem;
+        font-family: "Larsseit", "Arial", sans-serif;
+    }
+
+    .infos-nav {
+        font-size: 2rem;
+        font-family: "Larsseit", "Arial", sans-serif;
+        transition: font-family 0.3s ease;
+    }
+
+    .infos-nav:hover {
+        font-family: "Bianzhidai", "Arial", sans-serif;
+    }
+
+
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    /* -------------- PAGE ACCUEIL - PROJETS ------------- */
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    .titre {
+        font-size: 1.5rem;
+        font-family: "Bianzhidai", "Pinic", "Arial", sans-serif;
+    }
+
+    .swipe-text {
+        display: inline-block;
+        position: relative;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .swipe-text:hover {
+        transform: translateX(10px);
+    }
+
+
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    /* ------------------ PAGE PROJETS ------------------- */
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    .scroll-container {
+        overflow-x: auto;
+        /* Permet le défilement horizontal */
+        white-space: nowrap;
+        /* Empêche le retour à la ligne du contenu */
+    }
+
+    .content {
+        display: flex;
+        width: 100%;
+        /* margin-left: 500px; */
+    }
+
+    .image-project {
+        width: 938px;
+        height: auto;
+    }
+
+    .titre-project {
+        font-family: "Bianzhidai";
+        font-size: 1.4rem;
+        padding-left: 15px;
+    }
+
+    .text-project-one {
+        margin-top: 90px;
+        /* margin-bottom: 5px; */
+        background-color: #e85d37;
+    }
+
+    .text-project-two {
+        margin-top: 90px;
+        /* margin-bottom: 5px; */
+        background-color:#f6adf4;
+    }
+
+    .text-project-three {
+        margin-top: 90px;
+        background-color: #b1eff1;
+    }
+
+    .section-project-one {
+        margin-top: 90px;
+        background-color: #e85d37;
+    }
+
+    .section-project-two {
+        background-color:#f6adf4;
+        margin-top: 90px;
+    }
+
+    .section-project-three {
+        background-color: #b1eff1;
+        margin-top: 90px;
+    }    
+
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    /* -------------------- PAGE INFOS ------------------- */
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    .popup {
+        position: fixed;
+        bottom: 60px;
+        left: 50%;
+        cursor: pointer;
+        transition: transform .25s, opacity .25s;
+    }
+
+    .popup-mobile button {
+        display: none;
+    }
+
+    a {
+        line-height: 1;
+    }
+
+    #contact {
+        margin-top: 90px;
+        background-color: rgb(247, 214, 26);
+        height: 100vh;
+    }
+
+    main {
+        background-color: rgb(249, 247, 236);
+    }
+
+    .textTotal {
+        margin-top: 20px;
+    }
+
+    #contact p {
+        color: black;
+    }
+
+    #contact a {
+        color: black;
+        margin: 0;
+    }
+
+    .text-contact {
+        font-size: 2rem;
+        font-family: "Larsseit", Arial, sans-serif;
+    }
+
+    .text-mail,
+    .text-tel {
+        font-size: 2rem;
+        font-family: "Larsseit", Arial, sans-serif;
+        display: inline-block;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+    }
+
+    .text-mail:hover {
+        text-decoration: underline 2px black;
+    }
+
+    .text-tel:hover {
+        text-decoration: underline 2px black;
+    }
+
+    .text-link,
+    .text-link-two {
+        font-size: 2rem;
+        font-family: "Larsseit", Arial, sans-serif;
+        text-decoration: none;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .text-link span,
+    .text-link-two span {
+        display: block;
+        transform: rotate(0deg);
+        transition: transform 0.3s ease;
+    }
+
+    .text-link:hover span {
+        transform: rotate(0deg);
+    }
+
+    .text-link:hover,
+    .text-link-two:hover {
+        text-decoration: underline 2px black;
+    }
+
+    .text-link-two:hover span {
+        transform: rotate(0deg);
+    }
+
+    .text-about {
+        font-size: 1.21rem;
+        font-family: "Larsseit", Arial, sans-serif;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .text-infos {
+        font-size: 1rem;
+        font-family: "Larsseit", Arial, sans-serif;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    /* défilement de la page du bas vers le haut */
+    .slide-in {
+        animation: slideIn 0.5s ease-out;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateY(100%);
+        }
+
+        to {
+            transform: translateY(0%);
+        }
+    }
+}
