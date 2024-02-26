@@ -42,14 +42,14 @@
 
     <main>
     <!-- Première rangée -->
-    <div class="section container">
+    <div class="section container w-100">
             <div class="col">
                 <div class="text">
                     <a href="https://manon-drumpad.projets.garage404.com/" target="_blank" class="titre swipe-text text-black text-decoration-none">Drum pad</a>
                     <p>Commanditaire : Garage404, exercice</p>
                     <p>— Web - Html, CSS, Javascript</p>
                 </div>
-                <div class="photo-gray">
+                <div class="photo-gray project-web">
                     <img class="image" src="../images/Drum_Pad.jpg" alt="Drum-Pad">
                 </div>
             </div>
@@ -60,7 +60,7 @@
                     <p>Commanditaire : Garage404, exercice</p>
                     <p>— Web, maquette- Html, CSS</p>
                 </div>
-                <div class="photo-gray">
+                <div class="photo-gray project-web">
                     <img class="image" src="../images/mountain-1.png" alt="Mountain">
                 </div>
             </div>
@@ -72,7 +72,7 @@
                     <p>Commanditaire : Garage404, exercice</p>
                     <p>— Web - Html, CSS, PDO</p>
                 </div>
-                <div class="photo-gray">
+                <div class="photo-gray project-web">
                     <img class="image" src="../images/clone-insta-1.png" alt="Clone-Instagram 1">
                 </div>
             </div>
@@ -83,7 +83,7 @@
                     <p>Commanditaire : Garage404, exercice</p>
                     <p>— Web, maquette - SASS</p>
                 </div>
-                <div class="photo-gray">
+                <div class="photo-gray project-web">
                     <img class="image" src="../images/Yellow-1.png" alt="Yellow">
                 </div>
             </div>
@@ -95,7 +95,7 @@
                     <p>Commanditaire : Garage404, exercice</p>
                     <p>— Web - CSS, PDO, POO</p>
                 </div>
-                <div class="photo-gray">
+                <div class="photo-gray project-web">
                     <img class="image" src="../images/punchline-combat.png" alt="Punchline-Combat">
                 </div>
             </div>
@@ -106,7 +106,7 @@
                     <p>Commanditaire : DRAC</p>
                     <p>— Print, scénographie, expérimentation</p>
                 </div>
-                <div class="photo-gray">
+                <div class="photo-gray project-graphic">
                     <img class="image" src="../images/IMG_0948_copie.jpg" alt="Battements Telluriques">
                 </div>
             </div>
@@ -118,7 +118,7 @@
                     <p>Commanditaire : Lycée Agricole d'Amboise</p>
                     <p>— Print, scénographie, expérimentation</p>
                 </div>
-                <div class="photo-gray">
+                <div class="photo-gray project-graphic">
                     <img class="image" src="../images/IMG_0355.jpg" alt="Au 46">
                 </div>
             </div>
@@ -128,13 +128,46 @@
                     <p>Commanditaire : Oïkos</p>
                     <p>— Identité visuelle</p>
                 </div>
-                <div class="photo-gray">
+                <div class="photo-gray project-graphic">
                     <img class="image" src="../images/Logo-constructions-plurielles.jpg" alt="Constructions Plurielles">
                 </div>
             </div>
         </div>
     </div>
 </main>
+<!-- <script>
+  function filterProjects(type) {
+        // Réinitialiser la visibilité et le filtre pour tous les projets
+        var projects = document.querySelectorAll('.project');
+        projects.forEach(function(project) {
+            project.style.display = 'block'; // Afficher tous les projets
+            project.style.filter = 'none'; // Réinitialiser le filtre
+        });
+
+        // Appliquer le filtre aux projets graphiques si le bouton "web" est cliqué
+        if (type === 'web') {
+            var graphicProjects = document.querySelectorAll('.project-graphic');
+            graphicProjects.forEach(function(graphicProject) {
+                graphicProject.style.filter = 'blur(5px)';
+            });
+        }
+
+        // Appliquer le filtre aux projets web si le bouton "graphisme" est cliqué
+        if (type === 'graphisme') {
+            var webProjects = document.querySelectorAll('.project-web');
+            webProjects.forEach(function(webProject) {
+                webProject.style.filter = 'blur(5px)';
+            });
+        }
+
+        // Réinitialiser le filtre pour les projets qui ne correspondent pas au type sélectionné
+        projects.forEach(function(project) {
+            if (!project.classList.contains('project-' + type)) {
+                project.style.filter = 'none';
+            }
+        });
+    }
+</script> -->
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 integrity="sha256-5p8Fk9+P5CDu5PZfklO1R/hFUBn26Hb8jKlJ8A+2+L4=" crossorigin="anonymous"></script>

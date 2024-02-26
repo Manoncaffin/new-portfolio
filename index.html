@@ -3,13 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="Description" content="Designer graphique et d'espace, Manon Caffin est actuellement en apprentissage au Garage404.">
+    <meta name="Description"
+        content="Designer graphique et d'espace, Manon Caffin est actuellement en apprentissage au Garage404.">
     <meta name="Keywords" content="Développement web, web design, design graphique, graphisme">
     <meta name="Copyright" content="Manon Caffin">
     <meta name="Author" content="Manon Caffin">
     <meta name="Revisit-After" content="15 days">
     <meta name="Robots" content="All">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./appearance/style.css">
     <link href="https://api.fontshare.com/v2/css?f[]=excon@400,900,700,500,300,100,1&display=swap" rel="stylesheet">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
@@ -18,39 +20,41 @@
 
 <body>
     <main>
-        <section id="loading">
-            <div class="container">
+        <section id="load container">
             <div id="name">
                 <p>manon caffin</p>
             </div>
             <div id="loader">00 %</div>
-        </div>
         </section>
     </main>
     <script>
         // loading
-        document.addEventListener("DOMContentLoaded", function() {
-            const loader = document.querySelector("#loader");
+        document.addEventListener("DOMContentLoaded", function () {
+            const loader = document.querySelector("#load");
             let load = 0;
-            setInterval(function() {
+            setInterval(function () {
                 loader.innerHTML = `${load} %`;
                 if (load < 100) {
                     load++;
                 } else {
-                    setTimeout(function() {
+                    setTimeout(function () {
                         load = 0;
                     }, 2000);
                 }
             }, 50);
 
             // Redirection à la fin de l'animation en simulant une tâche longue
-            setTimeout(function() {
-                document.querySelector(".loading").style.display = "none";
+            setTimeout(function () {
+                console.log("Masquage de la section loading");
+                document.querySelector("#load").style.display = "none";
+                console.log("Redirection vers la page project.html");
                 window.location.href = "./pages/project.html";
-            }, 1500);
+            }, 1000);
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
