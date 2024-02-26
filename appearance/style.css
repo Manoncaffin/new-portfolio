@@ -105,6 +105,8 @@
         /* margin-top: 90px; */
         padding-left: 0;
         padding-right: 0;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
     }
 
     .col {
@@ -161,8 +163,8 @@
     }
 
     .titre {
-        font-family: "Bianzhidai", "Pinic", Arial, sans-serif;
-        font-size: 1.6rem;
+        font-family: "Bianzhidai", "Larsseit", Arial, sans-serif;
+        font-size: 1.9rem;
     }
 
     .swipe-text {
@@ -192,7 +194,7 @@
     }
 
     .titre-project {
-        font-family: "Bianzhidai";
+        font-family: "Bianzhidai", "Larsseit", Arial, sans-serif;
         font-size: 1.4rem;
         padding-left: 15px;
     }
@@ -553,7 +555,7 @@
     }
 
     .titre-project {
-        font-family: "Bianzhidai";
+        font-family: "Bianzhidai", "Larsseit", Arial, sans-serif;
         font-size: 1.4rem;
         /* padding-left: 15px; */
     }
