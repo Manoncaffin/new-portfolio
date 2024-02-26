@@ -20,7 +20,7 @@
 
 <body>
     <main>
-        <section id="load container">
+        <section class="loading container-md col-7 d-flex justify-content-center flex-column">
             <div id="name">
                 <p>manon caffin</p>
             </div>
@@ -29,27 +29,25 @@
     </main>
     <script>
         // loading
-        document.addEventListener("DOMContentLoaded", function () {
-            const loader = document.querySelector("#load");
+        document.addEventListener("DOMContentLoaded", function() {
+            const loader = document.querySelector("#loader");
             let load = 0;
-            setInterval(function () {
+            setInterval(function() {
                 loader.innerHTML = `${load} %`;
                 if (load < 100) {
                     load++;
                 } else {
-                    setTimeout(function () {
+                    setTimeout(function() {
                         load = 0;
                     }, 2000);
                 }
             }, 50);
 
             // Redirection à la fin de l'animation en simulant une tâche longue
-            setTimeout(function () {
-                console.log("Masquage de la section loading");
-                document.querySelector("#load").style.display = "none";
-                console.log("Redirection vers la page project.html");
+            setTimeout(function() {
+                document.querySelector(".loading").style.display = "none";
                 window.location.href = "./pages/project.html";
-            }, 1000);
+            }, 1500);
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
