@@ -38,21 +38,21 @@
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
     .loading {
-        padding-top: 200px;
+        padding-top: 250px;
     }
 
     #name {
         justify-content: center;
-        font-family: "Bianzhidai", "Larsseit", "Arial", sans-serif;
+        font-family: "Larsseit", "Arial", sans-serif;
         color: black;
-        font-size: 5vmax;
+        font-size: 6vmax;
         font-weight: 600;
     }
 
     #loader {
-        font-family: "Bianzhidai", "Larsseit", "Arial", sans-serif;
+        font-family: "Larsseit", "Arial", sans-serif;
         color: black;
-        font-size: 5vmax;
+        font-size: 6vmax;
         font-weight: 600;
     }
 
@@ -170,7 +170,7 @@
 
     .titre {
         font-family: "Bianzhidai", "Larsseit", Arial, sans-serif;
-        font-size: 1.9rem;
+        font-size: 1.6rem;
     }
 
     .swipe-text {
@@ -397,7 +397,7 @@
 
     body {
         font-family: "Larsseit", Arial, sans-serif;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         min-width: 100vw;
         min-height: 100vh;
         overflow-x: hidden;
