@@ -401,7 +401,6 @@
     }
 
     .section {
-        /* flex-direction: row; */
         margin-top: 90px;
         padding-left: 0;
         padding-right: 0;
@@ -648,13 +647,13 @@
     }
 
     .text-contact {
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-family: "Larsseit", Arial, sans-serif;
     }
 
     .text-mail,
     .text-tel {
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-family: "Larsseit", Arial, sans-serif;
         display: inline-block;
         text-decoration: none;
@@ -671,7 +670,7 @@
 
     .text-link,
     .text-link-two {
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-family: "Larsseit", Arial, sans-serif;
         text-decoration: none;
         display: inline-block;
