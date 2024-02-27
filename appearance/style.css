@@ -34,11 +34,8 @@
     ::-webkit-scrollbar {
         display: none;
     }
-    
-    scrollbar-width: none;
-    
 
-
+    
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
     /* ---------- INDEX - PAGE DE CHARGEMENT ------------- */
@@ -134,7 +131,6 @@
 
     .col-1 {
         background-color: #ffd700;
-        margin-top: 90px;
     }
 
     .col-2 {
@@ -577,7 +573,7 @@
     }
 
     .image-project {
-        width: 980px;
+        width: 990px;
         height: auto;
     }
 
@@ -763,7 +759,7 @@
 .image {
     width: 100%;
     height: auto;
-    /* margin: 10px 0; */
+    margin: 10px 0;
 }
 
 .image-project {
