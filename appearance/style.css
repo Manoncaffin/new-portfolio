@@ -7,7 +7,7 @@
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
-/* ------------- MEDIA MIN-WIDTH 350PX --------------- */ 
+/* ------------- MEDIA MIN-WIDTH 350PX --------------- */
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
@@ -29,13 +29,13 @@
         p {
             margin: 0;
         }
+
+        a {
+            text-decoration: none;
+        }
     }
 
-    ::-webkit-scrollbar {
-        display: none;
-    }
 
-    
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
     /* ---------- INDEX - PAGE DE CHARGEMENT ------------- */
@@ -67,8 +67,8 @@
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
     header {
-        padding-left : 0;
-        padding-right : 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .navbar {
@@ -81,7 +81,8 @@
         background-color: rgba(249, 247, 236, 0.827);
     }
 
-    .infos-name, .infos-nav {
+    .infos-name,
+    .infos-nav {
         font-size: 2.5rem;
         font-family: "Larsseit", "Arial", sans-serif;
     }
@@ -107,7 +108,7 @@
         width: 100%;
         padding: 15px;
         margin: 0;
-    } 
+    }
 
     .image {
         width: 100%;
@@ -199,7 +200,7 @@
 
     .text-project-two {
         margin-top: 90px;
-        background-color:#f6adf4;
+        background-color: #f6adf4;
     }
 
     .text-project-three {
@@ -213,53 +214,46 @@
     }
 
     .section-project-two {
-        background-color:#f6adf4;
+        background-color: #f6adf4;
         margin-top: 90px;
     }
 
     .section-project-three {
         background-color: #b1eff1;
         margin-top: 90px;
-    }    
+    }
 
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
     /*-------------------- PAGE INFOS ---------------------*/
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
-    .popup {
-        display: none;
+    .page-contact {
+        background-color: #f3d841;
+        height: 100%;
+        margin-top: 90px;        
     }
 
-    .popup-mobile {
+    .box-one,.box-two {
+        padding: 30px;
+    }
+
+    .close-btn {
+        width: 100%;
         display: flex;
-        justify-content: space-between;
-        padding-right: 2px;
-    }
-
-    .popup-mobile button {
-        display: block;
+        justify-content: center;
+        padding-bottom: 15px;
     }
 
     a {
         line-height: 1;
     }
 
-    #contact {
-        background-color: #f3d841;
-        height: 100%;
-    }
-
-    .textTotal {
-        margin-top: 110px;
-        flex-direction: column;
-    }
-
-    #contact p {
+    .page-contact p {
         color: black;
     }
 
-    #contact a {
+    .page-contact a {
         color: black;
         margin: 0;
     }
@@ -298,21 +292,12 @@
     .text-link span,
     .text-link-two span {
         display: block;
-        transform: rotate(0deg);
         transition: transform 0.3s ease;
-    }
-
-    .text-link:hover span {
-        transform: rotate(0deg);
     }
 
     .text-link:hover,
     .text-link-two:hover {
         text-decoration: underline 2px black;
-    }
-
-    .text-link-two:hover span {
-        transform: rotate(0deg);
     }
 
     .text-about {
@@ -354,17 +339,15 @@
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 /* ------------- MEDIA MIN-WIDTH 768PX --------------- */
+/* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
-/* --------------------------------------------------- */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     .rang {
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .col {
         width: 50%;
-        /* flex: 1; */
         max-width: 50%;
         padding: 20px;
         box-sizing: border-box;
@@ -384,29 +367,44 @@
         margin: 10px 0;
     }
 
-.popup {
-    display: none;
+    /* .box-one,
+    .box-two {
+        width: 100%;
+    } */
 }
 
-.popup-mobile {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 2px;
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ----------- MEDIA MAX-WIDTH 1000PX ----------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1000px) {
+    .scroll-container {
+        overflow-x: auto;
+        /* Permet le défilement horizontal */
+        white-space: nowrap;
+        /* Empêche le retour à la ligne du contenu */
+    }
+
+    .content {
+        display: flex;
+        width: 100%;
+    }
+
+    .image-project {
+        width: 1100px;
+        height: auto;
+    }
 }
 
-.popup-mobile button {
-    display: block;
-}
-}
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 /* ----------- MEDIA MIN-WIDTH 1200PX ----------------- */
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
-
 @media only screen and (min-width: 1200px) {
-
     html,
     body {
         background-color: rgb(249, 247, 236);
@@ -439,7 +437,6 @@
 
     .col {
         width: 50%;
-        /* flex: 1; */
         max-width: 50%;
         padding: 20px;
         box-sizing: border-box;
@@ -583,7 +580,6 @@
     .content {
         display: flex;
         width: 100%;
-        /* margin-left: 500px; */
     }
 
     .image-project {
@@ -604,7 +600,7 @@
     .text-project-two {
         margin-top: 90px;
         /* margin-bottom: 5px; */
-        background-color:#f6adf4;
+        background-color: #f6adf4;
     }
 
     .text-project-three {
@@ -618,55 +614,65 @@
     }
 
     .section-project-two {
-        background-color:#f6adf4;
+        background-color: #f6adf4;
         margin-top: 90px;
     }
 
     .section-project-three {
         background-color: #b1eff1;
         margin-top: 90px;
-    }    
+    }
 
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
     /* -------------------- PAGE INFOS ------------------- */
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
-    .popup {
-        position: fixed;
-        bottom: 60px;
-        left: 50%;
-        cursor: pointer;
-        transition: transform .25s, opacity .25s;
+    main {
+        background-color: rgb(249, 247, 236);
     }
 
-    .popup-mobile button {
-        display: none;
+    .page-contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 90px;
+        background-color: #f3d841;
+        height: 89vh;
+        width: 100%;
+    }
+
+    .box-one {
+        width: 38%;
+        margin-bottom: 20px;
+        /* box-sizing: border-box; */
+        padding: 20px;
+    }
+
+    .box-two {
+        width: 62%;
+        padding: 20px;
+    }
+
+    .close-btn {
+        width: 100%;
+        position: relative;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
     }
 
     a {
         line-height: 1;
     }
 
-    #contact {
-        margin-top: 90px;
-        background-color: rgb(247, 214, 26);
-        height: 100vh;
-    }
-
-    main {
-        background-color: rgb(249, 247, 236);
-    }
-
-    .textTotal {
-        margin-top: 20px;
-    }
-
-    #contact p {
+    .page-contact p {
         color: black;
     }
 
-    #contact a {
+    .page-contact a {
         color: black;
         margin: 0;
     }
@@ -705,21 +711,12 @@
     .text-link span,
     .text-link-two span {
         display: block;
-        transform: rotate(0deg);
         transition: transform 0.3s ease;
-    }
-
-    .text-link:hover span {
-        transform: rotate(0deg);
     }
 
     .text-link:hover,
     .text-link-two:hover {
         text-decoration: underline 2px black;
-    }
-
-    .text-link-two:hover span {
-        transform: rotate(0deg);
     }
 
     .text-about {
@@ -760,8 +757,6 @@
 
 
 
-
-
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 /* ------------- MEDIA MIN-WIDTH 1440px -------------- */
@@ -769,26 +764,65 @@
 /* --------------------------------------------------- */
 
 @media only screen and (min-width: 1440px) {
-.image {
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
+    .no-scroll {
+        overflow-y: hidden;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .image-project {
+        width: 970px;
+        height: auto;
+    }
+
+    .col-1 {
+        background-color: #ffd700;
+    }
+
+    .col-2 {
+        background-color: #d6b4f36a;
+    }
+
+    .col-3 {
+        background-color: #0026ffb1;
+    }
+
+    .col-4 {
+        background-color: #edd9686a;
+    }
+
+    .col-5 {
+        background-color: #ff00f2;
+    }
+
+    .col-6 {
+        background-color: #e85d37;
+    }
+
+    .col-7 {
+        background-color: #f6adf4;
+    }
+
+    .col-8 {
+        background-color: #81edf1;
+    }
+
+    .col-1 .image {
+        padding-top: 0;
+    }
+
+    .col-8 .image {
+        padding-top: 0;
+    }
 }
 
-.image-project {
-    width: 1300px;
-    height: auto;
+@media only screen and (min-width: 1540px) {
+    .image-project {
+        width: 1250px;
+        height: auto;
+    }
 }
-}
-
-
-
-
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/* ------------- MEDIA MAX-WIDTH 576PX --------------- */
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-
-
-

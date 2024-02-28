@@ -12,42 +12,19 @@
     <meta name="Robots" content="All">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../appearance/style.css">
+    <link rel="stylesheet" href="./appearance/style.css">
     <link href="https://api.fontshare.com/v2/css?f[]=excon@400,900,700,500,300,100,1&display=swap" rel="stylesheet">
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <title>Manon Caffin - Développeuse web junior et designer graphique</title>
 </head>
 <style>
-.row {
-    width: 100%;
-}
 
-.col {
-    width: 100%;
-}
-
-.image {
-    border-radius: 10%;
-}
-@media screen and (min-width: 321px) {
-.row {
-    display: flex;
-    flex-direction: column;
-}
-}
-
-@media screen and (min-width: 801px) {
-.row {
-    display: flex; 
-    flex-direction: row;
-}
-}
 
 </style>
 
 <body>
 
-    <header class="container-md w-100 fixed-top navbar">
+    <header class="container w-100 fixed-top navbar px-0">
         <nav class="container-md col-12 d-flex justify-content-between p-0">
             <div class="infos-name">
                 <a href="./project.html" alt="Manon Caffin" class="infos-name text-black text-decoration-none">manon
@@ -60,124 +37,55 @@
         </nav>
     </header>
 
-    <!-- <div class="container w-100 second-navbar mt-5">
-        <nav class="list-choose container-md col-12 d-flex justify-content-start">
-            <button class="navbar-item" onclick="filterProjects('web')">Web</button>
-            <button class="navbar-item" onclick="filterProjects('graphisme')">Graphisme</button>
-        </nav>
-    </div> -->
-
-
     <main>
-        <div class="section container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="col-1">
-                        <div class="text">
-                            <a href="https://manon-drumpad.projets.garage404.com/" target="_blank"
-                                class="titre swipe-text text-black text-decoration-none">Drum pad</a>
-                            <p>Commanditaire : Garage404, exercice</p>
-                            <p>— Web - CSS, Javascript</p>
-                        </div>
-                        <div class="photo-gray project-web">
-                            <img class="image" src="../images/Drum-Pad.-1webp.webp" alt="Drum-Pad" width="100%" height="auto">
-                        </div>
-                    </div>
-
-                    <div class="col-3">
-                        <div class="text">
-                            <a href="https://insta-manon.projets.garage404.com/" target="_blank" target="_blank"
-                                class="titre swipe-text text-black text-decoration-none">Clone-Instagram</a>
-                            <p>Commanditaire : Garage404, exercice</p>
-                            <p>— Web - CSS, PDO</p>
-                        </div>
-                        <div class="photo-gray project-web">
-                            <img class="image" src="../images/Clone-insta-1.webp" alt="Clone-Instagram" width="100%" height="auto">
-                        </div>
-                    </div>
-
-                    <div class="col-5">
-                        <div class="text">
-                            <a href="https://manon-combat-punchlines.projets.garage404.com" target="_blank"
-                                class="titre swipe-text text-black text-decoration-none">Punchline-combat</a>
-                            <p>Commanditaire : Garage404, exercice</p>
-                            <p>— Web - CSS, PDO, POO</p>
-                        </div>
-                        <div class="photo-gray project-web">
-                            <img class="image" src="../images/Punchline-combat.webp" alt="Punchline-Combat" width="100%" height="auto">
-                        </div>
-                    </div>
-
-                    <div class="col-7">
-                        <div class="text">
-                            <a href="./au-46.html" target="_blank"
-                                class="titre swipe-text text-black text-decoration-none">Au
-                                46</a>
-                            <p>Commanditaire : Lycée Agricole d'Amboise</p>
-                            <p>— Print, édition, expérimentation</p>
-                        </div>
-                        <div class="photo-gray project-graphic">
-                            <img class="image" src="../images/Au46-9.webp" alt="Au 46" width="100%" height="auto">
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6">
-                    <div class="col-2">
-                        <div class="text">
-                            <a href="https://manon-mountains.projets.garage404.com/" target="_blank"
-                                class="titre swipe-text text-black text-decoration-none">In the hall of the mountain
-                                king</a>
-                            <p>Commanditaire : Garage404, exercice</p>
-                            <p>— Web, maquette- CSS</p>
-                        </div>
-                        <div class="photo-gray project-web">
-                            <img class="image" src="../images/Mountain-1.webp" alt="Mountain" width="100%" height="auto">
-                        </div>
-                    </div>
-
-                    <div class="col-4">
-                        <div class="text">
-                            <a href="https://manon-yellow.projets.garage404.com/" target="_blank"
-                                class="titre swipe-text text-black text-decoration-none">Yellow</a>
-                            <p>Commanditaire : Garage404, exercice</p>
-                            <p>— Web, maquette - SASS</p>
-                        </div>
-                        <div class="photo-gray project-web">
-                            <img class="image" src="../images/Yellow-1.webp" alt="Yellow" width="100%" height="auto">
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <div class="text">
-                            <a href="./battement-telluriques.html" target="_blank"
-                                class="titre swipe-text text-black text-decoration-none">Battements Telluriques</a>
-                            <p>Commanditaire : DRAC</p>
-                            <p>— Print, scénographie, expérimentation</p>
-                        </div>
-                        <div class="photo-gray project-graphic">
-                            <img class="image" src="../images/Battements-Telluriques-2.webp"
-                                alt="Battements Telluriques" width="100%" height="auto">
-                        </div>
-                    </div>
-
-                    <div class="col-8">
-                        <div class="text">
-                            <a href="./constructions-plurielles.html" target="_blank"
-                                class="titre swipe-text text-black text-decoration-none">Constructions
-                                Pluri[elles]</a>
-                            <p>Commanditaire : Association Oïkos</p>
-                            <p>— Identité visuelle, podcast</p>
-                        </div>
-                        <div class="photo-gray project-graphic">
-                            <img class="image" src="../images/Logo-constructions-plurielles.webp"
-                                alt="Constructions Plurielles" width="100%" height="auto">
-                        </div>
-                    </div>
+        <div class="container-md page-contact p-0">
+            <div class="box-one">
+                <div>
+                    <a href="mailto:caffinmanon@gmail.com" class="text-mail m-0">caffinmanon@gmail.com</a><br>
+                    <p class="text-tel pb-4">+33 (0) 6 81 78 23 14</p>
+                    <p class="text-contact">graphisme</p>
+                    <p class="text-contact">identité visuelle</p>
+                    <p class="text-contact pb-4">développement web</p>
+                    <a href="https://github.com/Manoncaffin" target="_blank"
+                        class="text-link m-0"><span>GitHub</span></a><br>
+                    <a href="../images/CV-Manon-Caffin.pdf" target="_blank" class="text-link-two m-0"><span>Curriculum
+                            vitae</span></a><br>
+                    <a href="https://www.linkedin.com/in/manon-caffin-84192a198/" target="_blank"
+                        class="text-link m-0 pb-4"><span>Linkedin</span></a>
                 </div>
             </div>
+
+            <div class="box-two">
+                <div class="">
+                    <p class="pb-4">Designer graphique et espace de formation, je me forme actuellement au
+                        développement web au Garage404 à Saint-Étienne.</p>
+                    <p>Je souhaite trouver un stage qui puisse mêler le front-end et le back-end afin de
+                        solidifier
+                        les connaissances que j'ai acquises de par ma formation et mes expériences passées, mais
+                        également et surtout pour solidifier les connaissances que j'apprends à acquérir en
+                        centre
+                        de formation.</p>
+                    <p><span>Technologies :</span> Bootstrap, JavaScript, Symfony, PHP (PDO, POO), My SQL
+                    </p>
+                    <p class="pb-4"><span>Logiciels :</span> InDesign, Illustrator, Photoshop, Figma,
+                        Première Pro</p>
+                    <p class="text-infos"><span>Conception graphique et développement :</span> Manon Caffin</p>
+                    <p class="text-infos"><span>Photographies :</span> © Manon Caffin - Caroline Colas</p>
+                    <p class="text-infos"><span>Typographie :</span> © Larsseit par Nico Inosanto, BianZhiDai
+                        par
+                        Xiaoyuan Gao</p>
+                    <p class="text-infos pb-5">Aucune des images présentées sur ce site ne peut être reproduite
+                        sans
+                        autorisation préalable de ses auteurs.</p>
+                </div>
+            </div>
+            <div class="">
+                <a href="./project.html"><button type="button"
+                        class="btn-close close-btn"
+                        aria-label="Close"></button></a>
+            </div> 
         </div>
+
     </main>
     <!-- <script>
   function filterProjects(type) {
