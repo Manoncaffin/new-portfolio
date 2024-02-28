@@ -193,21 +193,6 @@
         font-size: 1.4rem;
     }
 
-    .text-project-one {
-        margin-top: 90px;
-        background-color: #e85d37;
-    }
-
-    .text-project-two {
-        margin-top: 90px;
-        background-color: #f6adf4;
-    }
-
-    .text-project-three {
-        margin-top: 90px;
-        background-color: #b1eff1;
-    }
-
     .section-project-one {
         background-color: #e85d37;
         margin-top: 90px;
@@ -424,72 +409,10 @@
         }
     }
 
-    .section {
-        margin-top: 90px;
-        padding-left: 0;
-        padding-right: 0;
+    .no-scroll {
+        overflow-y: hidden;
     }
 
-    .rang {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .col {
-        width: 50%;
-        max-width: 50%;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
-    .image {
-        width: 100%;
-        height: auto;
-        margin: 10px 0;
-    }
-
-    .col-1 {
-        background-color: #ffd700;
-    }
-
-    .col-2 {
-        background-color: #d6b4f36a;
-    }
-
-    .col-3 {
-        background-color: #0026ffb1;
-    }
-
-    .col-4 {
-        background-color: #edd9686a;
-    }
-
-    .col-5 {
-        background-color: #ff00f2;
-    }
-
-    .col-6 {
-        background-color: #e85d37;
-    }
-
-    .col-7 {
-        background-color: #f6adf4;
-    }
-
-    .col-8 {
-        background-color: #81edf1;
-    }
-
-
-    .photo-gray img {
-        filter: grayscale(1);
-        -webkit-filter: grayscale(1);
-    }
-
-    .photo-gray img:hover {
-        filter: grayscale(0);
-        -webkit-filter: grayscale(0);
-    }
 
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
@@ -565,6 +488,72 @@
         transform: translateX(10px);
     }
 
+    .section {
+        margin-top: 90px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .rang {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .col {
+        width: 50%;
+        max-width: 50%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    /* .col-1 {
+        background-color: #ffd700;
+    }
+
+    .col-2 {
+        background-color: #d6b4f36a;
+    }
+
+    .col-3 {
+        background-color: #0026ffb1;
+    }
+
+    .col-4 {
+        background-color: #edd9686a;
+    }
+
+    .col-5 {
+        background-color: #ff00f2;
+    }
+
+    .col-6 {
+        background-color: #e85d37;
+    }
+
+    .col-7 {
+        background-color: #f6adf4;
+    }
+
+    .col-8 {
+        background-color: #81edf1;
+    }
+
+    .photo-gray img {
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+    }
+
+    .photo-gray img:hover {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+    } */
+
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
     /* ------------------ PAGE PROJETS ------------------- */
@@ -572,9 +561,7 @@
     /* --------------------------------------------------- */
     .scroll-container {
         overflow-x: auto;
-        /* Permet le défilement horizontal */
         white-space: nowrap;
-        /* Empêche le retour à la ligne du contenu */
     }
 
     .content {
@@ -592,36 +579,22 @@
         font-size: 1.4rem;
     }
 
-    .text-project-one {
+    /* .section-project-one {
         margin-top: 90px;
         background-color: #e85d37;
     }
 
-    .text-project-two {
-        margin-top: 90px;
-        /* margin-bottom: 5px; */
-        background-color: #f6adf4;
-    }
-
-    .text-project-three {
-        margin-top: 90px;
-        background-color: #b1eff1;
-    }
-
-    .section-project-one {
-        margin-top: 90px;
-        background-color: #e85d37;
-    }
 
     .section-project-two {
-        background-color: #f6adf4;
         margin-top: 90px;
+        background-color: #f6adf4;
     }
 
     .section-project-three {
-        background-color: #b1eff1;
         margin-top: 90px;
-    }
+        background-color: #b1eff1;
+    } */
+
 
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
@@ -720,7 +693,7 @@
     }
 
     .text-about {
-        font-size: 1.21rem;
+        font-size: 1.32rem;
         font-family: "Larsseit", Arial, sans-serif;
 
         span {
@@ -817,6 +790,24 @@
 
     .col-8 .image {
         padding-top: 0;
+    }
+
+    .text-about {
+        font-size: 1.38rem;
+        font-family: "Larsseit", Arial, sans-serif;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .text-infos {
+        font-size: 1.035rem;
+        font-family: "Larsseit", Arial, sans-serif;
+
+        span {
+            font-weight: bold;
+        }
     }
 }
 
