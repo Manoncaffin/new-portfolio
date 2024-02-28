@@ -356,8 +356,48 @@
 /* ------------- MEDIA MIN-WIDTH 768PX --------------- */
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
+@media only screen and (min-width: 768px) {
+    .rang {
+        display: flex;
+        flex-direction: row;
+    }
 
+    .col {
+        width: 50%;
+        /* flex: 1; */
+        max-width: 50%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
 
+    .col-1 .image {
+        padding-top: 25px;
+    }
+
+    .col-8 .image {
+        padding-top: 10px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+.popup {
+    display: none;
+}
+
+.popup-mobile {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2px;
+}
+
+.popup-mobile button {
+    display: block;
+}
+}
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
