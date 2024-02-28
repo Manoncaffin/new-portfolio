@@ -11,7 +11,6 @@
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
-
     html,
     body {
         background-color: rgb(249, 247, 236);
@@ -244,13 +243,13 @@
     }
 
     .text-contact {
-        font-size: 2.3rem;
+        font-size: 2.4rem;
         font-family: "Larsseit", Arial, sans-serif;
     }
 
     .text-mail,
     .text-tel {
-        font-size: 2.3rem;
+        font-size: 2.4rem;
         font-family: "Larsseit", Arial, sans-serif;
         display: inline-block;
         text-decoration: none;
@@ -267,7 +266,7 @@
 
     .text-link,
     .text-link-two {
-        font-size: 2.3rem;
+        font-size: 2.4rem;
         font-family: "Larsseit", Arial, sans-serif;
         text-decoration: none;
         display: inline-block;
@@ -286,7 +285,7 @@
     }
 
     .text-about {
-        font-size: 2rem;
+        font-size: 2.1rem;
         font-family: "Larsseit", Arial, sans-serif;
 
         span {
@@ -295,7 +294,7 @@
     }
 
     .text-infos {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         font-family: "Larsseit", Arial, sans-serif;
 
         span {
@@ -352,10 +351,20 @@
         margin: 10px 0;
     }
 
-    /* .box-one,
-    .box-two {
-        width: 100%;
-    } */
+    .text-contact, .text-mail,
+    .text-tel, .text-link,
+    .text-link-two  {
+        font-size: 2.7rem;
+    }
+
+    .text-about {
+        font-size: 2.2rem;
+    }
+
+    .text-infos {
+        font-size: 1.7rem;
+    }
+
 }
 
 
