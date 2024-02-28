@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description"
+        content="Designer graphique et d'espace, Manon Caffin est actuellement en apprentissage au Garage404.">
+    <meta name="Keywords" content="Développement web, web design, design graphique, graphisme">
+    <meta name="Copyright" content="Manon Caffin">
+    <meta name="Author" content="Manon Caffin">
+    <meta name="Revisit-After" content="15 days">
+    <meta name="Robots" content="All">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../appearance/style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=excon@400,900,700,500,300,100,1&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Manon Caffin - Développeuse web junior et designer graphique</title>
+</head>
+<style>
+.row {
+    width: 100%;
+}
+
+.col {
+    width: 100%;
+}
+
+.image {
+    border-radius: 10%;
+}
+@media screen and (min-width: 321px) {
+.row {
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media screen and (min-width: 801px) {
+.row {
+    display: flex; 
+    flex-direction: row;
+}
+}
+
+</style>
+
+<body>
+
+    <header class="container-md w-100 fixed-top navbar">
+        <nav class="container-md col-12 d-flex justify-content-between p-0">
+            <div class="infos-name">
+                <a href="./project.html" alt="Manon Caffin" class="infos-name text-black text-decoration-none">manon
+                    caffin</a>
+            </div>
+
+            <div class="infos-nav">
+                <a href="./infos.html" id="infosLink" class="infos-nav text-black text-decoration-none">infos</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <div class="container w-100 second-navbar mt-5">
+        <nav class="list-choose container-md col-12 d-flex justify-content-start">
+            <button class="navbar-item" onclick="filterProjects('web')">Web</button>
+            <button class="navbar-item" onclick="filterProjects('graphisme')">Graphisme</button>
+        </nav>
+    </div> -->
+
+
+    <main>
+        <div class="section container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-1">
+                        <div class="text">
+                            <a href="https://manon-drumpad.projets.garage404.com/" target="_blank"
+                                class="titre swipe-text text-black text-decoration-none">Drum pad</a>
+                            <p>Commanditaire : Garage404, exercice</p>
+                            <p>— Web - CSS, Javascript</p>
+                        </div>
+                        <div class="photo-gray project-web">
+                            <img class="image" src="../images/Drum-Pad.-1webp.webp" alt="Drum-Pad" width="100%" height="auto">
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="text">
+                            <a href="https://insta-manon.projets.garage404.com/" target="_blank" target="_blank"
+                                class="titre swipe-text text-black text-decoration-none">Clone-Instagram</a>
+                            <p>Commanditaire : Garage404, exercice</p>
+                            <p>— Web - CSS, PDO</p>
+                        </div>
+                        <div class="photo-gray project-web">
+                            <img class="image" src="../images/Clone-insta-1.webp" alt="Clone-Instagram" width="100%" height="auto">
+                        </div>
+                    </div>
+
+                    <div class="col-5">
+                        <div class="text">
+                            <a href="https://manon-combat-punchlines.projets.garage404.com" target="_blank"
+                                class="titre swipe-text text-black text-decoration-none">Punchline-combat</a>
+                            <p>Commanditaire : Garage404, exercice</p>
+                            <p>— Web - CSS, PDO, POO</p>
+                        </div>
+                        <div class="photo-gray project-web">
+                            <img class="image" src="../images/Punchline-combat.webp" alt="Punchline-Combat" width="100%" height="auto">
+                        </div>
+                    </div>
+
+                    <div class="col-7">
+                        <div class="text">
+                            <a href="./au-46.html" target="_blank"
+                                class="titre swipe-text text-black text-decoration-none">Au
+                                46</a>
+                            <p>Commanditaire : Lycée Agricole d'Amboise</p>
+                            <p>— Print, édition, expérimentation</p>
+                        </div>
+                        <div class="photo-gray project-graphic">
+                            <img class="image" src="../images/Au46-9.webp" alt="Au 46" width="100%" height="auto">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="col-2">
+                        <div class="text">
+                            <a href="https://manon-mountains.projets.garage404.com/" target="_blank"
+                                class="titre swipe-text text-black text-decoration-none">In the hall of the mountain
+                                king</a>
+                            <p>Commanditaire : Garage404, exercice</p>
+                            <p>— Web, maquette- CSS</p>
+                        </div>
+                        <div class="photo-gray project-web">
+                            <img class="image" src="../images/Mountain-1.webp" alt="Mountain" width="100%" height="auto">
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="text">
+                            <a href="https://manon-yellow.projets.garage404.com/" target="_blank"
+                                class="titre swipe-text text-black text-decoration-none">Yellow</a>
+                            <p>Commanditaire : Garage404, exercice</p>
+                            <p>— Web, maquette - SASS</p>
+                        </div>
+                        <div class="photo-gray project-web">
+                            <img class="image" src="../images/Yellow-1.webp" alt="Yellow" width="100%" height="auto">
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="text">
+                            <a href="./battement-telluriques.html" target="_blank"
+                                class="titre swipe-text text-black text-decoration-none">Battements Telluriques</a>
+                            <p>Commanditaire : DRAC</p>
+                            <p>— Print, scénographie, expérimentation</p>
+                        </div>
+                        <div class="photo-gray project-graphic">
+                            <img class="image" src="../images/Battements-Telluriques-2.webp"
+                                alt="Battements Telluriques" width="100%" height="auto">
+                        </div>
+                    </div>
+
+                    <div class="col-8">
+                        <div class="text">
+                            <a href="./constructions-plurielles.html" target="_blank"
+                                class="titre swipe-text text-black text-decoration-none">Constructions
+                                Pluri[elles]</a>
+                            <p>Commanditaire : Association Oïkos</p>
+                            <p>— Identité visuelle, podcast</p>
+                        </div>
+                        <div class="photo-gray project-graphic">
+                            <img class="image" src="../images/Logo-constructions-plurielles.webp"
+                                alt="Constructions Plurielles" width="100%" height="auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <script>
+  function filterProjects(type) {
+        // Réinitialiser la visibilité et le filtre pour tous les projets
+        const projects = document.querySelectorAll('.project');
+        projects.forEach(function(project) {
+            project.style.display = 'block'; // Afficher tous les projets
+            project.style.filter = 'none'; // Réinitialiser le filtre
+        });
+
+        // Appliquer le filtre aux projets graphiques si le bouton "web" est cliqué
+        if (type === 'web') {
+            const graphicProjects = document.querySelectorAll('.project-graphic');
+            graphicProjects.forEach(function(graphicProject) {
+                graphicProject.style.filter = 'blur(5px)';
+            });
+        }
+
+        // Appliquer le filtre aux projets web si le bouton "graphisme" est cliqué
+        if (type === 'graphisme') {
+            const webProjects = document.querySelectorAll('.project-web');
+            webProjects.forEach(function(webProject) {
+                webProject.style.filter = 'blur(5px)';
+            });
+        }
+
+        // Réinitialiser le filtre pour les projets qui ne correspondent pas au type sélectionné
+        projects.forEach(function(project) {
+            if (!project.classList.contains('project-' + type)) {
+                project.style.filter = 'none';
+            }
+        });
+    }
+</script>  -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-5p8Fk9+P5CDu5PZfklO1R/hFUBn26Hb8jKlJ8A+2+L4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

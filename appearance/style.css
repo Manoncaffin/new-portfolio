@@ -7,10 +7,10 @@
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
-/* ------------- MEDIA MAX-WIDTH 480PX --------------- */
+/* ------------- MEDIA MIN-WIDTH 350PX --------------- */ 
+/* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
-/* --------------------------------------------------- */
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 350px) {
 
     html,
     body {
@@ -81,19 +81,6 @@
         background-color: rgba(249, 247, 236, 0.827);
     }
 
-    /* .second-navbar {
-        margin-top: 50px;
-    } 
-
-    .navbar-item {
-        margin-right: 20px;
-    }
-
-    .list-choose {
-        margin-top: 50px;
-        padding: 0;
-    } */
-
     .infos-name, .infos-nav {
         font-size: 2.5rem;
         font-family: "Larsseit", "Arial", sans-serif;
@@ -106,14 +93,13 @@
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
     .section {
-        /* margin-top: 90px; */
+        margin-top: 90px;
         padding-left: 0;
         padding-right: 0;
-
+        margin-bottom: 90px;
     }
 
     .rang {
-        /* display: flex; */
         flex-direction: column;
     }
 
@@ -199,24 +185,20 @@
 
     .content {
         width: 100%;
-        /* margin-left: 60px; */
     }
 
     .titre-project {
         font-family: "Bianzhidai", "Larsseit", Arial, sans-serif;
         font-size: 1.4rem;
-        padding-left: 15px;
     }
 
     .text-project-one {
         margin-top: 90px;
-        /* margin-bottom: 5px; */
         background-color: #e85d37;
     }
 
     .text-project-two {
         margin-top: 90px;
-        /* margin-bottom: 5px; */
         background-color:#f6adf4;
     }
 
@@ -257,7 +239,6 @@
 
     .popup-mobile button {
         display: block;
-        padding-top: 20px;
     }
 
     a {
@@ -271,6 +252,7 @@
 
     .textTotal {
         margin-top: 110px;
+        flex-direction: column;
     }
 
     #contact p {
@@ -371,27 +353,19 @@
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
-/* ------------- MEDIA MIN-WIDTH 800px -------------- */
+/* ------------- MEDIA MIN-WIDTH 768PX --------------- */
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
-
-@media only screen and (min-width: 800px) {
-
-
-}
-
-
-
 
 
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
-/* ----------- MEDIA MIN-WIDTH 801PX ----------------- */
+/* ----------- MEDIA MIN-WIDTH 1200PX ----------------- */
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1200px) {
 
     html,
     body {
@@ -580,7 +554,6 @@
     .titre-project {
         font-family: "Bianzhidai", "Larsseit", Arial, sans-serif;
         font-size: 1.4rem;
-        /* padding-left: 15px; */
     }
 
     .text-project-one {
@@ -763,7 +736,19 @@
 }
 
 .image-project {
-    width: 1420px;
+    width: 1300px;
     height: auto;
 }
 }
+
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MAX-WIDTH 576PX --------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+
+
+
