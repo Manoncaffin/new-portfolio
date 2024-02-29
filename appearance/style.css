@@ -52,14 +52,12 @@
         font-family: "Bianzhidai", "Larsseit", "Arial", sans-serif;
         color: black;
         font-size: 6vmax;
-        font-weight: 600;
     }
 
     #loader {
         font-family: "Bianzhidai", "Larsseit", "Arial", sans-serif;
         color: black;
         font-size: 6vmax;
-        font-weight: 600;
     }
 
 
@@ -355,6 +353,7 @@
     }
 
     .col {
+        width: 50%;
         max-width: 50%;
         padding: 20px;
         box-sizing: border-box;
@@ -459,13 +458,13 @@
     }
 
     #name {
-        font-family: "Bianzhidai", "Larsseit", "Arial", sans-serif;
+        font-family: "Bianzhidai", "Larsseit", "Arial";
         color: black;
         font-size: 5vmax;
     }
 
     #loader {
-        font-family: "Bianzhidai", "Larsseit", "Arial", sans-serif;
+        font-family: "Bianzhidai", "Larsseit", "Arial";
         color: black;
         font-size: 5vmax;
     }
@@ -546,6 +545,7 @@
     }
 
     .col {
+        width: 50%;
         max-width: 50%;
         padding: 20px;
         box-sizing: border-box;
@@ -771,9 +771,18 @@
     }
 
     .col {
+        width: 50%;
+        max-width: 50%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width: 1541px) {
+    .col {
+        width: 50%;
         max-width: 49.6%;
         padding: 20px;
         box-sizing: border-box;
     }
-
 }
