@@ -34,6 +34,14 @@
         }
     }
 
+    .container_homepage {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
 
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
@@ -74,8 +82,6 @@
     .navbar {
         padding-top: 25px;
         padding-bottom: 5px;
-        padding-left: 15px;
-        padding-right: 15px;
         border-bottom: 1px solid black;
         height: 90px;
         background-color: rgba(249, 247, 236, 0.827);
@@ -106,14 +112,20 @@
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
     .section {
-        /* width: 100%; */
         margin-top: 90px;
-        padding-left: 0;
-        padding-right: 0;
         margin-bottom: 90px;
         margin-left: 30px;
         margin-right: 30px;
+        padding-bottom: 78px;
+        position: absolute;
     }
+
+    /* .container_inner {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    } */
 
     .rang {
         flex-direction: column;
@@ -128,7 +140,6 @@
     .image {
         width: 100%;
         height: auto;
-        /* margin: 10px 0; */
     }
 
     .col-1 {
@@ -348,14 +359,21 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (max-width: 768px) {
+    .container_homepage {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: absolute;
+    }
+
     .rang {
         flex-direction: column;
     }
 
     .col {
-        width: 50%;
-        max-width: 50%;
-        padding: 20px;
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
         box-sizing: border-box;
     }
 
@@ -386,7 +404,6 @@
     .text-infos {
         font-size: 1.7rem;
     }
-
 }
 
 
@@ -411,6 +428,10 @@
     .image-project {
         width: 1100px;
         height: auto;
+    }
+
+    .col {
+        padding: 25px;
     }
 }
 
@@ -599,6 +620,8 @@
         margin-top: 90px;
         background-color: #f3d841;
         height: 89vh;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     .box-one {
