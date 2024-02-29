@@ -558,48 +558,6 @@
         margin: 10px 0;
     }
 
-    /* .col-1 {
-        background-color: #ffd700;
-    }
-
-    .col-2 {
-        background-color: #d6b4f36a;
-    }
-
-    .col-3 {
-        background-color: #0026ffb1;
-    }
-
-    .col-4 {
-        background-color: #edd9686a;
-    }
-
-    .col-5 {
-        background-color: #ff00f2;
-    }
-
-    .col-6 {
-        background-color: #e85d37;
-    }
-
-    .col-7 {
-        background-color: #f6adf4;
-    }
-
-    .col-8 {
-        background-color: #81edf1;
-    }
-
-    .photo-gray img {
-        filter: grayscale(1);
-        -webkit-filter: grayscale(1);
-    }
-
-    .photo-gray img:hover {
-        filter: grayscale(0);
-        -webkit-filter: grayscale(0);
-    } */
-
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
     /* ------------------ PAGE PROJETS ------------------- */
@@ -624,23 +582,6 @@
         font-family: "Bianzhidai", "Larsseit", Arial, sans-serif;
         font-size: 1.7rem;
     }
-
-    /* .section-project-one {
-        margin-top: 90px;
-        background-color: #e85d37;
-    }
-
-
-    .section-project-two {
-        margin-top: 90px;
-        background-color: #f6adf4;
-    }
-
-    .section-project-three {
-        margin-top: 90px;
-        background-color: #b1eff1;
-    } */
-
 
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
@@ -797,36 +738,11 @@
         height: auto;
     }
 
-    .col-1 {
-        background-color: #ffd700;
-    }
-
-    .col-2 {
-        background-color: #d6b4f36a;
-    }
-
-    .col-3 {
-        background-color: #0026ffb1;
-    }
-
-    .col-4 {
-        background-color: #edd9686a;
-    }
-
-    .col-5 {
-        background-color: #ff00f2;
-    }
-
-    .col-6 {
-        background-color: #e85d37;
-    }
-
-    .col-7 {
-        background-color: #f6adf4;
-    }
-
-    .col-8 {
-        background-color: #81edf1;
+    .col {
+        width: 49.5%;
+        max-width: 49.5%;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     .col-1 .image {
@@ -861,4 +777,12 @@
         width: 1250px;
         height: auto;
     }
+
+    .col {
+        width: 50%;
+        max-width: 49.6%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
 }
