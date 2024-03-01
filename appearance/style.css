@@ -120,12 +120,12 @@
         position: absolute;
     }
 
-    /* .container_inner {
+    .container_inner {
         width: 100%;
         height: 100%;
         margin: 0 auto;
         position: relative;
-    } */
+    }
 
     .rang {
         flex-direction: column;
@@ -563,6 +563,8 @@
     .rang {
         display: flex;
         flex-direction: row;
+        width: 100%;
+        height: 100%;
     }
 
     .col {
@@ -627,7 +629,6 @@
     .box-one {
         width: 38%;
         margin-bottom: 20px;
-        /* box-sizing: border-box; */
         padding: 20px;
     }
 
@@ -787,6 +788,14 @@
     }
 }
 
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1540px -------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
 @media only screen and (min-width: 1540px) {
     .image-project {
         width: 1250px;
@@ -804,7 +813,7 @@
 @media only screen and (min-width: 1541px) {
     .col {
         width: 50%;
-        max-width: 49.6%;
+        max-width: 50%;
         padding: 20px;
         box-sizing: border-box;
     }
