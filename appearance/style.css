@@ -409,7 +409,7 @@
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
-/* ----------- MEDIA MAX-WIDTH 1000PX ----------------- */
+/* ----------- MEDIA MAX-WIDTH 1000PX ---------------- */
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
@@ -427,6 +427,11 @@
 
     .image-project {
         width: 1100px;
+        height: auto;
+    }
+
+    .image-project-two {
+        width: 600px;
         height: auto;
     }
 
@@ -599,6 +604,11 @@
         height: auto;
     }
 
+    .image-project-two {
+        width: 580px;
+        height: auto;
+    }
+
     .titre-project {
         font-family: "Bianzhidai", "Larsseit", Arial, sans-serif;
         font-size: 1.7rem;
@@ -760,6 +770,11 @@
         height: auto;
     }
 
+    .image-project-two {
+        width: 700px;
+        height: auto;
+    }
+
     .col-1 .image {
         padding-top: 0;
     }
@@ -798,6 +813,11 @@
 @media only screen and (min-width: 1540px) {
     .image-project {
         width: 1250px;
+        height: auto;
+    }
+
+    .image-project-two {
+        width: 700px;
         height: auto;
     }
 

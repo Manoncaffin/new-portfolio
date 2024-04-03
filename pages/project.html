@@ -35,17 +35,39 @@
             </nav>
         </header>
 
-        <!-- <div class="container w-100 second-navbar mt-5">
-        <nav class="list-choose container-md col-12 d-flex justify-content-start">
-            <button class="navbar-item" onclick="filterProjects('web')">Web</button>
-            <button class="navbar-item" onclick="filterProjects('graphisme')">Graphisme</button>
-        </nav>
-                </div> -->
-
-
         <main>
-            <!-- Première rangée -->
+
+             <!-- Première rangée -->
             <div class="section">
+            <div class="rang">
+                <div class="col col-7">
+                    <div class="text">
+                        <a href="./Bennes-solidaires.html" target="_blank"
+                            class="titre swipe-text text-black text-decoration-none">Bennes solidaires</a>
+                        <p>Commanditaire : Garage404, projet de certification</p>
+                        <p>— Web, maquette</p>
+                    </div>
+                    <div class="photo-gray project-graphic">
+                        <a href="./Bennes-solidaires.html" target="_blank"><img class="image" src="../images/Bennes-solidaires.webp"
+                                alt="Bennes solidaires" width="100%" height="auto"></a>
+                    </div>
+                </div>
+                <div class="col col-8">
+                    <div class="text">
+                        <a href="https://manon-luxury-services.projets.garage404.com/" target="_blank"
+                            class="titre swipe-text text-black text-decoration-none">Luxury Services</a>
+                        <p>Commanditaire : Garage404, exercice</p>
+                        <p>— Web, Symfony</p>
+                    </div>
+                    <div class="photo-gray project-graphic">
+                        <a href="https://manon-luxury-services.projets.garage404.com/" target="_blank"><img class="image"
+                                src="../images/Luxury-services.webp" alt="Luxury Services"
+                                width="100%" height="auto"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seconde rangée -->
                 <div class="rang">
                     <div class="col col-1">
                         <div class="text">
@@ -75,7 +97,7 @@
                     </div>
                 </div>
 
-                <!-- Deuxième rangée -->
+                <!-- Troisième rangée -->
                 <div class="rang">
                     <div class="col col-3">
                         <div class="text">
@@ -105,7 +127,7 @@
                     </div>
                 </div>
 
-                <!-- Troisième rangée -->
+                <!-- Quatrième rangée -->
                 <div class="rang">
                     <div class="col col-5">
                         <div class="text">
@@ -136,7 +158,7 @@
                     </div>
                 </div>
 
-                <!-- Quatrième rangée -->
+                <!-- Cinquième rangée -->
                 <div class="rang">
                     <div class="col col-7">
                         <div class="text">
@@ -169,40 +191,6 @@
             </div>
         </main>
     </div>
-
-    <!-- <script>
-  function filterProjects(type) {
-        // Réinitialiser la visibilité et le filtre pour tous les projets
-        const projects = document.querySelectorAll('.project');
-        projects.forEach(function(project) {
-            project.style.display = 'block'; // Afficher tous les projets
-            project.style.filter = 'none'; // Réinitialiser le filtre
-        });
-
-        // Appliquer le filtre aux projets graphiques si le bouton "web" est cliqué
-        if (type === 'web') {
-            const graphicProjects = document.querySelectorAll('.project-graphic');
-            graphicProjects.forEach(function(graphicProject) {
-                graphicProject.style.filter = 'blur(5px)';
-            });
-        }
-
-        // Appliquer le filtre aux projets web si le bouton "graphisme" est cliqué
-        if (type === 'graphisme') {
-            const webProjects = document.querySelectorAll('.project-web');
-            webProjects.forEach(function(webProject) {
-                webProject.style.filter = 'blur(5px)';
-            });
-        }
-
-        // Réinitialiser le filtre pour les projets qui ne correspondent pas au type sélectionné
-        projects.forEach(function(project) {
-            if (!project.classList.contains('project-' + type)) {
-                project.style.filter = 'none';
-            }
-        });
-    }
-</script>  -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-5p8Fk9+P5CDu5PZfklO1R/hFUBn26Hb8jKlJ8A+2+L4=" crossorigin="anonymous"></script>
