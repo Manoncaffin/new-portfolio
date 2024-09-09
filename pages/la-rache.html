@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description"
+        content="Designer UX/UI et de services">
+    <meta name="Keywords" content="Design UX/UI, développement web, design graphique">
+    <meta name="Copyright" content="Manon Caffin">
+    <meta name="Author" content="Manon Caffin">
+    <meta name="Revisit-After" content="15 days">
+    <meta name="Robots" content="All">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../appearance/style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=excon@400,900,700,500,300,100,1&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Manon Caffin - La Rache</title>
+</head>
+
+<body class="no-scroll">
+
+    <header class="fixed-top navbar-two">
+        <nav class="col-12 d-flex justify-content-between p-0">
+            <div class="infos-name">
+                <a href="./projets.html" alt="Manon Caffin" class="infos-name text-black text-decoration-none">manon
+                    caffin</a>
+            </div>
+
+            <div class="infos-nav">
+                <a href="./infos.html" id="infosLink" class="infos-nav text-black text-decoration-none">infos</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="section-project-three">
+        <div class="h-100 text-project-three p-0">
+            <p class="titre-project">La Rache, chorale féministe</p>
+        </div>
+        <div class="scroll-container" onwheel="horizontalScroll(event)">
+            <div class="content">
+                <div class="image-project col-md-12 col-lg-6 mx-auto d-flex justify-content-center align-items-center">
+                    <img src="../images/Logo-La-Rache.png" class="img-mobile" alt="La Rache" width="100%"
+                        height="auto">
+                </div>
+
+                <div class="image-project col-md-12 col-lg-6 mx-auto d-flex justify-content-center align-items-center">
+                    <img src="../images/Affiche-la-rache.png" class="img-mobile" alt="La Rache" width="100%"
+                        height="auto">
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        function horizontalScroll(event) {
+            if (window.innerWidth >= 768) {
+                event.preventDefault();
+                const delta = Math.max(-1, Math.min(1, (event.wheelDelta || -event.detail)));
+                document.querySelector('.scroll-container').scrollLeft -= delta * 40;
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-5p8Fk9+P5CDu5PZfklO1R/hFUBn26Hb8jKlJ8A+2+L4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
