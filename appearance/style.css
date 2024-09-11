@@ -227,6 +227,21 @@
         margin-top: 90px;
     }
 
+    .section-project-four {
+        background-color: #f6adf4;
+        margin-top: 90px;
+    }
+
+    .section-project-five {
+        background-color: #0026ffb1;
+        margin-top: 90px;
+    }
+
+    .section-project-six {
+        background-color: #d6b4f36a;
+        margin-top: 90px;
+    }
+
     .text-project-one, .text-project-two, .text-project-three {
         margin-left: 20px;
     }
