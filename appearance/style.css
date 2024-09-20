@@ -384,7 +384,7 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
     body {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         min-width: 100vw;
         min-height: 100vh;
     }
@@ -464,7 +464,7 @@
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
     .titre {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-family: "Bianzhidai", "Larsseit", "Arial", sans-serif;
     }
 
@@ -503,20 +503,7 @@
         margin: 10px 0;
     }
 
-    /* --------------------------------------------------- */
-    /* --------------------------------------------------- */
-    /* ------------------ PAGE PROJETS ------------------- */
-    /* --------------------------------------------------- */
-    /* --------------------------------------------------- */
 
-    .titre-project {
-        font-family: "Bianzhidai", "Larsseit", Arial, sans-serif;
-        font-size: 1.7rem;
-    }
-
-    .img-responsive {
-        max-width: 1200px;  
-    }
 
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
@@ -573,7 +560,7 @@
     }
 
     .text-contact {
-        font-size: 2.30rem;
+        font-size: 2.2rem;
         font-family: "Larsseit", Arial, sans-serif;
     }
 
@@ -596,7 +583,7 @@
 
     .text-link,
     .text-link-two {
-        font-size: 2.30rem;
+        font-size: 2.2rem;
         font-family: "Larsseit", Arial, sans-serif;
         text-decoration: none;
         display: inline-block;
@@ -615,7 +602,7 @@
     }
 
     .text-about {
-        font-size: 1.32rem;
+        font-size: 1.2rem;
         font-family: "Larsseit", Arial, sans-serif;
 
         span {
@@ -631,24 +618,7 @@
             font-weight: bold;
         }
     }
-
-    /* défilement de la page du bas vers le haut */
-    .slide-in {
-        animation: slideIn 0.5s ease-out;
-    }
-
-    @keyframes slideIn {
-        from {
-            transform: translateY(100%);
-        }
-
-        to {
-            transform: translateY(0%);
-        }
-    }
 }
-
-
 
 
 
@@ -668,21 +638,11 @@
     }
 
     .text-about {
-        font-size: 1.20rem;
-        font-family: "Larsseit", Arial, sans-serif;
-
-        span {
-            font-weight: bold;
-        }
+        font-size: 1.2rem;
     }
 
     .text-infos {
         font-size: 0.9rem;
-        font-family: "Larsseit", Arial, sans-serif;
-
-        span {
-            font-weight: bold;
-        }
     }
 }
 
