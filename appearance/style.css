@@ -14,6 +14,9 @@
     html,
     body {
         background-color: rgb(249, 247, 236);
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
     }
 
     body {
@@ -22,7 +25,6 @@
         color: black;
         min-width: 100vw;
         min-height: 100vh;
-        overflow-x: hidden;
         height: 100vh;
 
         p {
@@ -193,58 +195,6 @@
     }
 
 
-    /* --------------------------------------------------- */
-    /* --------------------------------------------------- */
-    /* ------------------ PAGE PROJETS ------------------- */
-    /* --------------------------------------------------- */
-    /* --------------------------------------------------- */
-    .scroll-container {
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
-
-    .content {
-        width: 100%;
-    }
-
-    .titre-project {
-        font-family: "Bianzhidai", "Larsseit", Arial, sans-serif;
-        font-size: 1.5rem;
-    }
-
-    .section-project-one {
-        background-color: #e85d37;
-        margin-top: 90px;
-    }
-
-    .section-project-two {
-        background-color: #edd9686a;
-        margin-top: 90px;
-    }
-
-    .section-project-three {
-        background-color: #b1eff1;
-        margin-top: 90px;
-    }
-
-    .section-project-four {
-        background-color: #f6adf4;
-        margin-top: 90px;
-    }
-
-    .section-project-five {
-        background-color: #0026ffb1;
-        margin-top: 90px;
-    }
-
-    .section-project-six {
-        background-color: #d6b4f36a;
-        margin-top: 90px;
-    }
-
-    .text-project-one, .text-project-two, .text-project-three {
-        margin-left: 20px;
-    }
 
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
@@ -421,28 +371,6 @@
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
-    .scroll-container {
-        overflow-x: auto;
-        /* Permet le défilement horizontal */
-        white-space: nowrap;
-        /* Empêche le retour à la ligne du contenu */
-    }
-
-    .content {
-        display: flex;
-        width: 100%;
-    }
-
-    .image-project {
-        width: 1100px;
-        height: auto;
-    }
-
-    .image-project-two {
-        width: 500px;
-        height: auto;
-    }
-
     .col {
         padding: 25px;
     }
@@ -455,27 +383,10 @@
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
-    html,
     body {
-        background-color: rgb(249, 247, 236);
-    }
-
-    body {
-        font-family: "Larsseit", Arial, sans-serif;
         font-size: 1.4rem;
         min-width: 100vw;
         min-height: 100vh;
-        overflow-x: hidden;
-        height: 100vh;
-        color: black;
-
-        p {
-            margin: 0;
-        }
-    }
-
-    .no-scroll {
-        overflow-y: hidden;
     }
 
 
@@ -597,29 +508,14 @@
     /* ------------------ PAGE PROJETS ------------------- */
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
-    .scroll-container {
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    .content {
-        display: flex;
-        width: 100%;
-    }
-
-    .image-project {
-        width: 990px;
-        height: auto;
-    }
-
-    .image-project-two {
-        width: 560px;
-        height: auto;
-    }
 
     .titre-project {
         font-family: "Bianzhidai", "Larsseit", Arial, sans-serif;
         font-size: 1.7rem;
+    }
+
+    .img-responsive {
+        max-width: 1200px;  
     }
 
     /* --------------------------------------------------- */
@@ -683,7 +579,7 @@
 
     .text-mail,
     .text-tel {
-        font-size: 2.30rem;
+        font-size: 2.2rem;
         font-family: "Larsseit", Arial, sans-serif;
         display: inline-block;
         text-decoration: none;
@@ -763,26 +659,6 @@
 /* --------------------------------------------------- */
 
 @media only screen and (min-width: 1440px) {
-    .no-scroll {
-        overflow-y: hidden;
-    }
-
-    .image {
-        width: 100%;
-        height: auto;
-        margin: 10px 0;
-    }
-
-    .image-project {
-        width: 970px;
-        height: auto;
-    }
-
-    .image-project-two {
-        width: 590px;
-        height: auto;
-    }
-
     .col-1 .image {
         padding-top: 0;
     }
@@ -819,16 +695,6 @@
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1540px) {
-    .image-project {
-        width: 1250px;
-        height: auto;
-    }
-
-    .image-project-two {
-        width: 700px;
-        height: auto;
-    }
-
     .col {
         max-width: 50%;
         padding: 20px;
@@ -836,7 +702,7 @@
     }
 }
 
-@media only screen and (min-width: 1541px) {
+@media only screen and (min-width: 1641px) {
     .col {
         max-width: 50%;
         padding: 20px;

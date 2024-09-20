@@ -12,13 +12,13 @@
     <meta name="Robots" content="All">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../appearance/style.css">
+    <link rel="stylesheet" href="../appearance/projects.css">
     <link href="https://api.fontshare.com/v2/css?f[]=excon@400,900,700,500,300,100,1&display=swap" rel="stylesheet">
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <title>Manon Caffin - La Friche Artistique Lamartine</title>
 </head>
 
-<body class="no-scroll">
+<body>
 
     <header class="fixed-top navbar-two">
         <nav class="col-12 d-flex justify-content-between p-0">
@@ -37,38 +37,26 @@
         <div class="h-100 text-project-two p-0">
             <p class="titre-project">La Friche Artistique Lamartine</p>
         </div>
-        <div class="scroll-container" onwheel="horizontalScroll(event)">
+        <div class="scroll-container">
             <div class="content">
-                <div class="image-project col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
-                    <img src="../images/Friche-Lamartine-Accueil-72.webp" class="img-mobile" alt="La Friche Artistique Lamartine - Page d'accueil" width="100%"
-                        height="auto" loading="lazy">
+                <div class="image-project">
+                    <img src="../images/Friche-Lamartine-Accueil-72.webp" class="img-mobile img-responsive" alt="La Friche Artistique Lamartine - Page d'accueil"
+                        loading="lazy">
                 </div>
 
-                <div class="image-project col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
-                    <img src="../images/Friche-Actualites-72.webp" class="img-mobile" alt="La Friche Artistique Lamartine - Page des actualités" width="100%"
-                        height="auto" loading="lazy">
+                <div class="image-project">
+                    <img src="../images/Friche-Actualites-72.webp" class="img-mobile img-responsive" alt="La Friche Artistique Lamartine - Page des actualités" 
+                        loading="lazy">
                 </div>
 
-                <div class="image-project col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
-                    <img src="../images/Friche-Artistes-72.webp" class="img-mobile" alt="La Friche Artistique Lamartine - Page des artistes" width="100%"
-                        height="auto" loading="lazy">
+                <div class="image-project">
+                    <img src="../images/Friche-Artistes-72.webp" class="img-mobile img-responsive" alt="La Friche Artistique Lamartine - Page des artistes" loading="lazy">
                 </div>
             </div>
         </div>
 
     </main>
-    <script>
-        function horizontalScroll(event) {
-            if (window.innerWidth >= 768) {
-                event.preventDefault();
-                const delta = Math.max(-1, Math.min(1, (event.wheelDelta || -event.detail)));
-                document.querySelector('.scroll-container').scrollLeft -= delta * 40;
-            }
-        }
-    </script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-5p8Fk9+P5CDu5PZfklO1R/hFUBn26Hb8jKlJ8A+2+L4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

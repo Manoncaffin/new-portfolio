@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 350PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 350px) {
+    html,
+    body {
+        background-color: rgb(249, 247, 236);
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        font-family: "Larsseit", Arial, sans-serif;
+        font-size: 1.5rem;
+        color: black;
+        min-width: 100vw;
+        min-height: 100vh;
+        overflow-x: hidden;
+        height: 100vh;
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+
+
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    /* ------------- HEADER - NAVBAR PROJET -------------- */
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar {
+        padding-top: 25px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid black;
+        height: 90px;
+        background-color: rgba(249, 247, 236, 0.827);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .navbar-two {
+        padding-top: 25px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-bottom: 1px solid black;
+        height: 90px;
+        background-color: rgba(249, 247, 236, 0.827);
+    }
+
+    .infos-name,
+    .infos-nav {
+        font-size: 2.5rem;
+        font-family: "Larsseit", "Arial", sans-serif;
+    }
+
+
+
+
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    /* ------------------ PAGE PROJETS ------------------- */
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+
+    .scroll-container {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .image-project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100vw;
+        margin-bottom: -2px;
+    }
+
+    .img-responsive {
+        width: auto; 
+        height: 100%; 
+    }
+
+    .titre-project {
+        font-family: "Bianzhidai", "Larsseit", Arial, sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .section-project-one {
+        background-color: #e85d37;
+        margin-top: 90px;
+    }
+
+    .section-project-two {
+        background-color: #edd9686a;
+        margin-top: 90px;
+    }
+
+    .section-project-three {
+        background-color: #b1eff1;
+        margin-top: 90px;
+    }
+
+    .section-project-four {
+        background-color: #f6adf4;
+        margin-top: 90px;
+    }
+
+    .section-project-five {
+        background-color: #0026ffb1;
+        margin-top: 90px;
+    }
+
+    .section-project-six {
+        background-color: #d6b4f36a;
+        margin-top: 90px;
+    }
+
+    .text-project-one, .text-project-two, .text-project-three {
+        margin-left: 20px;
+    }
+}
+
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ----------- MEDIA MAX-WIDTH 1000PX ---------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1000px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    .scroll-container {
+        width: 100vh;
+        height: 100vw;
+        transform: rotate(-90deg) translateX(-100vh);
+        transform-origin: top left;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+    
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        width: 130vw;
+        transform: rotate(90deg) translateY(-100vh);
+        transform-origin: top left;
+    }
+
+    .image-project {
+        height: 86vh;
+        width: 100vw;
+        margin-right: -2px;
+        margin-bottom: 0;
+    }
+
+    .img-responsive {
+        max-width: 1100px; 
+        width: auto; 
+        height: 100%; 
+    }
+}
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ----------- MEDIA MIN-WIDTH 1200PX ----------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 1.4rem;
+    }
+
+
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    /* ----------- HEADER - NAVBAR PAGE PROJET ----------- */
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    .navbar {
+        padding-top: 25px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-bottom: 1px solid black;
+        height: 90px;
+        background-color: rgba(249, 247, 236, 0.827);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .navbar-two {
+        padding-top: 25px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-bottom: 1px solid black;
+        height: 90px;
+        background-color: rgba(249, 247, 236, 0.827);
+    }
+
+    .infos-name {
+        font-size: 2.3rem;
+        font-family: "Larsseit", "Arial", sans-serif;
+    }
+
+    .infos-nav {
+        font-size: 2rem;
+        font-family: "Larsseit", "Arial", sans-serif;
+        transition: font-family 0.3s ease;
+    }
+
+    .infos-nav:hover {
+        font-family: "Bianzhidai", "Arial", sans-serif;
+    }
+
+
+
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    /* ------------------ PAGE PROJETS ------------------- */
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+
+    .titre-project {
+        font-family: "Bianzhidai", "Larsseit", Arial, sans-serif;
+        font-size: 1.7rem;
+    }
+
+    .img-responsive {
+        max-width: 1200px;  
+    }
+}
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1440px -------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+
+@media only screen and (min-width: 1440px) {
+    .img-responsive {
+        max-width: 1500px; 
+        width: auto; 
+        height: 100%; 
+    }
+}
+
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1540px -------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1540px) {
+    .img-responsive {
+        max-width: 1580px; 
+        width: auto; 
+        height: 100%; 
+    }
+
+    .image-project {
+        height: 89vh;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .img-responsive {
+        max-width: 2500px; 
+        width: auto; 
+        height: 100%; 
+    }
+}
