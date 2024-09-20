@@ -168,6 +168,8 @@
         overflow-x: hidden;
         -ms-overflow-style: none;
         scrollbar-width: none;
+        margin: 0;
+        padding: 0;
     }
     ::-webkit-scrollbar {
         display: none;
@@ -185,7 +187,6 @@
     .content {
         display: flex;
         flex-direction: row;
-        width: 130vw;
         transform: rotate(90deg) translateY(-100vh);
         transform-origin: top left;
     }
@@ -193,7 +194,8 @@
     .image-project {
         height: 86vh;
         width: 100vw;
-        margin-right: -2px;
+        margin: 0;
+        padding: 0;
         margin-bottom: 0;
     }
 
