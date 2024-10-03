@@ -11,6 +11,7 @@
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
+
     html,
     body {
         background-color: rgb(249, 247, 236);
@@ -99,6 +100,50 @@
         font-size: 2.5rem;
         font-family: "Larsseit", "Arial", sans-serif;
     }
+
+    .fixed-top {
+        z-index: 1000;
+    }
+
+    .tags {
+        width: 96.8%;
+        position: fixed;
+        top: 90px;
+        z-index: 999;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: start;
+        background-color: rgba(249, 247, 236, 0.827);
+    }
+
+    .tag {
+        padding: 6px 20px;
+        border: none;
+        color: black;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .tag:hover {
+        padding: 6px 20px;
+        background-color: black;
+        color: white;
+    }
+
+    .project {
+        margin-bottom: 20px;
+        transition: filter 0.3s ease;
+    }
+
+    .project.flou {
+        filter: blur(5px);
+    }
+
+    .project img {
+        transition: opacity 0.3s ease;
+        /* Pour rendre le changement plus visible */
+    }
+
 
 
     /* --------------------------------------------------- */
@@ -204,12 +249,13 @@
     .page-contact {
         background-color: #f3d841;
         height: 100%;
-        margin-top: 90px;    
+        margin-top: 90px;
         margin-left: 30px;
-        margin-right: 30px;    
+        margin-right: 30px;
     }
 
-    .box-one,.box-two {
+    .box-one,
+    .box-two {
         padding: 30px;
     }
 
@@ -349,9 +395,11 @@
         margin: 10px 0;
     }
 
-    .text-contact, .text-mail,
-    .text-tel, .text-link,
-    .text-link-two  {
+    .text-contact,
+    .text-mail,
+    .text-tel,
+    .text-link,
+    .text-link-two {
         font-size: 2.7rem;
     }
 
@@ -479,7 +527,7 @@
     }
 
     .section {
-        margin-top: 90px;
+        margin-top: 131px;
         padding-left: 0;
         padding-right: 0;
     }
