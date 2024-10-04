@@ -106,11 +106,10 @@
     }
 
     .tags {
-        width: 96.8%;
+        width: 98%;
         position: fixed;
         top: 90px;
         z-index: 999;
-        border-bottom: 1px solid black;
         display: flex;
         justify-content: start;
         background-color: rgba(249, 247, 236, 0.827);
@@ -237,6 +236,12 @@
 
     .swipe-text:hover {
         transform: translateX(10px);
+    }
+
+    .section {
+        margin-top: 138px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
 
@@ -505,6 +510,10 @@
         font-family: "Bianzhidai", "Arial", sans-serif;
     }
 
+    .tags {
+        width: 98%;
+    }
+
 
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
@@ -539,6 +548,11 @@
         height: 100%;
     }
 
+    .photo-gray {
+        display: flex;
+        justify-content: start;
+    }
+
     .col {
         max-width: 50%;
         padding: 20px;
@@ -549,6 +563,7 @@
         width: 100%;
         height: auto;
         margin: 10px 0;
+        border-radius: 10px;
     }
 
 
