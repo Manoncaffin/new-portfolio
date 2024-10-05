@@ -4,6 +4,11 @@
     padding: 0px;
 }
 
+@font-face {
+    font-family: 'Bianzhidai';
+    src: url('/fonts/Bianzhidai.otf') format('oft');
+}
+
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -46,24 +51,6 @@
         right: 0;
     }
 
-    /* --------------------------------------------------- */
-    /* --------------------------------------------------- */
-    /* ---------- INDEX - PAGE DE CHARGEMENT ------------- */
-    /* --------------------------------------------------- */
-    /* --------------------------------------------------- */
-    .loading {
-        padding-top: 250px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-
-    #name {
-        justify-content: center;
-        font-family: "Bianzhidai", "Larsseit", "Arial", sans-serif;
-        color: black;
-        font-size: 6vmax;
-    }
 
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
@@ -81,18 +68,8 @@
         border-bottom: 1px solid black;
         height: 90px;
         background-color: rgba(249, 247, 236, 0.827);
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .navbar-two {
-        padding-top: 25px;
-        padding-bottom: 5px;
-        padding-left: 15px;
-        padding-right: 15px;
-        border-bottom: 1px solid black;
-        height: 90px;
-        background-color: rgba(249, 247, 236, 0.827);
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
     .infos-name,
@@ -129,18 +106,17 @@
         color: white;
     }
 
+    .tag.active {
+        background-color: black;
+        color: white;
+    }
+
     .project {
-        margin-bottom: 20px;
-        transition: filter 0.3s ease;
+        display: block;
     }
 
-    .project.flou {
-        filter: blur(5px);
-    }
-
-    .project img {
-        transition: opacity 0.3s ease;
-        /* Pour rendre le changement plus visible */
+    .hidden {
+        display: none;
     }
 
 
@@ -151,10 +127,10 @@
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
     .section {
-        margin-top: 90px;
+        margin-top: 138px;
         margin-bottom: 90px;
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
         padding-bottom: 78px;
         position: absolute;
     }
@@ -167,7 +143,9 @@
     }
 
     .rang {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
     }
 
     .col {
@@ -223,8 +201,18 @@
         -webkit-filter: grayscale(0);
     }
 
+    .project {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        /* background: #f0f0f0;  */
+        padding: 10px;
+        gap: 10px;
+        /* border: 1px solid #ccc; */
+    }
+
     .titre {
-        font-family: "Bianzhidai", "Larsseit", Arial, sans-serif;
+        font-family: "Larsseit", "Larsseit", Arial, sans-serif;
         font-size: 1.6rem;
     }
 
@@ -238,12 +226,6 @@
         transform: translateX(10px);
     }
 
-    .section {
-        margin-top: 138px;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
 
 
     /* --------------------------------------------------- */
@@ -255,8 +237,8 @@
         background-color: #f3d841;
         height: 100%;
         margin-top: 90px;
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
     .box-one,
@@ -358,6 +340,10 @@
             transform: translateY(0%);
         }
     }
+
+    .close-btn {
+        font-size: 40px;
+    }
 }
 
 
@@ -373,10 +359,6 @@
         height: 100%;
         margin: 0 auto;
         position: absolute;
-    }
-
-    .rang {
-        flex-direction: column;
     }
 
     .col {
@@ -418,17 +400,6 @@
 }
 
 
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/* ----------- MEDIA MAX-WIDTH 1000PX ---------------- */
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-@media only screen and (min-width: 1000px) {
-    .col {
-        padding: 25px;
-    }
-}
-
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -437,67 +408,13 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
     body {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         min-width: 100vw;
         min-height: 100vh;
     }
 
-
-    /* --------------------------------------------------- */
-    /* --------------------------------------------------- */
-    /* ----------- PAGE DE CHARGEMENT - INDEX ----------- */
-    /* --------------------------------------------------- */
-    /* --------------------------------------------------- */
-    .loading {
-        padding-top: 200px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-
-    #name {
-        font-family: "Bianzhidai", "Larsseit", "Arial";
-        color: black;
-        font-size: 5vmax;
-    }
-
-    #loader {
-        font-family: "Bianzhidai", "Larsseit", "Arial";
-        color: black;
-        font-size: 5vmax;
-    }
-
-
-    /* --------------------------------------------------- */
-    /* --------------------------------------------------- */
-    /* ----------- HEADER - NAVBAR PAGE PROJET ----------- */
-    /* --------------------------------------------------- */
-    /* --------------------------------------------------- */
-    .navbar {
-        padding-top: 25px;
-        padding-bottom: 5px;
-        padding-left: 15px;
-        padding-right: 15px;
-        border-bottom: 1px solid black;
-        height: 90px;
-        background-color: rgba(249, 247, 236, 0.827);
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .navbar-two {
-        padding-top: 25px;
-        padding-bottom: 5px;
-        padding-left: 15px;
-        padding-right: 15px;
-        border-bottom: 1px solid black;
-        height: 90px;
-        background-color: rgba(249, 247, 236, 0.827);
-    }
-
-    .infos-name {
-        font-size: 2.3rem;
-        font-family: "Larsseit", "Arial", sans-serif;
+    .tags {
+        width: 98%;
     }
 
     .infos-nav {
@@ -508,10 +425,6 @@
 
     .infos-nav:hover {
         font-family: "Bianzhidai", "Arial", sans-serif;
-    }
-
-    .tags {
-        width: 98%;
     }
 
 
@@ -536,16 +449,18 @@
     }
 
     .section {
-        margin-top: 131px;
-        padding-left: 0;
-        padding-right: 0;
+        margin-top: 128px;
+        gap: 20px;
     }
 
     .rang {
-        display: flex;
-        flex-direction: row;
         width: 100%;
         height: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project {
+        text-align: center;
     }
 
     .photo-gray {
@@ -554,17 +469,52 @@
     }
 
     .col {
-        max-width: 50%;
-        padding: 20px;
+        max-width: 100%;
         box-sizing: border-box;
+        flex: 0 0 50%;
+        margin-bottom: 5px;
     }
 
     .image {
         width: 100%;
         height: auto;
-        margin: 10px 0;
-        border-radius: 10px;
+        margin-top: 10px;
     }
+
+    .photo-gray {
+        position: relative;
+        width: 100%;
+        overflow: hidden; /* Empêche tout débordement */
+    }
+    
+    .photo-gray .image {
+        width: 100%;
+        height: auto;
+        transition: opacity 0.3s ease; /* Transition en douceur pour l'image */
+    }
+    
+    .photo-gray .hover-text {
+        position: absolute;
+        bottom: 10px; /* Place le texte en bas, ajustez selon vos besoins */
+        left: 10px;
+        right: 10px;
+        color: white; /* Couleur du texte */
+        background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+        padding: 10px;
+        visibility: hidden; /* Masque le texte par défaut */
+        opacity: 0; /* Opacité à 0 par défaut */
+        transition: visibility 0s, opacity 0.3s ease-in-out; /* Transition pour l'effet */
+    }
+    
+    .photo-gray:hover .hover-text {
+        visibility: visible; /* Rend le texte visible */
+        opacity: 1; /* Affiche le texte */
+    }
+    
+    .photo-gray:hover .image {
+        opacity: 0.4; /* Légèrement masque l'image au survol (ajustez à 0 si vous voulez la cacher totalement) */
+    }
+    
 
 
 
@@ -585,8 +535,6 @@
         margin-top: 90px;
         background-color: #f3d841;
         height: 89vh;
-        margin-left: 30px;
-        margin-right: 30px;
     }
 
     .box-one {
@@ -629,7 +577,7 @@
 
     .text-mail,
     .text-tel {
-        font-size: 2.2rem;
+        font-size: 2rem;
         font-family: "Larsseit", Arial, sans-serif;
         display: inline-block;
         text-decoration: none;
@@ -681,6 +629,10 @@
             font-weight: bold;
         }
     }
+
+    .close-btn {
+        font-size: 20px;
+    }
 }
 
 
@@ -692,6 +644,13 @@
 /* --------------------------------------------------- */
 
 @media only screen and (min-width: 1440px) {
+
+    .navbar,
+    .section {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
     .col-1 .image {
         padding-top: 0;
     }
@@ -707,28 +666,14 @@
     .text-infos {
         font-size: 0.9rem;
     }
-}
 
-
-
-
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/* ------------- MEDIA MIN-WIDTH 1540px -------------- */
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-@media only screen and (min-width: 1540px) {
-    .col {
-        max-width: 50%;
-        padding: 20px;
-        box-sizing: border-box;
+    .page-contact {
+        margin-left: 100px;
+        margin-right: 100px;
     }
-}
 
-@media only screen and (min-width: 1641px) {
-    .col {
-        max-width: 50%;
-        padding: 20px;
-        box-sizing: border-box;
+    .text-mail,
+    .text-tel {
+        font-size: 2.2rem;
     }
 }
