@@ -65,7 +65,7 @@
     }
 
     .back {
-        visibility: hidden;
+        display: none;
     }
     
 
@@ -130,7 +130,7 @@
     }
 
     .section-project-five {
-        background-color: #0026ffb1;
+        background-color: #004cffb1;
         margin-top: 93px;
         border-top: 1px solid black;
     }
@@ -143,9 +143,10 @@
 
     .text-project-one, .text-project-two, .text-project-three {
         margin-left: 50px;
-        margin-top: 8px;
         display: flex;
         justify-content: space-between;
+        padding: 5px 0;
+        top: 90px;
     }
 }
 
@@ -209,17 +210,48 @@
     }
 
     .back {
+        display: block;
         padding: 6px 20px;
+        border-radius: 15px;
         border: none;
         color: black;
         cursor: pointer;
         background-color: transparent;
-        text-decoration: none;
+        position: relative;
+        z-index: 1;
     }
-    
-    .back:hover {
-        background-color: black;
-        color: white;
+
+    .back::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(206, 207, 201);
+        z-index: -1;
+        border-radius: 15px;
+        opacity: 0;
+        filter: blur(0);
+        transition: opacity 0.3s ease, filter 0.3s ease;
+    }
+
+    .back:hover::before,
+    .back.active::before {
+        opacity: 1;
+        filter: blur(6px);
+    }
+
+    .back:hover,
+    .back.active {
+        color: black;
+        z-index: 2;
+    }
+
+    .text-project-one, 
+    .text-project-two, 
+    .text-project-three {
+        margin-right: 50px;
     }
 }
 
@@ -244,7 +276,17 @@
     }
 
     .content {
-        gap: 5px;
+        gap: 10px;
+    }
+
+    .infos-name {
+        font-size: 1.9rem;
+        font-family: "Larsseit", "Arial", sans-serif;
+        transition: font-family 0.3s ease;
+    }
+
+    .infos-name:hover {
+        font-family: "Bianzhidai", "Arial", sans-serif;
     }
 
 
