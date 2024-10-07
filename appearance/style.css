@@ -6,7 +6,16 @@
 
 @font-face {
     font-family: 'Bianzhidai';
-    src: url('/fonts/Bianzhidai.otf') format('oft');
+    src: url('/fonts/Bianzhidai.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Larsseit';
+    src: url('/fonts/Larsseit.otf') format('opentype');
+    font-weight: medium;
+    font-style: normal;
 }
 
 
@@ -42,13 +51,18 @@
         }
     }
 
-    .container_homepage {
+    .container_homepage,
+    .container_inner {
         width: 100%;
         height: 100%;
         margin: 0 auto;
         position: absolute;
-        left: 0;
-        right: 0;
+        /* Aligné ici pour éviter la répétition */
+    }
+
+    header {
+        padding-left: 0;
+        padding-right: 0;
     }
 
 
@@ -57,14 +71,9 @@
     /* ------------- HEADER - NAVBAR PROJET -------------- */
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
-    header {
-        padding-left: 0;
-        padding-right: 0;
-    }
 
     .navbar {
-        padding-top: 25px;
-        padding-bottom: 5px;
+        padding: 25px 0 5px 0;
         border-bottom: 1px solid black;
         height: 90px;
         background-color: rgba(249, 247, 236, 0.827);
@@ -83,7 +92,7 @@
     }
 
     .tags {
-        width: 98%;
+        width: 100vw;
         position: fixed;
         top: 90px;
         z-index: 999;
@@ -94,30 +103,48 @@
 
     .tag {
         padding: 6px 20px;
+        border-radius: 8px;
         border: none;
         color: black;
         cursor: pointer;
         background-color: transparent;
+        position: relative;
+        z-index: 1;
     }
 
-    .tag:hover {
-        padding: 6px 20px;
-        background-color: black;
-        color: white;
+    .tag::before {
+        border-radius: 20px;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(206, 207, 201);
+        z-index: -1;
+        opacity: 0;
+        filter: blur(0);
+        transition: opacity 0.3s ease, filter 0.3s ease;
     }
 
+    .tag:hover::before,
+    .tag.active::before {
+        border-radius: 20px;
+        opacity: 1;
+        filter: blur(9px);
+    }
+
+    .tag:hover,
     .tag.active {
-        background-color: black;
-        color: white;
+        color: black;
+        z-index: 2;
     }
 
-    .project {
-        display: block;
-    }
-
-    .hidden {
+    .hidden,
+    .hover-text {
         display: none;
     }
+
 
 
 
@@ -127,36 +154,45 @@
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
     .section {
-        margin-top: 138px;
-        margin-bottom: 90px;
-        margin-left: 50px;
-        margin-right: 50px;
-        padding-bottom: 78px;
-        position: absolute;
-    }
-
-    .container_inner {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        position: relative;
-    }
-
-    .rang {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 5px;
+        margin: 138px 50px 90px;
+        padding-bottom: 78px;
+        position: absolute;
     }
 
     .col {
         width: 100%;
         padding: 15px;
         margin: 0;
+        margin-bottom: 15px;
     }
 
     .image {
         width: 100%;
         height: auto;
+    }
+
+    .project {
+        display: block;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .titre {
+        font-family: "Bianzhidai", "Larsseit", "Arial", sans-serif;
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 8px;
     }
 
     .col-1 {
@@ -168,7 +204,7 @@
     }
 
     .col-3 {
-        background-color: #0026ffb1;
+        background-color: #004cffb1;
     }
 
     .col-4 {
@@ -201,31 +237,6 @@
         -webkit-filter: grayscale(0);
     }
 
-    .project {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-        /* background: #f0f0f0;  */
-        padding: 10px;
-        gap: 10px;
-        /* border: 1px solid #ccc; */
-    }
-
-    .titre {
-        font-family: "Larsseit", "Larsseit", Arial, sans-serif;
-        font-size: 1.6rem;
-    }
-
-    .swipe-text {
-        display: inline-block;
-        position: relative;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .swipe-text:hover {
-        transform: translateX(10px);
-    }
-
 
 
     /* --------------------------------------------------- */
@@ -236,9 +247,7 @@
     .page-contact {
         background-color: #f3d841;
         height: 100%;
-        margin-top: 90px;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin: 90px 50px 0 50px;
     }
 
     .box-one,
@@ -257,41 +266,28 @@
         line-height: 1;
     }
 
-    .page-contact p {
-        color: black;
-    }
-
+    .page-contact p,
     .page-contact a {
         color: black;
         margin: 0;
     }
 
-    .text-contact {
-        font-size: 3rem;
-        font-family: "Larsseit", Arial, sans-serif;
-    }
-
+    .text-contact,
     .text-mail,
-    .text-tel {
+    .text-tel,
+    .text-link,
+    .text-link-two {
         font-size: 3rem;
         font-family: "Larsseit", Arial, sans-serif;
-        display: inline-block;
-        text-decoration: none;
-        transition: transform 0.3s ease;
     }
 
-    .text-mail:hover {
-        text-decoration: underline 2px black;
-    }
-
+    .text-mail:hover,
     .text-tel:hover {
         text-decoration: underline 2px black;
     }
 
     .text-link,
     .text-link-two {
-        font-size: 3rem;
-        font-family: "Larsseit", Arial, sans-serif;
         text-decoration: none;
         display: inline-block;
         overflow: hidden;
@@ -301,11 +297,6 @@
     .text-link-two span {
         display: block;
         transition: transform 0.3s ease;
-    }
-
-    .text-link:hover,
-    .text-link-two:hover {
-        text-decoration: underline 2px black;
     }
 
     .text-about {
@@ -326,21 +317,6 @@
         }
     }
 
-    /* défilement de la page du bas vers le haut */
-    .slide-in {
-        animation: slideIn 0.5s ease-out;
-    }
-
-    @keyframes slideIn {
-        from {
-            transform: translateY(100%);
-        }
-
-        to {
-            transform: translateY(0%);
-        }
-    }
-
     .close-btn {
         font-size: 40px;
     }
@@ -354,12 +330,6 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (max-width: 768px) {
-    .container_homepage {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        position: absolute;
-    }
 
     .col {
         width: 100%;
@@ -368,17 +338,7 @@
         box-sizing: border-box;
     }
 
-    .col-1 .image {
-        padding-top: 25px;
-    }
-
-    .col-8 .image {
-        padding-top: 10px;
-    }
-
     .image {
-        width: 100%;
-        height: auto;
         margin: 10px 0;
     }
 
@@ -397,6 +357,67 @@
     .text-infos {
         font-size: 1.7rem;
     }
+
+    .swipe-text {
+        display: inline-block;
+        position: relative;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .swipe-text:hover {
+        transform: translateX(10px);
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .photo-gray {
+        display: flex;
+        justify-content: start;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .photo-gray .image {
+        width: 100%;
+        height: auto;
+        transition: opacity 0.3s ease;
+    }
+
+    .photo-gray .hover-text {
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        color: black;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .circle {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 3px 6px;
+        margin-bottom: 5px;
+    }
+
+    .photo-gray:hover .hover-text {
+        opacity: 1;
+    }
+
+    .photo-gray:hover .image {
+        opacity: 0.05;
+    }
 }
 
 
@@ -411,10 +432,6 @@
         font-size: 1.1rem;
         min-width: 100vw;
         min-height: 100vh;
-    }
-
-    .tags {
-        width: 98%;
     }
 
     .infos-nav {
@@ -438,34 +455,12 @@
         font-family: "Bianzhidai", "Larsseit", "Arial", sans-serif;
     }
 
-    .swipe-text {
-        display: inline-block;
-        position: relative;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .swipe-text:hover {
-        transform: translateX(10px);
-    }
-
     .section {
         margin-top: 128px;
         gap: 20px;
-    }
-
-    .rang {
-        width: 100%;
-        height: 100%;
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .project {
-        text-align: center;
-    }
-
-    .photo-gray {
-        display: flex;
-        justify-content: start;
+        grid-template-rows: repeat(4, 1fr);
     }
 
     .col {
@@ -475,46 +470,6 @@
         margin-bottom: 5px;
     }
 
-    .image {
-        width: 100%;
-        height: auto;
-        margin-top: 10px;
-    }
-
-    .photo-gray {
-        position: relative;
-        width: 100%;
-        overflow: hidden; /* Empêche tout débordement */
-    }
-    
-    .photo-gray .image {
-        width: 100%;
-        height: auto;
-        transition: opacity 0.3s ease; /* Transition en douceur pour l'image */
-    }
-    
-    .photo-gray .hover-text {
-        position: absolute;
-        bottom: 10px; /* Place le texte en bas, ajustez selon vos besoins */
-        left: 10px;
-        right: 10px;
-        color: white; /* Couleur du texte */
-        background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
-        padding: 10px;
-        visibility: hidden; /* Masque le texte par défaut */
-        opacity: 0; /* Opacité à 0 par défaut */
-        transition: visibility 0s, opacity 0.3s ease-in-out; /* Transition pour l'effet */
-    }
-    
-    .photo-gray:hover .hover-text {
-        visibility: visible; /* Rend le texte visible */
-        opacity: 1; /* Affiche le texte */
-    }
-    
-    .photo-gray:hover .image {
-        opacity: 0.4; /* Légèrement masque l'image au survol (ajustez à 0 si vous voulez la cacher totalement) */
-    }
-    
 
 
 
@@ -675,5 +630,10 @@
     .text-mail,
     .text-tel {
         font-size: 2.2rem;
+    }
+
+    .section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
 }
