@@ -20,7 +20,7 @@
     }
 
     body {
-        font-family: "Switzer", Arial, sans-serif;
+        font-family: "Inter", Arial, sans-serif;
         font-size: 1.5rem;
         color: black;
         min-width: 100vw;
@@ -62,7 +62,7 @@
     .infos-name,
     .infos-nav {
         font-size: 2.5rem;
-        font-family: "Switzer", "Arial", sans-serif;
+        font-family: "Inter", "Arial", sans-serif;
     }
 
 
@@ -97,7 +97,7 @@
     }
 
     .titre-project {
-        font-family: "Bianzhidai", "Switzer", Arial, sans-serif;
+        font-family: "Bianzhidai", "Inter", Arial, sans-serif;
         font-size: 1.5rem;
         margin-bottom: 5px;
     }
@@ -237,7 +237,7 @@
     }
 
     .titre-project {
-        font-family: "Bianzhidai", "Switzer", Arial, sans-serif;
+        font-family: "Bianzhidai", "Inter", Arial, sans-serif;
         font-size: 1.3rem;
     }
 
@@ -251,7 +251,7 @@
 
     .infos-name {
         font-size: 1.9rem;
-        font-family: "Switzer", "Arial", sans-serif;
+        font-family: "Inter", "Arial", sans-serif;
         transition: font-family 0.3s ease;
     }
 
@@ -276,12 +276,12 @@
 
     .infos-name {
         font-size: 2.3rem;
-        font-family: "Switzer", "Arial", sans-serif;
+        font-family: "Inter", "Arial", sans-serif;
     }
 
     .infos-nav {
         font-size: 2rem;
-        font-family: "Switzer", "Arial", sans-serif;
+        font-family: "Inter", "Arial", sans-serif;
         transition: font-family 0.3s ease;
     }
 
