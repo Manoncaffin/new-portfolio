@@ -310,7 +310,7 @@
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
     .page-contact {
-        background-color: #f3d841;
+        /* background-color: #f3d841; */
         height: 100%;
         margin: 90px 50px 0 50px;
     }
@@ -460,165 +460,170 @@
 
 
 
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/* -------------- PAGE ACCUEIL - PROJETS ------------- */
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-.titre {
-    font-size: 1.3rem;
-    font-family: "Bianzhidai", "Larsseit", "Arial", sans-serif;
-}
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    /* -------------- PAGE ACCUEIL - PROJETS ------------- */
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    .titre {
+        font-size: 1.3rem;
+        font-family: "Bianzhidai", "Larsseit", "Arial", sans-serif;
+    }
 
-.section {
-    margin-top: 137px;
-    gap: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-}
+    .section {
+        margin-top: 137px;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
 
-.col {
-    max-width: 100%;
-    box-sizing: border-box;
-    flex: 0 0 50%;
-    margin-bottom: 5px;
-}
-
-
+    .col {
+        max-width: 100%;
+        box-sizing: border-box;
+        flex: 0 0 50%;
+        margin-bottom: 5px;
+    }
 
 
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/* -------------------- PAGE INFOS ------------------- */
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-main {
-    background-color: rgb(249, 247, 236);
-}
 
-.page-contact {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 90px;
-    background-color: #f3d841;
-    height: 89vh;
-}
 
-.box-one {
-    width: 38%;
-    margin-bottom: 20px;
-    padding: 20px;
-}
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    /* -------------------- PAGE INFOS ------------------- */
+    /* --------------------------------------------------- */
+    /* --------------------------------------------------- */
+    main {
+        background-color: rgb(249, 247, 236);
+    }
 
-.box-two {
-    width: 62%;
-    padding: 20px;
-}
+    .page-contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 90px;
+        height: 89vh;
+    }
 
-.close-btn {
-    width: 100%;
-    position: relative;
-    bottom: 20px;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-}
+    .box-one {
+        width: 38%;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
 
-a {
-    line-height: 1;
-}
+    .box-two {
+        width: 62%;
+        padding: 20px;
+    }
 
-.page-contact p {
-    color: black;
-}
+    .close-btn {
+        width: 100%;
+        position: relative;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
 
-.page-contact a {
-    color: black;
-    margin: 0;
-}
+    a {
+        line-height: 1;
+    }
 
-.text-contact {
-    font-size: 2.2rem;
-    font-family: "Larsseit", Arial, sans-serif;
-}
+    .page-contact p {
+        color: black;
+    }
 
-.text-mail,
-.text-tel {
-    font-size: 2rem;
-    font-family: "Larsseit", Arial, sans-serif;
-    display: inline-block;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-}
+    .page-contact a {
+        color: black;
+        margin: 0;
+    }
 
-.text-mail:hover {
-    text-decoration: underline 2px black;
-}
+    .text-contact {
+        font-size: 2.2rem;
+        font-family: "Larsseit", Arial, sans-serif;
+    }
 
-.text-tel:hover {
-    text-decoration: underline 2px black;
-}
+    .text-mail,
+    .text-tel {
+        font-size: 2rem;
+        font-family: "Larsseit", Arial, sans-serif;
+        display: inline-block;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+    }
 
-.text-link,
-.text-link-two {
-    font-size: 2.2rem;
-    font-family: "Larsseit", Arial, sans-serif;
-    text-decoration: none;
-    display: inline-block;
-    overflow: hidden;
-}
+    .text-mail:hover {
+        text-decoration: underline 2px black;
+    }
 
-.text-link span,
-.text-link-two span {
-    display: block;
-    transition: transform 0.3s ease;
-}
+    .text-tel:hover {
+        text-decoration: underline 2px black;
+    }
 
-.text-link:hover,
-.text-link-two:hover {
-    text-decoration: underline 2px black;
-}
+    .text-link,
+    .text-link-two {
+        font-size: 2.2rem;
+        font-family: "Larsseit", Arial, sans-serif;
+        text-decoration: none;
+        display: inline-block;
+        overflow: hidden;
+    }
 
-.text-about {
-    font-size: 1.2rem;
-    font-family: "Larsseit", Arial, sans-serif;
+    .text-link span,
+    .text-link-two span {
+        display: block;
+        transition: transform 0.3s ease;
+    }
 
-    span {
-        font-weight: bold;
+    .text-link:hover,
+    .text-link-two:hover {
+        text-decoration: underline 2px black;
+    }
+
+    .text-about {
+        font-size: 1.2rem;
+        font-family: "Larsseit", Arial, sans-serif;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .text-infos {
+        font-size: 1rem;
+        font-family: "Larsseit", Arial, sans-serif;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .close-btn,
+    .close-btn-project {
+        font-size: 20px;
     }
 }
 
-.text-infos {
-    font-size: 1rem;
-    font-family: "Larsseit", Arial, sans-serif;
-
-    span {
-        font-weight: bold;
-    }
-}
-
-.close-btn {
-    font-size: 20px;
-}
-}
-
 
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
-/* ------------- MEDIA MIN-WIDTH 1440px -------------- */
+/* ------------- MEDIA MIN-WIDTH 2000px -------------- */
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 2000px) {
 
     .navbar,
     .section {
         margin-left: 100px;
         margin-right: 100px;
+    }
+
+    .section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
 
     .col-1 .image {
@@ -643,22 +648,10 @@ a {
     }
 
     .text-mail,
-    .text-tel {
-        font-size: 2.2rem;
+    .text-tel,
+    .text-contact,
+    .text-link,
+    .text-link-two {
+        font-size: 2.3rem;
     }
-}
-
-
-
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/* ------------- MEDIA MIN-WIDTH 1440px -------------- */
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-
-@media only screen and (min-width: 2000px) {
-.section {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-}
 }

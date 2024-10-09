@@ -11,6 +11,7 @@
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
+
     html,
     body {
         background-color: rgb(249, 247, 236);
@@ -64,10 +65,6 @@
         font-family: "Larsseit", "Arial", sans-serif;
     }
 
-    .back {
-        display: none;
-    }
-    
 
 
     /* --------------------------------------------------- */
@@ -95,8 +92,8 @@
     }
 
     .img-responsive {
-        width: 100%; 
-        height: auto; 
+        width: 100%;
+        height: auto;
     }
 
     .titre-project {
@@ -141,12 +138,23 @@
         border-top: 1px solid black;
     }
 
-    .text-project-one, .text-project-two, .text-project-three {
+    .text-project-one,
+    .text-project-two,
+    .text-project-three {
         margin-left: 50px;
         display: flex;
         justify-content: space-between;
         padding: 5px 0;
         top: 90px;
+    }
+
+    .text-project-three {
+        margin-right: 50px;
+    }
+
+    .close-btn-project {
+        font-size: 20px;
+        margin-top: 5px;
     }
 }
 
@@ -175,6 +183,7 @@
         margin: 0;
         padding: 0;
     }
+
     ::-webkit-scrollbar {
         display: none;
     }
@@ -182,7 +191,7 @@
     .scroll-container::-webkit-scrollbar {
         display: none;
     }
-    
+
 
     ::-webkit-scrollbar {
         display: none;
@@ -204,52 +213,13 @@
     }
 
     .img-responsive {
-        max-width: 2000px; 
-        width: auto; 
-        height: 100%; 
-    }
-
-    .back {
-        display: block;
-        padding: 6px 20px;
-        border-radius: 15px;
-        border: none;
-        color: black;
-        cursor: pointer;
-        background-color: transparent;
-        position: relative;
-        z-index: 1;
-    }
-
-    .back::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
+        max-width: 2000px;
+        width: auto;
         height: 100%;
-        background-color: rgb(206, 207, 201);
-        z-index: -1;
-        border-radius: 15px;
-        opacity: 0;
-        filter: blur(0);
-        transition: opacity 0.3s ease, filter 0.3s ease;
     }
 
-    .back:hover::before,
-    .back.active::before {
-        opacity: 1;
-        filter: blur(6px);
-    }
-
-    .back:hover,
-    .back.active {
-        color: black;
-        z-index: 2;
-    }
-
-    .text-project-one, 
-    .text-project-two, 
+    .text-project-one,
+    .text-project-two,
     .text-project-three {
         margin-right: 50px;
     }
@@ -272,7 +242,7 @@
     }
 
     .img-responsive {
-        max-width: 1300px;  
+        max-width: 1300px;
     }
 
     .content {
@@ -318,6 +288,12 @@
     .infos-nav:hover {
         font-family: "Bianzhidai", "Arial", sans-serif;
     }
+
+    .close-btn-project {
+        font-size: 20px;
+        bottom: 20px;
+        cursor: pointer;
+    }
 }
 
 
@@ -330,9 +306,9 @@
 
 @media only screen and (min-width: 1440px) {
     .img-responsive {
-        max-width: 2000px; 
-        width: auto; 
-        height: 100%; 
+        max-width: 2000px;
+        width: auto;
+        height: 100%;
     }
 
     .navbar-three {
@@ -340,8 +316,8 @@
         padding-right: 100px;
     }
 
-    .text-project-one, 
-    .text-project-two, 
+    .text-project-one,
+    .text-project-two,
     .text-project-three {
         margin-left: 100px;
         margin-right: 100px;
@@ -358,9 +334,9 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1540px) {
     .img-responsive {
-        max-width: 2000px; 
-        width: auto; 
-        height: 100%; 
+        max-width: 2000px;
+        width: auto;
+        height: 100%;
     }
 
     .image-project {
@@ -370,8 +346,8 @@
 
 @media only screen and (min-width: 2000px) {
     .img-responsive {
-        max-width: 2500px; 
-        width: auto; 
-        height: 100%; 
+        max-width: 2500px;
+        width: auto;
+        height: 100%;
     }
 }
