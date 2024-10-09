@@ -310,14 +310,17 @@
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
     .page-contact {
-        /* background-color: #f3d841; */
         height: 100%;
         margin: 90px 50px 0 50px;
     }
 
     .box-one,
     .box-two {
-        padding: 30px;
+        padding: 30px 0;
+    }
+
+    .text-infos {
+        margin-top: 25px;
     }
 
     .close-btn {
@@ -384,6 +387,10 @@
 
     .close-btn {
         font-size: 40px;
+    }
+
+    .line {
+        border-bottom: 1px solid black;
     }
 }
 
@@ -503,18 +510,19 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 90px;
-        height: 89vh;
+        /* height: 89vh; */
     }
 
     .box-one {
         width: 38%;
         margin-bottom: 20px;
-        padding: 20px;
+        padding: 20px 0;
+        border-right: 1px solid black;
     }
 
     .box-two {
         width: 62%;
-        padding: 20px;
+        padding: 20px 0 20px 0;
     }
 
     .close-btn {
@@ -584,6 +592,7 @@
     .text-about {
         font-size: 1.2rem;
         font-family: "Larsseit", Arial, sans-serif;
+        padding-left: 20px;
 
         span {
             font-weight: bold;
@@ -593,13 +602,19 @@
     .text-infos {
         font-size: 1rem;
         font-family: "Larsseit", Arial, sans-serif;
+        margin-top: 25px;
+        padding-left: 20px;
 
         span {
             font-weight: bold;
         }
     }
 
-    .close-btn,
+    .close-btn {
+        font-size: 20px;
+        margin-top: 100px;
+    }
+
     .close-btn-project {
         font-size: 20px;
     }
