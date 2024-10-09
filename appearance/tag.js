@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function adjustGrid() {
         const visibleProjects = document.querySelectorAll('.project:not(.hidden)');
         
-        if (window.innerWidth >= 1440) {
+        if (window.innerWidth >= 1460) {
             section.style.gridTemplateColumns = `repeat(3, 1fr)`; 
         } else if (window.innerWidth >= 1200) {
             section.style.gridTemplateColumns = `repeat(2, 1fr)`;
