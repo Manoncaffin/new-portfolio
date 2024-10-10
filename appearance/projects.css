@@ -140,11 +140,8 @@
         margin-left: 50px;
         display: flex;
         justify-content: space-between;
-        padding: 5px 0;
+        align-items: center;
         top: 90px;
-    }
-
-    .text-project-three {
         margin-right: 50px;
     }
 
