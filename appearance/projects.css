@@ -4,6 +4,20 @@
     padding: 0px;
 }
 
+@font-face {
+    font-family: 'Bianzhidai';
+    src: url('/fonts/Bianzhidai.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Uncut-Sans";
+    src: url('/fonts/Uncut-Sans.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -20,7 +34,7 @@
     }
 
     body {
-        font-family: "Uncut-Sans", Arial, sans-serif;
+        font-family: "Uncut Sans", Arial, sans-serif;
         font-size: 1.5rem;
         color: black;
         min-width: 100vw;
@@ -59,7 +73,7 @@
     .infos-name,
     .infos-nav {
         font-size: 2.5rem;
-        font-family: "Uncut-Sans-Semibold", "Arial", sans-serif;
+        font-family: "Uncut Sans", "Arial", sans-serif;
     }
 
 
