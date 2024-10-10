@@ -396,28 +396,18 @@
         overflow: hidden;
     }
 
-    .text-link span,
-    .text-link-two span {
-        display: block;
-        transition: transform 0.3s ease;
+    span {
+        font-size: 1rem;
     }
 
     .text-about {
         font-size: 2.5rem;
         font-family: "UncutSans-Bold", "Inter", Arial, sans-serif;
-
-        span {
-            font-weight: bold;
-        }
     }
 
     .text-infos {
         font-size: 1.9rem;
         font-family: "UncutSans-Bold", "Inter", Arial, sans-serif;
-
-        span {
-            font-weight: bold;
-        }
     }
 
     .line {
@@ -671,12 +661,6 @@
         overflow: hidden;
     }
 
-    .text-link span,
-    .text-link-two span {
-        display: block;
-        transition: transform 0.3s ease;
-    }
-
     .text-link:hover,
     .text-link-two:hover {
         text-decoration: underline 2px black;
@@ -686,19 +670,11 @@
     .text-about {
         font-size: 1.2rem;
         padding-left: 20px;
-
-        span {
-            font-weight: bold;
-        }
     }
 
     .text-infos {
         font-size: 1rem;
         padding-left: 20px;
-
-        span {
-            font-weight: bold;
-        }
     }
 
     .title-infos {
