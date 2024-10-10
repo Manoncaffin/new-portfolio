@@ -32,15 +32,28 @@
                     <a href="/pages/infos.html" id="infosLink"
                         class="infos-nav text-black text-decoration-none">infos</a>
                 </div>
-
-                <div class="tags">
-                    <button class="tag" data-category="project-graphic">graphisme</button>
-                    <button class="tag" data-category="project-service">design de service</button>
-                    <button class="tag" data-category="project-ux">design UX/UI</button>
-                    <button class="tag" data-category="project-web">code</button>
-                    <button class="tag" data-category="all">tout</button>
-                </div>
             </nav>
+
+            <div class="tags-mobile mobile-dropdown">
+                <input type="checkbox" id="dropdown-toggle" class="dropdown-checkbox">
+                <label for="dropdown-toggle" class="tag-mobile">↓ type de projet</label>
+            
+                <div class="dropdown-menu">
+                    <button class="tag-mobile" data-category="project-graphic">graphisme</button>
+                    <button class="tag-mobile" data-category="project-service">design de service</button>
+                    <button class="tag-mobile" data-category="project-ux">design UX/UI</button>
+                    <button class="tag-mobile" data-category="project-web">code</button>
+                    <button class="tag-mobile" data-category="all">tout</button>
+                </div>
+            </div>
+            
+            <div class="tags-desktop desktop-only">
+                <button class="tag-desktop" data-category="project-graphic">graphisme</button>
+                <button class="tag-desktop" data-category="project-service">design de service</button>
+                <button class="tag-desktop" data-category="project-ux">design UX/UI</button>
+                <button class="tag-desktop" data-category="project-web">code</button>
+                <button class="tag-desktop" data-category="all">tout</button>
+            </div>
         </header>
 
         <main>
@@ -227,6 +240,7 @@
     </div>
 
     <script src="./appearance/tag.js"></script>
+    <script src="./appearance/dropdown.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-5p8Fk9+P5CDu5PZfklO1R/hFUBn26Hb8jKlJ8A+2+L4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

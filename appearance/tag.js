@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const tags = document.querySelectorAll('.tag');
+    const tags = document.querySelectorAll('.tag-mobile, .tag-desktop');
     const projects = document.querySelectorAll('.project');
     const section = document.querySelector('.section');
 
@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            adjustGrid();
+            adjustGrid(); 
         });
     });
 
     function adjustGrid() {
         const visibleProjects = document.querySelectorAll('.project:not(.hidden)');
-        
+
         if (window.innerWidth >= 1460) {
             section.style.gridTemplateColumns = `repeat(3, 1fr)`; 
         } else if (window.innerWidth >= 1200) {
@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             section.style.gridTemplateColumns = `repeat(1, 1fr)`;
         }
+
+        section.style.gridAutoRows = 'minmax(100px, auto)';
     }
 
     adjustGrid();

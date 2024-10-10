@@ -20,7 +20,7 @@
     }
 
     body {
-        font-family: "Inter", Arial, sans-serif;
+        font-family: "Uncut-Sans", Arial, sans-serif;
         font-size: 1.5rem;
         color: black;
         min-width: 100vw;
@@ -51,10 +51,7 @@
     }
 
     .navbar-three {
-        padding-top: 25px;
-        padding-bottom: 5px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding: 25px 50px 5px 50px;
         height: 90px;
         background-color: rgba(249, 247, 236, 0.827);
     }
@@ -62,7 +59,7 @@
     .infos-name,
     .infos-nav {
         font-size: 2.5rem;
-        font-family: "Inter", "Arial", sans-serif;
+        font-family: "Uncut-Sans-Semibold", "Arial", sans-serif;
     }
 
 
@@ -97,9 +94,8 @@
     }
 
     .titre-project {
-        font-family: "Bianzhidai", "Inter", Arial, sans-serif;
-        font-size: 1.5rem;
-        margin-bottom: 5px;
+        font-family: "Uncut-Sans-Semibold", "Inter", Arial, sans-serif;
+        font-size: 2.5rem;
     }
 
     .section-project-one {
@@ -152,9 +148,13 @@
         margin-right: 50px;
     }
 
-    .close-btn-project {
+    .close-btn-project a {
         font-size: 20px;
-        margin-top: 5px;
+        margin: 5px 0;
+        background-color: rgb(249, 247, 236);
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -223,6 +223,21 @@
     .text-project-three {
         margin-right: 50px;
     }
+
+    .titre-project {
+        font-size: 1.9rem;
+    }
+
+    .infos-nav,
+    .infos-name {
+        font-size: 1.9rem;
+        transition: font-family 0.3s ease;
+    }
+
+    .infos-nav:hover,
+    .infos-name:hover {
+        font-family: "Bianzhidai", "Arial", sans-serif;
+    }
 }
 
 
@@ -236,11 +251,6 @@
         font-size: 1.1rem;
     }
 
-    .titre-project {
-        font-family: "Bianzhidai", "Inter", Arial, sans-serif;
-        font-size: 1.3rem;
-    }
-
     .img-responsive {
         max-width: 1300px;
     }
@@ -249,47 +259,14 @@
         gap: 10px;
     }
 
-    .infos-name {
-        font-size: 1.9rem;
-        font-family: "Inter", "Arial", sans-serif;
-        transition: font-family 0.3s ease;
-    }
-
-    .infos-name:hover {
-        font-family: "Bianzhidai", "Arial", sans-serif;
-    }
-
 
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
     /* ----------- HEADER - NAVBAR PAGE PROJET ----------- */
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
-    .navbar-three {
-        padding-top: 25px;
-        padding-bottom: 5px;
-        padding-left: 50px;
-        padding-right: 50px;
-        height: 90px;
-        background-color: rgba(249, 247, 236, 0.827);
-    }
 
-    .infos-name {
-        font-size: 2.3rem;
-        font-family: "Inter", "Arial", sans-serif;
-    }
-
-    .infos-nav {
-        font-size: 2rem;
-        font-family: "Inter", "Arial", sans-serif;
-        transition: font-family 0.3s ease;
-    }
-
-    .infos-nav:hover {
-        font-family: "Bianzhidai", "Arial", sans-serif;
-    }
-
-    .close-btn-project {
+    .close-btn-project a {
         font-size: 20px;
         bottom: 20px;
         cursor: pointer;
@@ -309,18 +286,6 @@
         max-width: 2000px;
         width: auto;
         height: 100%;
-    }
-
-    .navbar-three {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    .text-project-one,
-    .text-project-two,
-    .text-project-three {
-        margin-left: 100px;
-        margin-right: 100px;
     }
 }
 
@@ -349,5 +314,17 @@
         max-width: 2500px;
         width: auto;
         height: 100%;
+    }
+
+    .navbar-three {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .text-project-one,
+    .text-project-two,
+    .text-project-three {
+        margin-left: 100px;
+        margin-right: 100px;
     }
 }
