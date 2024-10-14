@@ -5,16 +5,18 @@
 }
 
 @font-face {
-    font-family: 'Bianzhidai';
-    src: url('/fonts/Bianzhidai.otf') format('opentype');
+    font-family: 'bianzhidai-Pearl';
+    src: url('/fonts/bianzhidai-Pearl.otf') format('opentype');
+    src: url('/fonts/bianzhidai-Pearl.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "UncutSans-Bold";
+    font-family: "UncutSans";
     src: url('/fonts/UncutSans-Bold.woff2') format('woff2');
-    font-weight: normal;
+    src: url('/fonts/UncutSans-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -36,7 +38,8 @@
     }
 
     body {
-        font-family: "UncutSans-Bold", "Inter", Arial, sans-serif;
+        font-family: "UncutSans", "Inter", Arial, sans-serif;
+        font-weight: bold;
         font-size: 1.5rem;
         color: black;
         min-width: 100vw;
@@ -84,7 +87,8 @@
     .infos-name,
     .infos-nav {
         font-size: 2.5rem;
-        font-family: "UncutSans-Bold", "Inter", "Arial", sans-serif;
+        font-family: "UncutSans", "Inter", "Arial", sans-serif;
+        font-weight: bold;
     }
 
     .fixed-top {
@@ -232,7 +236,8 @@
     }
 
     .titre {
-        font-family: "UncutSans-Bold", "Inter", "Arial", sans-serif;
+        font-family: "UncutSans", "Inter", "Arial", sans-serif;
+        font-weight: bold;
         font-size: 2.5rem;
         text-align: center;
         margin-bottom: 8px;
@@ -380,7 +385,8 @@
     .text-link,
     .text-link-two {
         font-size: 3rem;
-        font-family: "UncutSans-Bold", "Inter", Arial, sans-serif;
+        font-family: "UncutSans", "Inter", Arial, sans-serif;
+        font-weight: bold;
     }
 
     .text-mail:hover,
@@ -402,12 +408,14 @@
 
     .text-about {
         font-size: 2.5rem;
-        font-family: "UncutSans-Bold", "Inter", Arial, sans-serif;
+        font-family: "UncutSans", "Inter", Arial, sans-serif;
+        font-weight: bold;
     }
 
     .text-infos {
         font-size: 1.9rem;
-        font-family: "UncutSans-Bold", "Inter", Arial, sans-serif;
+        font-family: "UncutSans", "Inter", Arial, sans-serif;
+        font-weight: bold;
     }
 
     .line {
@@ -549,7 +557,7 @@
 
     .infos-nav:hover,
     .infos-name:hover {
-        font-family: "Bianzhidai", "Arial", sans-serif;
+        font-family: "bianzhidai-Pearl", "Arial", sans-serif;
     }
 
 
