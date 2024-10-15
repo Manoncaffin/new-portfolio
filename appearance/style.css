@@ -538,7 +538,6 @@
     .tag-desktop.active {
         color: black;
         z-index: 2;
-        border-bottom: 1px solid black;
     }
 }
 
