@@ -30,7 +30,8 @@
 
     html,
     body {
-        background-color: rgb(249, 247, 236);
+        /* background-color: rgb(249, 247, 236); */
+        background-color: rgb(251,250,249);
         width: 100%;
         height: 100%;
     }
@@ -69,12 +70,13 @@
     .navbar-three {
         padding: 25px 50px 5px 50px;
         height: 90px;
-        background-color: rgba(249, 247, 236, 0.827);
+        /* background-color: rgba(249, 247, 236, 0.827); */
+        background-color: rgb(251,250,249, 0.827);
     }
 
     .infos-name,
     .infos-nav {
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-family: "UncutSans", "Arial", sans-serif;
     }
 
@@ -117,44 +119,51 @@
     }
 
     .section-project-one {
-        background-color: #f6adf4; 
-        margin-top: 93px;
+        /* background-color: #f6adf4;  */
+        background-color: rgb(251,250,249);
+        margin-top: 95px;
         border-top: 1px solid black;
     } 
 
     .section-project-two {
-        background-color: #edd9686a;
-        margin-top: 93px;
+        /* background-color: #edd9686a; */
+        background-color: rgb(251,250,249);
+        margin-top: 95px;
         border-top: 1px solid black;
     }
 
     .section-project-three {
-        background-color: #b1eff1;
-        margin-top: 93px;
+        /* background-color: #b1eff1; */
+        background-color: rgb(251,250,249);
+        margin-top: 95px;
         border-top: 1px solid black;
     }
 
     .section-project-four {
-        background-color: #75e9ab;
-        margin-top: 93px;
+        /* background-color: #75e9ab; */
+        background-color: rgb(251,250,249);
+        margin-top: 95px;
         border-top: 1px solid black;
     }
 
     .section-project-five {
-        background-color: #004cffb1;
-        margin-top: 93px;
+        /* background-color: #004cffb1; */
+        background-color: rgb(251,250,249);
+        margin-top: 95px;
         border-top: 1px solid black;
     }
 
     .section-project-six {
-        background-color: #d6b4f36a;
-        margin-top: 93px;
+        /* background-color: #d6b4f36a; */
+        background-color: rgb(251,250,249);
+        margin-top: 95px;
         border-top: 1px solid black;
     }
 
     .section-project-seven {
-        background-color: #e85d37;
-        margin-top: 93px;
+        /* background-color: #e85d37; */
+        background-color: rgb(251,250,249);
+        margin-top: 95px;
         border-top: 1px solid black;
     }
 
@@ -172,10 +181,21 @@
     .close-btn-project a {
         font-size: 20px;
         margin: 5px 0;
-        background-color: rgb(249, 247, 236);
+        /* background-color: rgb(249, 247, 236); */
+        background-color: rgb(251,250,249);
         border: 1px solid black;
         display: flex;
         align-items: center;
+    }
+
+    .more-text {
+        width: 50%;
+        height: 50%;
+    }
+
+    .more-text p {
+        margin-left: 50px;
+        margin-top: 20px;
     }
 }
 
@@ -205,6 +225,25 @@
         padding: 0;
     }
 
+    .navbar-three {
+        height: 75px;
+    }
+
+    .section-project-one,
+    .section-project-two,
+    .section-project-three,
+    .section-project-four,
+    .section-project-five,
+    .section-project-six,
+    .section-project-seven {
+        margin-top: 85px;
+    }
+
+    .text-project-one, .text-project-two, .text-project-three {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     ::-webkit-scrollbar {
         display: none;
     }
@@ -226,11 +265,13 @@
     }
 
     .image-project {
-        height: 86vh;
+        height: 80vh;
         width: 100vw;
         margin: 0;
         padding: 0;
         margin-bottom: 0;
+        display: flex;
+        align-items: start;
     }
 
     .img-responsive {
@@ -327,7 +368,7 @@
     }
 
     .image-project {
-        height: 89vh;
+        height: 80vh;
     }
 }
 
