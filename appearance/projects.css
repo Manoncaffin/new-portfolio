@@ -37,7 +37,6 @@
 
     body {
         font-family: "UncutSans", Arial, sans-serif;
-        font-weight: bold;
         font-size: 1.5rem;
         color: black;
         min-width: 100vw;
@@ -77,7 +76,6 @@
     .infos-nav {
         font-size: 2.5rem;
         font-family: "UncutSans", "Arial", sans-serif;
-        font-weight: bold;
     }
 
 
@@ -115,15 +113,14 @@
 
     .titre-project {
         font-family: "UncutSans", "Inter", Arial, sans-serif;
-        font-weight: bold;
         font-size: 2.5rem;
     }
 
     .section-project-one {
-        background-color: #e85d37;
+        background-color: #f6adf4; 
         margin-top: 93px;
         border-top: 1px solid black;
-    }
+    } 
 
     .section-project-two {
         background-color: #edd9686a;
@@ -138,7 +135,7 @@
     }
 
     .section-project-four {
-        background-color: #f6adf4;
+        background-color: #75e9ab;
         margin-top: 93px;
         border-top: 1px solid black;
     }
@@ -151,6 +148,12 @@
 
     .section-project-six {
         background-color: #d6b4f36a;
+        margin-top: 93px;
+        border-top: 1px solid black;
+    }
+
+    .section-project-seven {
+        background-color: #e85d37;
         margin-top: 93px;
         border-top: 1px solid black;
     }
@@ -255,6 +258,7 @@
     .infos-nav:hover,
     .infos-name:hover {
         font-family: "bianzhidai-Pearl", "Arial", sans-serif;
+        font-weight: normal;
     }
 }
 
