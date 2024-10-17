@@ -615,7 +615,7 @@
         gap: 25px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 420px);
         margin-top: 127px;
     }
 
@@ -849,7 +849,7 @@
 
     .section {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 420px);
     }
 
     .col-1 .image,
