@@ -255,21 +255,15 @@
         align-items: start;
         flex-direction: column;
         margin-top: 15px;
+    }
 
-        p {
-            line-height: 1.5rem;
-        }
+    .text p {
+        line-height: 2rem;
     }
 
     .titre {
         font-family: "UncutSans", "Inter", "Arial", sans-serif;
-        font-size: 2.5rem;
-        text-align: center;
-        margin-bottom: 8px;
-    }
-
-    .titre:hover {
-        background-color: rgb(227, 227, 227);
+        font-size: 2.2rem;
     }
 
     .circle {
@@ -538,13 +532,17 @@
     }
 
     .infos-name,
-    .infos-nav,
-    .titre {
+    .infos-nav {
         font-size: 2rem;
     }
 
+    .titre {
+        font-size: 1.5rem;
+    }
+
+
     .tag-desktop {
-        font-size: 2rem;
+        font-size: 1.5rem;
         border: none;
         color: black;
         cursor: pointer;
@@ -618,7 +616,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        margin-top: 140px;
+        margin-top: 127px;
     }
 
     .col {
@@ -644,7 +642,6 @@
     .photo-gray:hover .hover-text {
         opacity: 1;
     }
-
 
     .tag {
         font-size: 1.9rem;
@@ -721,6 +718,15 @@
         background-color: #bcf5da;
         border: 1px solid black;
     }
+
+    .text {
+        margin-top: 0;
+    }
+
+
+    .text p {
+        line-height: 1.5rem;
+}
 
 
 
@@ -816,7 +822,7 @@
     }
 
     .text-infos {
-        font-size: 1rem;
+        font-size: 0.8rem;
         padding-left: 20px;
     }
 
@@ -852,27 +858,12 @@
     }
 
     .text-about {
-        font-size: 1.2rem;
-    }
-
-    .text-infos {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .page-contact {
         margin-left: 100px;
         margin-right: 100px;
-    }
-
-    .text-mail,
-    .text-tel,
-    .text-link,
-    .text-link-two {
-        font-size: 2.3rem;
-    }
-
-    .title-infos {
-        font-size: 0.7rem;
     }
 
 }
