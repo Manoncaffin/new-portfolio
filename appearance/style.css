@@ -80,6 +80,7 @@
         background-color: rgb(251, 250, 249, 0.827);
         margin-left: 50px;
         margin-right: 50px;
+        border-bottom: 1px solid black;
     }
 
     .infos-name,
@@ -266,6 +267,10 @@
         font-size: 2.2rem;
     }
 
+    .titre:hover {
+        background-color: rgb(227, 227, 227);
+    }
+
     .circle {
         background-color: rgb(227, 227, 227);
         margin-bottom: 6px;
@@ -422,10 +427,6 @@
         overflow: hidden;
     }
 
-    span {
-        font-size: 1.9rem;
-    }
-
     .text-about {
         font-size: 2.5rem;
         font-family: "UncutSans", "Inter", Arial, sans-serif;
@@ -482,10 +483,6 @@
     .text-infos {
         font-size: 1.7rem;
     }
-
-    span {
-        font-size: 1.5rem;
-    }
 }
 
 
@@ -496,10 +493,6 @@
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
-
-    .navbar {
-        border-bottom: 1px solid black;
-    }
 
     .section {
         margin-top: 145px;
@@ -531,15 +524,21 @@
         gap: 30px;
     }
 
-    .infos-name,
-    .infos-nav {
+    .infos-nav,
+    .infos-name {
         font-size: 2rem;
+        transition: font-family 0.3s ease;
+    }
+
+    .infos-nav:hover,
+    .infos-name:hover {
+        font-family: "bianzhidai", "Arial", sans-serif;
+        font-weight: normal;
     }
 
     .titre {
         font-size: 1.5rem;
     }
-
 
     .tag-desktop {
         font-size: 1.5rem;
@@ -589,20 +588,8 @@
         min-height: 100vh;
     }
 
-    .infos-nav,
-    .infos-name {
-        font-size: 1.9rem;
-        transition: font-family 0.3s ease;
-    }
-
-    .infos-nav:hover,
-    .infos-name:hover {
-        font-family: "bianzhidai", "Arial", sans-serif;
-        font-weight: normal;
-    }
-
     .tags-desktop {
-        top: 77px;
+        top: 79px;
     }
 
     /* --------------------------------------------------- */
@@ -615,7 +602,7 @@
         gap: 25px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 420px);
+        grid-template-rows: repeat(4, 490px);
         margin-top: 127px;
     }
 
@@ -647,88 +634,24 @@
         font-size: 1.9rem;
     }
 
-    .col-1 {
-        border-bottom: none;
-    }
-
-    .col-1:hover {
-        background-color: #75e9ab;
-        border: 1px solid black;
-    }
-
-    .col-2 {
-        border-bottom: none;
-    }
-
-    .col-2:hover {
-        background-color: #e85d37;
-        border: 1px solid black;
-    }
-
-    .col-3 {
-        border-bottom: none;
-    }
-
-    .col-3:hover {
-        background-color: #004cffb1;
-        border: 1px solid black;
-    }
-
-    .col-4 {
-        border-bottom: none;
-    }
-
-    .col-4:hover {
-        background-color: #f6adf4;
-        border: 1px solid black;
-    }
-
-    .col-5 {
-        border-bottom: none;
-    }
-
-    .col-5:hover {
-        background-color: #edd9686a;
-        border: 1px solid black;
-    }
-
-    .col-6 {
-        border-bottom: none;
-    }
-
-    .col-6:hover {
-        background-color: #d6b4f36a;
-        border: 1px solid black;
-    }
-
-    .col-7 {
-        border-bottom: none;
-    }
-
-    .col-7:hover {
-        background-color: #81edf1;
-        border: 1px solid black;
-    }
-
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
     .col-8 {
         border-bottom: none;
-    }
-
-    .col-8:hover {
-        background-color: #bcf5da;
-        border: 1px solid black;
     }
 
     .text {
         margin-top: 0;
     }
 
-
     .text p {
         line-height: 1.5rem;
-}
-
-
+    }
 
     /* --------------------------------------------------- */
     /* --------------------------------------------------- */
@@ -744,7 +667,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 90px;
+        margin-top: 80px;
     }
 
     .box-one {
@@ -840,7 +763,6 @@
 /* --------------------------------------------------- */
 
 @media only screen and (min-width: 1460px) {
-
     .navbar,
     .section {
         margin-left: 100px;

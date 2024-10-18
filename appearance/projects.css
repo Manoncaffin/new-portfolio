@@ -103,7 +103,7 @@
         align-items: center;
         height: auto;
         width: 100vw;
-        margin-bottom: -2px;
+        margin-bottom: 10px;
     }
 
     .img-responsive {
@@ -117,6 +117,7 @@
         font-family: "UncutSans", "Inter", "Arial", sans-serif;
         font-size: 2.2rem;
         margin-bottom: 5px;
+        line-height: 2.8rem;
     }
 
     .titre-project:hover {
@@ -143,6 +144,7 @@
         display: flex;
         justify-content: space-between;
         padding-top: 20px;
+        gap: 10px;
     }
 
     .text-project {
@@ -236,9 +238,19 @@
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
-
     body {
         overflow: hidden;
+        font-size: 1rem;
+    }
+
+    .image-project {
+        height: 80vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0;
+        display: flex;
+        align-items: start;
     }
 
     .scroll-container {
@@ -251,6 +263,30 @@
         scrollbar-width: none;
         margin: 0;
         padding: 0;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .img-responsive {
+        padding: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        transform: rotate(90deg) translateY(-100vh);
+        transform-origin: top left;
+        gap: 10px;
     }
 
     .close-btn-project {
@@ -277,42 +313,12 @@
     .text-project-two,
     .text-project-three {
         width: 100%;
+        padding-top: 10px;
     }
 
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
-    .scroll-container::-webkit-scrollbar {
-        display: none;
-    }
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: row;
-        transform: rotate(90deg) translateY(-100vh);
-        transform-origin: top left;
-    }
-
-    .image-project {
-        height: 80vh;
-        width: 100vw;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 0;
-        display: flex;
-        align-items: start;
-    }
-
-    .img-responsive {
-        max-width: 2000px;
-        width: auto;
-        padding: 0;
-        /* height: 100%; */
+    .text-project,
+    .all-details {
+        margin-bottom: 15px;
     }
 
     .titre-project {
@@ -327,7 +333,7 @@
 
     .infos-nav,
     .infos-name {
-        font-size: 1.9rem;
+        font-size: 2rem;
         transition: font-family 0.3s ease;
     }
 
@@ -350,16 +356,10 @@
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
-    body {
-        font-size: 1rem;
-    }
-
     .img-responsive {
-        max-width: 1300px;
-    }
-
-    .content {
-        gap: 20px;
+        max-width: 1400px;
+        width: auto;
+        height: 100%;
     }
 
     .text-project {
@@ -390,7 +390,7 @@
     .details-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 150px;
+        grid-gap: 50px;
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -401,6 +401,21 @@
 
     .all-details {
         grid-column: 2 / 3;
+    }
+
+    .reduced-size {
+        transform: scale(0.7);
+        transition: transform 0.3s ease;
+    }
+
+    .adjusted-position {
+        margin-top: -70px;
+    }
+
+    .reduced-size-project img {
+        height: 70vh;
+        margin-right: -220px;
+        margin-left: -20px;
     }
 }
 
@@ -418,32 +433,18 @@
         width: auto;
         height: 100%;
     }
-}
 
-
-
-
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/* ------------- MEDIA MIN-WIDTH 1540px -------------- */
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-@media only screen and (min-width: 1540px) {
-    .img-responsive {
-        max-width: 2000px;
-        width: auto;
-        height: 100%;
+    .adjusted-position {
+        margin-top: -100px;
     }
 
-    .image-project {
+    .reduced-size-project img {
         height: 80vh;
+        margin-right: -265px;
+        margin-left: -70px;
     }
-}
 
-@media only screen and (min-width: 2000px) {
-    .img-responsive {
-        max-width: 2500px;
-        width: auto;
-        height: 100%;
+    .details-container {
+        grid-gap: 150px;
     }
 }
