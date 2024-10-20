@@ -80,6 +80,7 @@
         background-color: rgb(251, 250, 249, 0.827);
         margin-left: 50px;
         margin-right: 50px;
+        border-bottom: 1px solid black;
     }
 
     .infos-name,
@@ -497,10 +498,6 @@
         margin-top: 130px;
     }
 
-    .navbar {
-        border-bottom: 1px solid black;
-    }
-
     .col {
         margin-top: 0;
     }
@@ -767,6 +764,7 @@
 /* --------------------------------------------------- */
 
 @media only screen and (min-width: 1460px) {
+
     .navbar,
     .section {
         margin-left: 100px;
