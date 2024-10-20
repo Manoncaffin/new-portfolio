@@ -323,6 +323,7 @@
 
     .titre-project {
         font-size: 1.5rem;
+        line-height: 2rem;
     }
 
     .btn-more,
@@ -420,7 +421,7 @@
         height: 65%;
         /* margin-right: -220px;
         margin-left: -20px;*/
-    } 
+    }
 }
 
 
@@ -460,8 +461,8 @@
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 
-@media only screen and (min-width: 1540px) {   
+@media only screen and (min-width: 1540px) {
     .details-container {
-    grid-gap: 150px;
+        grid-gap: 150px;
     }
 }
