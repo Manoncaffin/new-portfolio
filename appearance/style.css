@@ -80,7 +80,6 @@
         background-color: rgb(251, 250, 249, 0.827);
         margin-left: 50px;
         margin-right: 50px;
-        border-bottom: 1px solid black;
     }
 
     .infos-name,
@@ -495,7 +494,11 @@
 @media only screen and (min-width: 1000px) {
 
     .section {
-        margin-top: 145px;
+        margin-top: 130px;
+    }
+
+    .navbar {
+        border-bottom: 1px solid black;
     }
 
     .col {
@@ -602,7 +605,7 @@
         gap: 25px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 490px);
+        grid-template-rows: repeat(4, 1fr);
         margin-top: 127px;
     }
 
@@ -690,6 +693,7 @@
         cursor: pointer;
         font-size: 20px;
         margin-top: 20px;
+        padding-bottom: 25px;
     }
 
     .close-btn-project {
