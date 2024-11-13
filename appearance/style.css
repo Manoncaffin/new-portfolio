@@ -85,6 +85,8 @@
         background-color: rgb(251, 250, 249, 0.827);
         padding-left: 50px;
         padding-right: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
         border-bottom: 1px solid black;
     }
 
@@ -323,10 +325,6 @@
     .col-8:hover {
         background-color: #bcf5da;
     }
-
-    /* .photo-gray img {
-        border-radius: 20px;
-    } */
 
     .image {
         width: 100%;
