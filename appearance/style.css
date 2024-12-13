@@ -333,7 +333,7 @@
 
     .photo-gray {
         display: flex;
-        justify-content: start;
+        justify-content: center;
         position: relative;
         width: 100%;
         overflow: hidden;
@@ -655,8 +655,14 @@
         border-bottom: none;
     }
 
+    .image {
+        margin-top: 0;
+        height: 80%;
+    }
+
     .text {
         margin-top: 0;
+        margin-bottom: 5px;
     }
 
     .text p {
@@ -783,7 +789,7 @@
 
     .section {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 420px);
+        grid-template-rows: repeat(4, 435px);
     }
 
     .col-1 .image,
