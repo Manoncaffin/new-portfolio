@@ -13,10 +13,23 @@
 }
 
 @font-face {
-    font-family: "UncutSans";
-    src: url('/fonts/UncutSans-Bold.woff2') format('woff2');
-    src: url('/fonts/UncutSans-Bold.woff') format('woff');
-    font-weight: bold;
+    font-family: "inter-v18-latin-500";
+    src: url('../appearance/fonts/inter-v18-latin-500.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "inter-v18-latin-200";
+    src: url('../appearance/fonts/inter-v18-latin-200.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "inter-v18-latin-regular";
+    src: url('../appearance/fonts/inter-v18-latin-regular.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -36,7 +49,7 @@
     }
 
     body {
-        font-family: "UncutSans", Arial, sans-serif;
+        font-family: "inter-v18-latin-regular", Arial, sans-serif;
         font-size: 1.5rem;
         color: black;
         min-width: 100vw;
@@ -75,7 +88,7 @@
     .infos-name,
     .infos-nav {
         font-size: 3rem;
-        font-family: "UncutSans", "Arial", sans-serif;
+        font-family: "inter-v18-latin-regular", "Arial", sans-serif;
     }
 
 
@@ -114,7 +127,7 @@
     }
 
     .titre-project {
-        font-family: "UncutSans", "Inter", "Arial", sans-serif;
+        font-family: "inter-v18-latin-regular", "Inter", "Arial", sans-serif;
         font-size: 2.2rem;
         margin-bottom: 5px;
         line-height: 2.8rem;
