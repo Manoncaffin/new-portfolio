@@ -49,7 +49,6 @@
 
     html,
     body {
-        /* background-color: rgb(249, 247, 236); */
         background-color: rgb(251, 250, 249);
         width: 100%;
         height: 100%;
@@ -102,7 +101,7 @@
         margin-right: 50px;
     }
 
-    .infos-name,
+    h1,
     .infos-nav {
         font-size: 3rem;
         font-family: "inter-v18-latin-regular", "Inter", "Arial", sans-serif;
@@ -581,13 +580,13 @@
     }
 
     .infos-nav,
-    .infos-name {
+    h1 {
         font-size: 2rem;
         transition: font-family 0.3s ease;
     }
 
     .infos-nav:hover,
-    .infos-name:hover {
+    h1:hover {
         font-family: "bianzhidai", "Arial", sans-serif;
         font-weight: normal;
     }
