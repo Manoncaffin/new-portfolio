@@ -436,7 +436,6 @@
     .page-contact p,
     .page-contact a {
         color: black;
-        margin: 0;
     }
 
     .text-mail,
@@ -846,6 +845,10 @@
     .text-link-two:hover {
         text-decoration: underline 2px black;
         background-color: rgb(227, 227, 227);
+    }
+
+    .text-tel {
+        margin-bottom: 20px;
     }
 
     .text-about {
