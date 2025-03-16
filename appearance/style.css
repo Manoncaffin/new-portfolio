@@ -5,32 +5,17 @@
 }
 
 @font-face {
-    font-family: 'bianzhidai';
-    src: url('/fonts/bianzhidai-Pearl.otf') format('opentype');
-    src: url('/fonts/bianzhidai-Pearl.woff') format('woff');
+    font-family: "Uncut-Sans-Medium";
+    src: url('../appearance/fonts/Uncut-Sans-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "inter-v18-latin-500";
-    src: url('../appearance/fonts/inter-v18-latin-500.woff2') format('woff2');
+    font-family: "Uncut-Sans-MediumOblique";
+    src: url('../appearance/fonts/Uncut-Sans-RegularOblique.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "inter-v18-latin-200";
-    src: url('../appearance/fonts/inter-v18-latin-200.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "inter-v18-latin-regular";
-    src: url('../appearance/fonts/inter-v18-latin-regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 }
 
 ::selection {
@@ -56,7 +41,7 @@
     }
 
     body {
-        font-family: "inter-v18-latin-regular", "Inter", Arial, sans-serif;
+        font-family: "Uncut-Sans-Regular", "Inter", Arial, sans-serif;
         font-size: 1.5rem;
         color: black;
         min-width: 100vw;
@@ -104,7 +89,7 @@
     h1,
     .infos-nav {
         font-size: 3rem;
-        font-family: "inter-v18-latin-regular", "Inter", "Arial", sans-serif;
+        font-family: "Uncut-Sans-Regular", "Inter", "Arial", sans-serif;
     }
 
     .fixed-top {
@@ -281,7 +266,7 @@
     }
 
     .titre {
-        font-family: "inter-v18-latin-regular", "Inter", "Arial", sans-serif;
+        font-family: "Uncut-Sans-Regular", "Inter", "Arial", sans-serif;
         font-size: 2.2rem;
     }
 
@@ -442,7 +427,7 @@
     .text-link,
     .text-link-two {
         font-size: 3rem;
-        font-family: "inter-v18-latin-regular", "Inter", Arial, sans-serif;
+        font-family: "Uncut-Sans-Regular", "Inter", Arial, sans-serif;
     }
 
     .text-mail:hover,
@@ -460,12 +445,12 @@
 
     .text-about {
         font-size: 2.5rem;
-        font-family: "inter-v18-latin-regular", "Inter", Arial, sans-serif;
+        font-family: "Uncut-Sans-Regular", "Inter", Arial, sans-serif;
     }
 
     .text-infos {
         font-size: 1.9rem;
-        font-family: "inter-v18-latin-regular", "Inter", Arial, sans-serif;
+        font-family: "Uncut-Sans-Regular", "Inter", Arial, sans-serif;
     }
 
     .line {
@@ -498,7 +483,8 @@
     }
 
     .talk:hover {
-        background-color: rgb(139, 238, 119); 
+        color: white;
+        background-color: rgb(4, 40, 156); 
     }
 }
 
@@ -588,7 +574,7 @@
 
     .infos-nav:hover,
     h1:hover {
-        font-family: "bianzhidai", "Arial", sans-serif;
+        font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
         font-weight: normal;
     }
 
@@ -893,7 +879,7 @@
 
     .section {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 435px);
+        grid-template-rows: repeat(3, 435px);
     }
 
     .col-1 .image,

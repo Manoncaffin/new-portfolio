@@ -5,32 +5,17 @@
 }
 
 @font-face {
-    font-family: 'bianzhidai-Pearl';
-    src: url('/fonts/bianzhidai-Pearl.otf') format('opentype');
-    src: url('/fonts/bianzhidai-Pearl.woff') format('woff');
+    font-family: "Uncut-Sans-Medium";
+    src: url('../appearance/fonts/Uncut-Sans-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "inter-v18-latin-500";
-    src: url('../appearance/fonts/inter-v18-latin-500.woff2') format('woff2');
+    font-family: "Uncut-Sans-MediumOblique";
+    src: url('../appearance/fonts/Uncut-Sans-RegularOblique.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "inter-v18-latin-200";
-    src: url('../appearance/fonts/inter-v18-latin-200.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "inter-v18-latin-regular";
-    src: url('../appearance/fonts/inter-v18-latin-regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 }
 
 ::selection {
@@ -54,7 +39,7 @@
     }
 
     body {
-        font-family: "inter-v18-latin-regular", Arial, sans-serif;
+        font-family: "Uncut-Sans-Regular", Arial, sans-serif;
         font-size: 1.5rem;
         color: black;
         min-width: 100vw;
@@ -93,7 +78,7 @@
     h1,
     .infos-nav {
         font-size: 3rem;
-        font-family: "inter-v18-latin-regular", "Arial", sans-serif;
+        font-family: "Uncut-Sans-Regular", "Inter", "Arial", sans-serif;
     }
 
 
@@ -132,7 +117,7 @@
     }
 
     .titre-project {
-        font-family: "inter-v18-latin-regular", "Inter", "Arial", sans-serif;
+        font-family: "Uncut-Sans-Regular", "Inter", "Arial", sans-serif;
         font-size: 2.2rem;
         margin-bottom: 5px;
         line-height: 2.8rem;
@@ -358,7 +343,7 @@
 
     .infos-nav:hover,
     h1:hover {
-        font-family: "bianzhidai-Pearl", "Arial", sans-serif;
+        font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
         font-weight: normal;
     }
 
