@@ -76,14 +76,14 @@
     }
 
     .navbar-three {
-        padding: 25px 50px 0 50px;
-        height: 90px;
+        padding: 25px 30px 0 30px;
+        height: 60px;
         background-color: rgb(251, 250, 249, 0.827);
     }
 
     h1,
     .infos-nav {
-        font-size: 3rem;
+        font-size: 1.5rem;
         font-family: "Uncut-Sans-Regular", "Inter", "Arial", sans-serif;
         margin: 0;
     }
@@ -119,15 +119,13 @@
     .img-responsive {
         width: 100%;
         height: auto;
-        padding-right: 50px;
-        padding-left: 50px;
+        padding-right: 30px;
+        padding-left: 30px;
     }
 
     .titre-project {
         font-family: "Uncut-Sans-Regular", "Inter", "Arial", sans-serif;
-        font-size: 2.2rem;
-        margin-bottom: 5px;
-        line-height: 2.8rem;
+        font-size: 1.2rem;
     }
 
     .titre-project:hover {
@@ -142,7 +140,7 @@
     .section-project-six,
     .section-project-seven {
         background-color: rgb(251, 250, 249);
-        margin-top: 95px;
+        margin-top: 65px;
         border-top: 1px solid black;
     }
 
@@ -166,8 +164,8 @@
     .start {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin-right: 50px;
-        margin-left: 50px;
+        margin-right: 30px;
+        margin-left: 30px;
     }
 
     .close-btn-project {
@@ -199,8 +197,8 @@
         background: none;
         border: none;
         color: inherit;
-        margin-bottom: 30px;
-        font-size: 1.5rem;
+        margin-bottom: 10px;
+        font-size: 1rem;
         cursor: pointer;
         display: inline-block;
         color: rgb(145, 145, 145);
@@ -251,6 +249,12 @@
     body {
         overflow: hidden;
         font-size: 1rem;
+    }
+
+    .img-responsive {
+        max-width: 1400px;
+        width: auto;
+        height: 100%;
     }
 
     .image-project {
@@ -346,12 +350,6 @@
     h1 {
         font-size: 2rem;
         transition: font-family 0.3s ease;
-    }
-
-    .infos-nav:hover,
-    h1:hover {
-        font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
-        font-weight: normal;
     }
 
     .more-text {

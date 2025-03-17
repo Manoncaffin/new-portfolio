@@ -42,7 +42,6 @@
 
     body {
         font-family: "Uncut-Sans-Regular", "Inter", Arial, sans-serif;
-        font-size: 1.5rem;
         color: black;
         min-width: 100vw;
         min-height: 100vh;
@@ -214,8 +213,9 @@
     .section {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin: 90px 30px 20px 30px;
+        margin: 90px 30px 0 30px;
         position: absolute;
+        padding-bottom: 40px;
     }
 
     .col {
@@ -384,18 +384,12 @@
     /* --------------------------------------------------- */
     .page-contact {
         height: 100%;
-        margin: 90px 50px 0 50px;
+        margin: 90px 30px 0 30px;
     }
 
     .page-legal {
         height: 100%;
-        margin: 90px 50px 0 50px;
-    }
-
-    .box-one,
-    .box-two,
-    .box-one_two {
-        padding: 30px 0;
+        margin: 90px 30px 0 30px;
     }
 
     .text-infos {
@@ -407,7 +401,7 @@
         display: flex;
         justify-content: center;
         padding-bottom: 15px;
-        font-size: 40px;
+        font-size: 20px;
     }
 
     a {
@@ -435,7 +429,7 @@
     .text-tel,
     .text-link,
     .text-link-two {
-        font-size: 3rem;
+        font-size: 1.2rem;
         font-family: "Uncut-Sans-Regular", "Inter", Arial, sans-serif;
     }
 
@@ -453,12 +447,12 @@
     }
 
     .text-about {
-        font-size: 2.5rem;
+        font-size: 1rem;
         font-family: "Uncut-Sans-Regular", "Inter", Arial, sans-serif;
     }
 
     .text-infos {
-        font-size: 1.9rem;
+        font-size: 0.8rem;
         font-family: "Uncut-Sans-Regular", "Inter", Arial, sans-serif;
     }
 
@@ -469,22 +463,20 @@
     .title-infos {
         background-color: rgb(216, 216, 216);
         padding: 0 2px;
-        font-size: 1.4rem;
-        font-weight: bold;
+        font-size: 0.8rem;
         margin-bottom: 0;
     }
 
     .title-infos_two {
         padding: 0 2px;
-        font-size: 1.4rem;
-        font-weight: bold;
+        font-size: 0.8rem;
     }
 
     .legal-notice {
         width: 100%;
         display: flex;
         justify-content: end;
-        margin-bottom: 30px;
+        margin: 30px 0 30px 0;
     }
 
     .talk {
@@ -516,19 +508,12 @@
         margin: 10px 0;
     }
 
-    .text-mail,
-    .text-tel,
-    .text-link,
-    .text-link-two {
-        font-size: 2.7rem;
-    }
-
     .text-about {
-        font-size: 2.2rem;
+        font-size: 1rem;
     }
 
     .text-infos {
-        font-size: 1.7rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -540,9 +525,6 @@
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
-    .navbar {
-        border-bottom: 1px solid black;
-    }
 
     .section {
         margin-top: 130px;
@@ -563,7 +545,7 @@
     .tags-desktop {
         width: 100%;
         position: fixed;
-        top: 80px;
+        top: 74px;
         z-index: 9999;
         display: flex;
         justify-content: start;
@@ -625,14 +607,7 @@
     }
 
     .text-about {
-        font-size: 1.5rem;
-    }
-
-    .text-link,
-    .text-link-two,
-    .text-mail,
-    .text-tel {
-        font-size: 2.5rem;
+        font-size: 1rem;
     }
 
     .title-infos,
@@ -662,7 +637,7 @@
     }
 
     .tags-desktop {
-        top: 79px;
+        top: 74px;
     }
 
     /* --------------------------------------------------- */
@@ -743,7 +718,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 80px;
     }
 
     .page-legal {
@@ -813,23 +787,19 @@
 
     .text-mail,
     .text-tel {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         display: inline-block;
         text-decoration: none;
         transition: transform 0.3s ease;
     }
 
-    .text-mail:hover {
-        text-decoration: underline 2px black;
-    }
-
+    .text-mail:hover,
     .text-tel:hover {
         text-decoration: underline 2px black;
     }
 
     .text-link,
     .text-link-two {
-        font-size: 1.5rem;
         text-decoration: none;
         display: inline-block;
         overflow: hidden;
@@ -846,7 +816,6 @@
     }
 
     .text-about {
-        font-size: 1.2rem;
         padding-left: 20px;
     }
 
@@ -857,7 +826,7 @@
 
     .title-infos,
     .title-infos_two {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .title-infos_two:hover {
@@ -893,10 +862,6 @@
     .col-1 .image,
     .col-8 .image {
         padding-top: 0;
-    }
-
-    .text-about {
-        font-size: 1rem;
     }
 
     .page-contact {
