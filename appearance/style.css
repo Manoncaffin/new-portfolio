@@ -5,15 +5,17 @@
 }
 
 @font-face {
-    font-family: "Uncut-Sans-Medium";
+    font-family: "Uncut-Sans-Regular";
     src: url('../appearance/fonts/Uncut-Sans-Regular.woff2') format('woff2');
+    src: url('../appearance/fonts/UncutSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Uncut-Sans-MediumOblique";
+    font-family: "Uncut-Sans-RegularOblique";
     src: url('../appearance/fonts/Uncut-Sans-RegularOblique.woff2') format('woff2');
+    src: url('../appearance/fonts/UncutSans-RegularItalic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
@@ -328,7 +330,7 @@
     }
 
     .col-8:hover {
-        background-color: rgb(251, 255, 0);
+        background-color: rgb(161, 126, 219);
     }
 
     .image {
@@ -485,7 +487,7 @@
 
     .talk:hover {
         color: white;
-        background-color: rgb(4, 40, 156);
+        background-color: #04289c;
     }
 }
 
@@ -583,6 +585,13 @@
         color: rgb(145, 145, 145);
     }
 
+    .tag-desktop:hover {
+        width: fit-content;
+        padding: 2px 20px;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+
     .tag-desktop::before {
         content: '';
         position: absolute;
@@ -604,7 +613,7 @@
     .tag-desktop.active {
         color: black;
         z-index: 2;
-    }
+    } 
 
     .text-about {
         font-size: 1rem;
