@@ -354,6 +354,12 @@
         transition: font-family 0.3s ease;
     }
 
+    .infos-nav:hover,
+    h1:hover {
+        font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
+        font-weight: normal;
+    }
+
     .more-text {
         font-size: 1rem;
         width: 100%;
