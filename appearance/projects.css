@@ -5,15 +5,17 @@
 }
 
 @font-face {
-    font-family: "Uncut-Sans-Medium";
+    font-family: "Uncut-Sans-Regular";
     src: url('../appearance/fonts/Uncut-Sans-Regular.woff2') format('woff2');
+    src: url('../appearance/fonts/UncutSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Uncut-Sans-MediumOblique";
+    font-family: "Uncut-Sans-RegularOblique";
     src: url('../appearance/fonts/Uncut-Sans-RegularOblique.woff2') format('woff2');
+    src: url('../appearance/fonts/UncutSans-RegularItalic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
