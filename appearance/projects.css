@@ -94,15 +94,16 @@
 
     h1,
     .infos-nav {
-        font-size: 1.5rem;
         margin: 0;
     }
 
     h1 {
+        font-size: 1.8rem;
         font-family: "Avara-BoldItalic", "Inter", "Arial", sans-serif;
     }
 
     .infos-nav {
+        font-size: 1.5rem;
         font-family: "Uncut-Sans-Regular", "Inter", "Arial", sans-serif;
     }
 
