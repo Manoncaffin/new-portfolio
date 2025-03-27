@@ -20,6 +20,15 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: "Avara-BoldItalic";
+    src: url('../appearance/fonts/Avara-BoldItalic.woff') format('woff');
+    src: url('../appearance/fonts/Avara-BoldItalic.woff2') format('woff');
+    src: url('../appearance/fonts/Avara-BoldItalic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
 ::selection {
     background-color: rgb(227, 227, 227);
     color: #000000; 
@@ -86,8 +95,15 @@
     h1,
     .infos-nav {
         font-size: 1.5rem;
-        font-family: "Uncut-Sans-Regular", "Inter", "Arial", sans-serif;
         margin: 0;
+    }
+
+    h1 {
+        font-family: "Avara-BoldItalic", "Inter", "Arial", sans-serif;
+    }
+
+    .infos-nav {
+        font-family: "Uncut-Sans-Regular", "Inter", "Arial", sans-serif;
     }
 
 
@@ -186,8 +202,9 @@
     }
 
     .details-container {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 1rem;
     }
 
     .all-details {
@@ -348,14 +365,12 @@
         margin-bottom: 10px;
     }
 
-    .infos-nav,
-    h1 {
+    .infos-nav {
         font-size: 2rem;
         transition: font-family 0.3s ease;
     }
 
-    .infos-nav:hover,
-    h1:hover {
+    .infos-nav:hover {
         font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
         font-weight: normal;
     }

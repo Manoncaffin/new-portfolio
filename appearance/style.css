@@ -20,6 +20,15 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: "Avara-BoldItalic";
+    src: url('../appearance/fonts/Avara-BoldItalic.woff') format('woff');
+    src: url('../appearance/fonts/Avara-BoldItalic.woff2') format('woff');
+    src: url('../appearance/fonts/Avara-BoldItalic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
 ::selection {
     background-color: rgb(227, 227, 227);
     color: #000000;
@@ -104,9 +113,17 @@
 
     h1,
     .infos-nav {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        font-family: "Avara-BoldItalic", "Inter", "Arial", sans-serif;
+    }
+
+    .infos-nav {
         font-size: 1.5rem;
         font-family: "Uncut-Sans-Regular", "Inter", "Arial", sans-serif;
-        margin: 0;
     }
 
     .fixed-top {
@@ -558,14 +575,12 @@
         gap: 30px;
     }
 
-    .infos-nav,
-    h1 {
+    .infos-nav {
         font-size: 2rem;
         transition: font-family 0.3s ease;
     }
 
-    .infos-nav:hover,
-    h1:hover {
+    .infos-nav:hover {
         font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
         font-weight: normal;
     }
@@ -583,13 +598,6 @@
         position: relative;
         z-index: 1;
         color: rgb(145, 145, 145);
-    }
-
-    .tag-desktop:hover {
-        width: fit-content;
-        padding: 2px 20px;
-        border-radius: 50%;
-        border: 1px solid black;
     }
 
     .tag-desktop::before {
