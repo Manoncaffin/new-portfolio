@@ -24,7 +24,7 @@
     font-family: "Avara-BoldItalic";
     src: url('../appearance/fonts/Avara-BoldItalic.woff') format('woff');
     src: url('../appearance/fonts/Avara-BoldItalic.woff2') format('woff');
-    src: url('../appearance/fonts/Avara-BoldItalic.ttf') format('ttf');
+    src: url('../appearance/fonts/Avara-BoldItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
