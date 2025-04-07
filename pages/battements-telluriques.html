@@ -10,30 +10,34 @@
     <meta name="description" content="Je suis Manon Caffin, designeuse interdisciplinaire installée à Saint-Étienne.">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Manon Caffin">
-    <meta property="description" content="Je suis Manon Caffin, designeuse interdisciplinaire installée à Saint-Étienne.">
+    <meta property="description"
+        content="Je suis Manon Caffin, designeuse interdisciplinaire installée à Saint-Étienne.">
     <meta property="og:url" content="https://wwww.manoncaffin.fr">
     <meta property="og:image" content="https://manoncaffin.fr/images/Accueil.webp">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Manon Caffin">
-    <meta name="twitter:description" content="Je suis Manon Caffin, designeuse interdisciplinaire installée à Saint-Étienne.">
+    <meta name="twitter:description"
+        content="Je suis Manon Caffin, designeuse interdisciplinaire installée à Saint-Étienne.">
     <meta name="twitter:image" content="https://wwww.manoncaffin.fr/images/Accueil.jpg">
 
-    <meta name="Keywords" content="webdesign, design graphique, conception web, développement web, designeuse indépendante, création site internet, design de service, Manon Caffin">
+    <meta name="Keywords"
+        content="webdesign, design graphique, conception web, développement web, designeuse indépendante, création site internet, design de service, Manon Caffin">
     <meta name="Copyright" content="Manon Caffin">
     <meta name="Author" content="Manon Caffin">
 
     <meta content="https://www.manoncaffin.fr" property="og:url">
     <meta content="Manon Caffin" property="og:site_name">
-    <meta content="Manon Caffin - designeuse interdisciplinaire" property="og:title" >
-    <meta content="Manon Caffin - designeuse interdisciplinaire, spécialisée en développement web" property="og:description">
+    <meta content="Manon Caffin - designeuse interdisciplinaire" property="og:title">
+    <meta content="Manon Caffin - designeuse interdisciplinaire, spécialisée en développement web"
+        property="og:description">
     <meta content="website" property="og:type">
 
     <link rel="canonical" href="https://www.manoncaffin.fr">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="../appearance/project.css">
+    <link rel="stylesheet" href="../appearance/project.css">
     <link href="https://api.fontshare.com/v2/css?f[]=excon@400,900,700,500,300,100,1&display=swap" rel="stylesheet">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 
@@ -41,20 +45,33 @@
 
 <body>
 
-    <header class="fixed-top navbar-three">
-        <nav class="col-12 d-flex justify-content-between p-0">
+    <header>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+        <nav class="col-12 fixed-top p-0 d-flex justify-content-between align-items-end">
             <div class="infos-name">
-                <a href="/index.html" alt="Manon Caffin" class="infos-name text-black text-decoration-none"><h1>manon
-                    caffin</h1></a>
+                <a href="/index.html" class="text-black text-decoration-none">
+                    <h1 class="m-0">manon caffin</h1>
+                </a>
             </div>
 
-            <div class="infos-nav">
-                <a href="/pages/projets.html" id="infosLink"
-                    class="infos-nav text-black text-decoration-none px-3">projets</a>
-                <a href="/pages/infos.html" id="infosLink"
-                    class="infos-nav text-black text-decoration-none">infos</a>
+            <label for="menu-toggle" class="menu-button">menu</label>
+            <div class="desktop-menu">
+                <a href="/pages/projets.html">projets</a>
+                <a href="/pages/infos.html">infos</a>
             </div>
         </nav>
+
+        <div class="mobile-menu">
+            <div class="close-btn-index">
+                <label for="menu-toggle" class="btn-close"></label>
+            </div>
+            <ul>
+                <li><a href="/pages/projets.html">projets</a></li>
+                <li><a href="/pages/infos.html">infos</a></li>
+                <li><a href="/pages/mentions-legales.html">mentions légales</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
@@ -98,39 +115,23 @@
                 </div>
             </div>
 
-            <div class="scroll-container">
-                <div class="content">
-                    <div class="image-project">
-                        <img src="../images/Battements-Telluriques-2.webp" class="img-mobile img-responsive"
-                            alt="Dépliant de l'exposition">
-                    </div>
-
-                    <div class="image-project">
-                        <img src="../images/Battements-Telluriques-3.webp" class="img-mobile img-responsive"
-                            alt="Dépliant de l'exposition ouvert">
-                    </div>
-
-                    <div class="image-project">
-                        <img src="../images/Battements-Telluriques-4.webp" class="img-mobile img-responsive"
-                            alt="Dépliant de l'exposition, 1ère et dernière de couverture">
-                    </div>
-
-                    <div class="image-project">
-                        <img src="../images/Battements-Telluriques-6.webp" class="img-mobile img-responsive"
-                            alt="Zoom sur les chansons-poèmes">
-                    </div>
-
-                    <div class="image-project">
-                        <img src="../images/Battements-Telluriques-1.webp" class="img-mobile img-responsive"
-                            alt="Dépliant déplié recto/verso">
-                    </div>
-
-                </div>
+            <div class="image-container no-scrollbar" id="imageContainer">
+                <img src="../images/Battements-Telluriques-2.webp" class="project-image img-responsive"
+                    alt="Dépliant de l'exposition">
+                <img src="../images/Battements-Telluriques-3.webp" class="project-image img-responsive"
+                    alt="Dépliant de l'exposition ouvert">
+                <img src="../images/Battements-Telluriques-4.webp" class="project-image img-responsive"
+                    alt="Dépliant de l'exposition, 1ère et dernière de couverture">
+                <img src="../images/Battements-Telluriques-6.webp" class="project-image img-responsive"
+                    alt="Zoom sur les chansons-poèmes">
+                <img src="../images/Battements-Telluriques-1.webp" class="project-image img-responsive"
+                    alt="Dépliant déplié recto/verso">
             </div>
         </div>
     </main>
 
-    <script src="/appearance/more.js"></script>
+    <script src="../appearance/more.js"></script>
+    <script src="../appearance/scroll.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
