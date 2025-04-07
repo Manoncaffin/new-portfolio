@@ -69,7 +69,6 @@
     }
 
     .container_homepage,
-    .container_inner,
     .container_homepage_one {
         width: 100%;
         height: 100%;
@@ -177,8 +176,7 @@
     /* Menu coulissant */
 
 
-    h1,
-    .infos-nav {
+    h1 {
         margin: 0;
     }
 
@@ -187,21 +185,8 @@
         font-family: "Avara-BoldItalic", "Inter", "Arial", sans-serif;
     }
 
-    .infos-nav {
-        font-size: 1.5rem;
-        font-family: "Uncut-Sans-Regular", "Inter", "Arial", sans-serif;
-    }
-
     .fixed-top {
         z-index: 1000;
-    }
-
-    .hidden {
-        display: none !important;
-    }
-
-    .hover-text {
-        display: none;
     }
 
     .container_homepage_one {
@@ -390,50 +375,6 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
 
-    .infos-nav {
-        font-size: 2rem;
-        transition: font-family 0.3s ease;
-    }
-
-    .infos-nav:hover {
-        font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
-        font-weight: normal;
-    }
-
-    .tag-desktop {
-        font-size: 1.5rem;
-        border: none;
-        color: black;
-        cursor: pointer;
-        background-color: transparent;
-        position: relative;
-        z-index: 1;
-        color: rgb(145, 145, 145);
-    }
-
-    .tag-desktop::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(216, 216, 216);
-        z-index: -1;
-        opacity: 0;
-    }
-
-    .tag-desktop:hover::before,
-    .tag-desktop.active::before {
-        opacity: 1;
-    }
-
-    .tag-desktop:hover,
-    .tag-desktop.active {
-        color: black;
-        z-index: 2;
-    }
-
     .text-about {
         font-size: 1rem;
     }
@@ -527,10 +468,6 @@
         font-size: 20px;
         margin-top: 20px;
         padding-bottom: 25px;
-    }
-
-    .close-btn-project {
-        font-size: 20px;
     }
 
     a {
