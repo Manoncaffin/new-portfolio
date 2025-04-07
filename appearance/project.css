@@ -311,6 +311,17 @@
         flex-direction: column;
         justify-content: start;
     }
+
+    .desktop-menu a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    .desktop-menu a:hover {
+        font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
+        font-weight: normal;
+    }
 }
 
 
@@ -334,17 +345,6 @@
     .desktop-menu {
         display: flex;
         gap: 1rem;
-    }
-
-    .desktop-menu a {
-        text-decoration: none;
-        color: black;
-        font-size: 1.5rem;
-    }
-
-    .desktop-menu a:hover {
-        font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
-        font-weight: normal;
     }
 }
 
@@ -551,6 +551,12 @@
         max-width: 60%;
         flex-shrink: 0;
         object-fit: contain;
+    }
+
+    .desktop-menu a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.8rem;
     }
 }
 
