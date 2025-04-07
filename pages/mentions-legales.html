@@ -41,35 +41,53 @@
 
 <body>
     <header class="fixed-top navbar px-0">
-        <nav class="col-12 d-flex justify-content-between p-0">
+        <!-- Toggle + Label pour ouvrir le menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    
+        <nav class="col-12 p-0 d-flex justify-content-between align-items-center">
             <div class="infos-name">
-                <a href="/index.html" alt="Manon Caffin" class="infos-name text-black text-decoration-none"><h1>manon
-                    caffin</h1></a>
+                <a href="/index.html" class="text-black text-decoration-none">
+                    <h1 class="m-0">manon caffin</h1>
+                </a>
             </div>
-
-            <div class="infos-nav">
-                <a href="./infos.html" id="infosLink" class="infos-nav text-black text-decoration-none">infos</a>
+            <!-- Label pour activer l'ouverture du menu -->
+            <label for="menu-toggle" class="menu-button">menu</label>
+            <div class="desktop-menu">
+                <a href="/pages/projets.html">projets</a>
+                <a href="/pages/infos.html">infos</a>
             </div>
         </nav>
-    </header>
+    
+        <!-- Menu mobile -->
+        <div class="mobile-menu">
+            <div class="close-btn-index">
+                <label for="menu-toggle" class="btn-close"></label>
+            </div>
+    
+            <ul>
+                <li><a href="/pages/projets.html">projets</a></li>
+                <li><a href="/pages/infos.html">infos</a></li>
+                <li><a href="/pages/mentions-legales.html">mentions légales</a></li>
+            </ul>
+        </div>
+    </header>   
 
     <main class="bg-contact no-scroll">
         <section class="page-legal p-0">
             <div class="text-legal">
                 <div class="box-one_two"></div>
                 <div class="box-two text-about">
-                    <h2 class="title-infos">↪ ÉDITEUR DU SITE</h2>
+                    <h2 class="title-infos">↪ ÉDITRICE DU SITE</h2>
                     <p>Manon Caffin</p>
-                    <p>Société Manon Caffin</p>
                     <p>Numéro SIRET : 842 599 904 00039</p>
-                    <p>Entrepreneur individuel</p>
+                    <p>Entrepreneuse individuelle</p>
                     <p>Responsable de publication : Manon Caffin</p>
-                    <p>Adresse : 42000 Saint-Étienne</p>
+                    <p>Siège social : 42000 Saint-Étienne</p>
                     <p>Email : manon.caffin[@]protonmail.com</p>
 
                     <h2 class="title-infos mt-3">↪ HÉBERGEUR</h2>
                     <p>EX2</p>
-                    <p>Adresse de l’hébergeur : Ex2 Inc., CP 70161 Québec STN Québec-Centre, G2K 0A2, Québec, Québec,
+                    <p>Siège social : Ex2 Inc., CP 70161 Québec STN Québec-Centre, G2K 0A2, Québec, Québec,
                         CANADA
                     </p>
                     <p>Email : support@ex2.com</p>
@@ -85,13 +103,13 @@
                         Les crédits des images sont mentionnés sur la page infos.</p>
 
                     <h2 class="title-infos mt-3">↪ COOKIES</h2>
-                    <p>Ce site n’utilise pas de cookies ni de traceurs.</p>
+                    <p>Ce site n’utilise pas de cookies.</p>
 
                     <p class="title-infos mt-3">↪ PROTECTIONS DES DONNÉES PERSONNELLES</p>
                     <p>Le site www.manoncaffin.fr ne collecte aucune donnée personnelle.</p>
 
                     <h2 class="title-infos mt-3">↪ RESPONSABILITÉ</h2>
-                    <p>L’éditeur du site ne peut être tenu responsable des erreurs ou omissions dans le contenu des
+                    <p>L’éditrice du site ne peut être tenu responsable des erreurs ou omissions dans le contenu des
                         informations disponibles sur ce site, ni des éventuelles interruptions ou dysfonctionnements du
                         site.
                         L’utilisateur du site www.manoncaffin.fr s'engage à respecter l’ensemble des dispositions

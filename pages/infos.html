@@ -41,17 +41,36 @@
 
 <body>
     <header class="fixed-top navbar px-0">
-        <nav class="col-12 d-flex justify-content-between p-0">
+        <!-- Toggle + Label pour ouvrir le menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    
+        <nav class="col-12 p-0 d-flex justify-content-between align-items-center">
             <div class="infos-name">
-                <a href="/index.html" alt="Manon Caffin" class="infos-name text-black text-decoration-none"><h1>manon
-                    caffin</h1></a>
+                <a href="/index.html" class="text-black text-decoration-none">
+                    <h1 class="m-0">manon caffin</h1>
+                </a>
             </div>
-
-            <div class="infos-nav">
-                <a href="./infos.html" id="infosLink" class="infos-nav text-black text-decoration-none">infos</a>
+            <!-- Label pour activer l'ouverture du menu -->
+            <label for="menu-toggle" class="menu-button">menu</label>
+            <div class="desktop-menu">
+                <a href="/pages/projets.html">projets</a>
+                <a href="/pages/infos.html">infos</a>
             </div>
         </nav>
-    </header>
+    
+        <!-- Menu mobile -->
+        <div class="mobile-menu">
+            <div class="close-btn-index">
+                <label for="menu-toggle" class="btn-close"></label>
+            </div>
+    
+            <ul>
+                <li><a href="/pages/projets.html">projets</a></li>
+                <li><a href="/pages/infos.html">infos</a></li>
+                <li><a href="/pages/mentions-legales.html">mentions légales</a></li>
+            </ul>
+        </div>
+    </header>   
 
     <main class="bg-contact no-scroll">
         <section class="page-contact p-0">
@@ -78,7 +97,7 @@
                         au contraire, je m'intéresse à tous les champs du design en tentant de répondre à un besoin avec
                         la solution la plus adaptée.
                         Mon objectif est de repousser toujours plus mes limites sur des sujets qui me tiennent à coeur :
-                        l'écoconception et l'accessibilité des sites web.</p>
+                        l'écoconception et l'accessibilité.</p>
                     <p>Je suis actuellement disponible pour de nouvelles opportunités. <a
                             href="mailto:caffinmanon@gmail.com" class="talk">Vous démarrez un projet ? Discutons-en
                             !</a></p>
