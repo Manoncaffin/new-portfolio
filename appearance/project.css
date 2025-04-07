@@ -31,7 +31,7 @@
 
 ::selection {
     background-color: rgb(227, 227, 227);
-    color: #000000; 
+    color: #000000;
 }
 
 
@@ -55,7 +55,7 @@
         color: black;
         min-width: 100vw;
         min-height: 100vh;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         height: 100vh;
 
         p {
@@ -80,11 +80,21 @@
         padding-right: 0;
     }
 
-    .navbar {
-        background-color: rgb(251, 250, 249, 0.827); 
-        width: 100%;
+    nav {
+        background-color: rgb(251, 250, 249, 0.827);
         height: 70px;
         padding: 30px 30px 0 30px;
+        border-bottom: 1px solid black;
+    }
+
+    nav.fixed-top {
+        left: 30px;
+        right: 30px;
+        width: auto;
+    }
+
+    .fixed-top {
+        z-index: 999;
     }
 
     /* Menu coulissant */
@@ -177,26 +187,16 @@
         overflow-y: auto;
     }
 
-    .content {
-        width: 100%;
+    .image-container {
         display: flex;
         flex-direction: column;
+        gap: 10px;
+        padding: 0 30px;
     }
 
-    .image-project {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .project-image {
+        max-width: 100%;
         height: auto;
-        width: 100vw;
-        margin-bottom: 10px;
-    }
-
-    .img-responsive {
-        width: 100%;
-        height: auto;
-        padding-right: 30px;
-        padding-left: 30px;
     }
 
     .titre-project {
@@ -216,8 +216,7 @@
     .section-project-six,
     .section-project-seven {
         background-color: rgb(251, 250, 249);
-        margin-top: 65px;
-        border-top: 1px solid black;
+        margin-top: 70.5px;
     }
 
     .text-project-one,
@@ -322,30 +321,31 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 768px) {
-/* Cacher le bouton menu et afficher les liens du menu */
-.menu-button {
-    display: none;
-}
 
-.mobile-menu {
-    display: none;
-}
+    /* Cacher le bouton menu et afficher les liens du menu */
+    .menu-button {
+        display: none;
+    }
 
-.desktop-menu {
-    display: flex;
-    gap: 1rem;
-}
+    .mobile-menu {
+        display: none;
+    }
 
-.desktop-menu a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
-}
+    .desktop-menu {
+        display: flex;
+        gap: 1rem;
+    }
 
-.desktop-menu a:hover {
-    font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
-    font-weight: normal;
-}
+    .desktop-menu a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    .desktop-menu a:hover {
+        font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
+        font-weight: normal;
+    }
 }
 
 
@@ -363,55 +363,46 @@
     }
 
     .img-responsive {
-        max-width: 1400px;
-        width: auto;
-        height: 100%;
+        max-width: 90%;
+        height: auto;
     }
 
-    .image-project {
-        height: 80vh;
-        width: 100vw;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 0;
-        display: flex;
-        align-items: start;
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
     }
 
-    .scroll-container {
-        width: 100vh;
-        height: 100vw;
-        transform: rotate(-90deg) translateX(-100vh);
-        transform-origin: top left;
-        overflow-x: hidden;
+    .no-scrollbar {
         -ms-overflow-style: none;
+        /* IE/Edge */
         scrollbar-width: none;
-        margin: 0;
-        padding: 0;
+        /* Firefox */
     }
 
-    ::-webkit-scrollbar {
-        display: none;
+    .image-container {
+        flex-direction: row;
+        overflow-x: auto;
+        width: 100%;
     }
 
-    .scroll-container::-webkit-scrollbar {
-        display: none;
+    .reduced-size {
+        width: 40%;
+        height: auto;
+        transition: width 0.3s ease-in-out;
     }
 
-    ::-webkit-scrollbar {
-        display: none;
+    .reduced-size-project {
+        width: 40%;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .project-image {
+        max-height: 560px;
+        flex-shrink: 0;
+        object-fit: contain;
     }
 
     .img-responsive {
         padding: 0;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: row;
-        transform: rotate(90deg) translateY(-100vh);
-        transform-origin: top left;
-        gap: 10px;
     }
 
     .close-btn-project {
@@ -476,14 +467,10 @@
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
-    .image-project {
-        height: 73vh;
-    }
 
     .img-responsive {
-        max-width: 1400px;
-        width: auto;
-        height: 100%;
+        max-width: 90%;
+        height: auto;
     }
 
     .text-project {
@@ -493,11 +480,6 @@
     .close-btn-project a {
         font-size: 20px;
         cursor: pointer;
-    }
-
-    .start {
-        margin-right: 30px;
-        margin-left: 30px;
     }
 
     .text-project-one,
@@ -522,8 +504,8 @@
         grid-column: 2 / 3;
     }
 
-    .reduced-size-project img {
-        height: 65%;
+    .project-image {
+        max-height: 580px;
     }
 
     .section-project-one,
@@ -548,24 +530,53 @@
 
 @media only screen and (min-width: 1440px) {
     .img-responsive {
-        max-width: 2000px;
-        width: auto;
-        height: 100%;
+        max-width: 90%;
+        height: auto;
     }
 
     .details-container {
         grid-gap: 50px;
     }
+
+    .reduced-size {
+        width: 47%;
+    }
+
+    .reduced-size-project {
+        width: 47%;
+    }
+
+    .project-image {
+        max-height: 900px;
+        max-width: 60%;
+        flex-shrink: 0;
+        object-fit: contain;
+    }
 }
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
-/* ------------- MEDIA MIN-WIDTH 1440px -------------- */
+/* ------------- MEDIA MIN-WIDTH 1540px -------------- */
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 
 @media only screen and (min-width: 1540px) {
     .details-container {
         grid-gap: 150px;
+    }
+
+    .reduced-size {
+        width: 50%;
+    }
+
+    .reduced-size-project {
+        width: 50%;
+    }
+
+    .project-image {
+        max-height: 900px;
+        max-width: 60%;
+        flex-shrink: 0;
+        object-fit: contain;
     }
 }

@@ -540,15 +540,6 @@
         gap: 80px;
     }
 
-    .tags-desktop {
-        width: 100%;
-        display: flex;
-        justify-content: start;
-        padding: 5px 0;
-        background-color: transparent;
-        gap: 30px;
-    }
-
     .infos-nav {
         font-size: 1.8rem;
         transition: font-family 0.3s ease;
@@ -558,12 +549,20 @@
         font-size: 1.5rem;
     }
 
+    .tags-desktop {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        padding: 5px 0;
+        background-color: transparent;
+        gap: 30px;
+    }
+
     .tag-desktop {
         font-size: 1.5rem;
         border: none;
         color: black;
         cursor: pointer;
-        background-color: transparent;
         position: relative;
         z-index: 1;
         color: rgb(145, 145, 145);
@@ -588,7 +587,6 @@
 
     .tag-desktop:hover,
     .tag-desktop.active {
-        color: black;
         z-index: 2;
     }
 }

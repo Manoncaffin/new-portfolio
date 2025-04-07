@@ -1,8 +1,8 @@
 document.getElementById('moreInfoBtn').addEventListener('click', function() {
     const moreText = document.querySelector('.more-text');
     const allDetails = document.querySelector('.all-details');
-    const images = document.querySelectorAll('.image-project img'); // Sélectionne toutes les images dans .image-project
-    const imageProjects = document.querySelectorAll('.image-project'); // Sélectionne tous les conteneurs d'images
+    const images = document.querySelectorAll('.project-image img'); // Sélectionne toutes les images
+    const imageProjects = document.querySelectorAll('.project-image'); // Sélectionne tous les conteneurs d'images
 
     if (moreText.style.display === 'none' || moreText.style.display === '') {
         moreText.style.display = 'block'; 
@@ -12,12 +12,11 @@ document.getElementById('moreInfoBtn').addEventListener('click', function() {
         // Ajoute la classe .reduced-size pour rétrécir les images
         images.forEach(image => {
             image.classList.add('reduced-size');
-            image.classList.add('adjusted-position'); // Ajoute une classe pour ajuster le positionnement
         });
 
-        // Ajoute une classe pour modifier le style de image-project
+        // Ajoute la classe .reduced-size-project pour rétrécir le conteneur des images
         imageProjects.forEach(imageProject => {
-            imageProject.classList.add('reduced-size-project'); // Ajouter une classe pour modifier image-project
+            imageProject.classList.add('reduced-size-project');
         });
     } else {
         moreText.style.display = 'none'; 
@@ -27,12 +26,11 @@ document.getElementById('moreInfoBtn').addEventListener('click', function() {
         // Retire la classe .reduced-size pour restaurer les tailles originales des images
         images.forEach(image => {
             image.classList.remove('reduced-size');
-            image.classList.remove('adjusted-position'); // Retire la classe pour restaurer le positionnement
         });
 
-        // Retire la classe pour restaurer le style de image-project
+        // Retire la classe .reduced-size-project pour restaurer le conteneur des images
         imageProjects.forEach(imageProject => {
-            imageProject.classList.remove('reduced-size-project'); // Retirer la classe pour modifier image-project
+            imageProject.classList.remove('reduced-size-project');
         });
     }
 });
