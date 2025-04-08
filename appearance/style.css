@@ -38,10 +38,10 @@
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
-/* ------------- MEDIA MIN-WIDTH 350PX --------------- */
+/* ------------- MEDIA MIN-WIDTH 320PX --------------- */
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 320px) {
 
     html,
     body {
@@ -320,6 +320,10 @@
         color: white;
         background-color: #04289c;
     }
+
+    .infos-nav {
+        display: none;
+    }
 }
 
 
@@ -390,6 +394,10 @@
 
     .box-one_two {
         display: none;
+    }
+
+    .desktop-menu a {
+        font-size: 1.8rem;
     }
 }
 
