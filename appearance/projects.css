@@ -468,11 +468,11 @@
         display: flex;
         gap: 1rem;
         justify-content: center;
+        margin: 7px 0;
     }
 
     .tag-desktop {
         cursor: pointer;
-        padding: 7px 0;
         text-decoration: none;
         color: black;
     }
@@ -485,11 +485,16 @@
     .tag-desktop.active {
         background-color: rgb(216, 216, 216);
         padding: 1px;
+        color: black;
     }
     
     .tag-mobile.active {
         font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
         font-weight: normal;
+    }
+
+    .section {
+        margin-top: 91px;
     }
 
     /* Cacher le dropdown mobile */
