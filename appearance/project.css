@@ -192,13 +192,20 @@
         flex-direction: column;
         gap: 10px;
         padding: 0 30px;
+        max-width: 100%;
     }
 
     .project-image {
         max-width: 100%;
         height: auto;
+        object-fit: contain;
+        flex-shrink: 0;
     }
 
+    .project-image {
+        width: 100%;
+        height: auto;
+    }
     .titre-project {
         font-family: "Uncut-Sans-Regular", "Inter", "Arial", sans-serif;
         font-size: 1.2rem;
@@ -558,7 +565,6 @@
         max-height: 900px;
         max-width: 60%;
         flex-shrink: 0;
-        object-fit: contain;
     }
 
     .desktop-menu a {
@@ -590,7 +596,5 @@
     .project-image {
         max-height: 900px;
         max-width: 60%;
-        flex-shrink: 0;
-        object-fit: contain;
     }
 }
