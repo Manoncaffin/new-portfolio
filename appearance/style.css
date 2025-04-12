@@ -7,7 +7,7 @@
 @font-face {
     font-family: "Uncut-Sans-Regular";
     src: url('../appearance/fonts/Uncut-Sans-Regular.woff2') format('woff2'),
-    url('../appearance/fonts/UncutSans-Regular.woff') format('woff');
+        url('../appearance/fonts/UncutSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,7 +15,7 @@
 @font-face {
     font-family: "Uncut-Sans-RegularOblique";
     src: url('../appearance/fonts/Uncut-Sans-RegularOblique.woff2') format('woff2'),
-    url('../appearance/fonts/UncutSans-RegularItalic.woff') format('woff');
+        url('../appearance/fonts/UncutSans-RegularItalic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
@@ -23,8 +23,8 @@
 @font-face {
     font-family: "Avara-BoldItalic";
     src: url('../appearance/fonts/Avara-BoldItalic.woff') format('woff'),
-    url('../appearance/fonts/Avara-BoldItalic.woff2') format('woff2'),
-    url('../appearance/fonts/Avara-BoldItalic.ttf') format('truetype');
+        url('../appearance/fonts/Avara-BoldItalic.woff2') format('woff2'),
+        url('../appearance/fonts/Avara-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
@@ -53,6 +53,8 @@
 
     body {
         font-family: "Uncut-Sans-Regular", "Inter", Arial, sans-serif;
+        font-weight: normal;
+        font-style: normal;
         color: black;
         min-width: 100vw;
         min-height: 100vh;
@@ -139,6 +141,7 @@
     .mobile-menu a:hover {
         font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
         font-weight: normal;
+        font-style: italic;
     }
 
     .btn-close {
@@ -266,6 +269,8 @@
     .text-link-two {
         font-size: 1.2rem;
         font-family: "Uncut-Sans-Regular", "Inter", Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
     }
 
     .text-mail:hover,
@@ -284,11 +289,15 @@
     .text-about {
         font-size: 1rem;
         font-family: "Uncut-Sans-Regular", "Inter", Arial, sans-serif;
+        font-weight: normal;
+        font-style: normal;
     }
 
     .text-infos {
         font-size: 0.8rem;
         font-family: "Uncut-Sans-Regular", "Inter", Arial, sans-serif;
+        font-weight: normal;
+        font-style: normal;
     }
 
     .line {
@@ -368,6 +377,7 @@
     .desktop-menu a:hover {
         font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
         font-weight: normal;
+        font-style: italic;
     }
 
 }
