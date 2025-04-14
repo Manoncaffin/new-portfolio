@@ -51,11 +51,12 @@
 
     body {
         font-family: "Uncut-Sans-Regular", Arial, sans-serif;
+        font-weight: normal;
+        font-style: normal;
         font-size: 1.5rem;
         color: black;
         min-width: 100vw;
         min-height: 100vh;
-        /* overflow-x: hidden; */
         height: 100vh;
 
         p {
@@ -124,6 +125,7 @@
     .mobile-menu a:hover {
         font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
         font-weight: normal;
+        font-style: italic;
     }
 
     .btn-close {
@@ -166,12 +168,16 @@
 
     h1 {
         font-size: 1.8rem;
-        font-family: "Avara-BoldItalic", "Inter", "Arial", sans-serif;
+        font-family: "Avara-BoldItalic", "Inter", "Arial", sans-serif;        
+        font-weight: bold;
+        font-style: italic;
     }
 
     .infos-nav {
         font-size: 1.5rem;
         font-family: "Uncut-Sans-Regular", "Inter", "Arial", sans-serif;
+        font-weight: normal;
+        font-style: normal;
     }
 
 
@@ -206,8 +212,11 @@
         width: 100%;
         height: auto;
     }
+
     .titre-project {
         font-family: "Uncut-Sans-Regular", "Inter", "Arial", sans-serif;
+        font-weight: normal;
+        font-style: normal;
         font-size: 1.2rem;
     }
 
@@ -336,6 +345,7 @@
     .desktop-menu a:hover {
         font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
         font-weight: normal;
+        font-style: italic;
     }
 }
 
@@ -472,6 +482,7 @@
     .infos-nav:hover {
         font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
         font-weight: normal;
+        font-style: italic;
     }
 
     .more-text {

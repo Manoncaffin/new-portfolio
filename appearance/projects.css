@@ -120,7 +120,6 @@
     h1 {
         font-size: 1.8rem;
         font-family: "Avara-BoldItalic", "Inter", "Arial", sans-serif;
-        font-family: "Avara-BoldItalic", "Inter", "Arial", sans-serif;
         font-weight: bold;
         font-style: italic;
     }
@@ -552,6 +551,13 @@
     .infos-nav {
         font-size: 1.8rem;
         transition: font-family 0.3s ease;
+    }
+
+
+    .infos-nav:hover {
+        font-family: "Uncut-Sans-RegularOblique", "Arial", sans-serif;
+        font-weight: normal;
+        font-style: italic;
     }
 
     .titre {

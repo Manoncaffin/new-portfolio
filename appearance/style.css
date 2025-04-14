@@ -6,25 +6,25 @@
 
 @font-face {
     font-family: "Uncut-Sans-Regular";
-    src: url('../appearance/fonts/Uncut-Sans-Regular.woff2') format('woff2'),
-        url('../appearance/fonts/UncutSans-Regular.woff') format('woff');
+    src: url('../appearance/fonts/Uncut-Sans-Regular.woff2') format('woff2');
+    src: url('../appearance/fonts/UncutSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Uncut-Sans-RegularOblique";
-    src: url('../appearance/fonts/Uncut-Sans-RegularOblique.woff2') format('woff2'),
-        url('../appearance/fonts/UncutSans-RegularItalic.woff') format('woff');
+    src: url('../appearance/fonts/Uncut-Sans-RegularOblique.woff2') format('woff2');
+    src: url('../appearance/fonts/UncutSans-RegularItalic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Avara-BoldItalic";
-    src: url('../appearance/fonts/Avara-BoldItalic.woff') format('woff'),
-        url('../appearance/fonts/Avara-BoldItalic.woff2') format('woff2'),
-        url('../appearance/fonts/Avara-BoldItalic.ttf') format('truetype');
+    src: url('../appearance/fonts/Avara-BoldItalic.woff') format('woff');
+    src: url('../appearance/fonts/Avara-BoldItalic.woff2') format('woff2');
+    src: url('../appearance/fonts/Avara-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
@@ -76,6 +76,10 @@
         height: 100%;
         margin: 0 auto;
         position: absolute;
+    }
+
+    .container_homepage_one {
+        margin-bottom: 30px;
     }
 
     nav {
