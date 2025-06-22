@@ -168,7 +168,7 @@
 
     h1 {
         font-size: 1.8rem;
-        font-family: "Avara-BoldItalic", "Inter", "Arial", sans-serif;        
+        font-family: "Avara-BoldItalic", "Inter", "Arial", sans-serif;
         font-weight: bold;
         font-style: italic;
     }
@@ -284,6 +284,15 @@
         display: none;
     }
 
+    .all-details p:first-child {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .all-details p:first-child a {
+        margin-left: 0;
+    }
+
     .btn-more,
     .link-next {
         background: none;
@@ -315,6 +324,8 @@
     .link-next:hover {
         background-color: rgb(227, 227, 227);
         text-decoration: none;
+        text-align: start;
+        padding: 5px;
     }
 
     .all-details {
@@ -389,7 +400,7 @@
 
     #imageContainer {
         position: relative;
-        cursor: none; 
+        cursor: none;
     }
 
     .img-responsive {
@@ -463,6 +474,15 @@
         margin-bottom: 15px;
     }
 
+        .all-details p:first-child {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .all-details p:first-child a {
+        margin-left: 30px;
+    }
+
     .titre-project {
         font-size: 1.5rem;
         line-height: 2rem;
@@ -472,6 +492,11 @@
     .link-next {
         font-size: 1rem;
         margin-bottom: 10px;
+    }
+
+        .btn-more:hover,
+    .link-next:hover {
+        padding: 0px;
     }
 
     .infos-nav {
