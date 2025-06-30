@@ -1,10 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 130.7 30" style="enable-background:new 0 0 130.7 30;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#04289C;stroke-width:4.9846;stroke-miterlimit:9.9692;}
-</style>
-<line class="st0" x1="4" y1="15" x2="130.5" y2="15"/>
-<polyline class="st0" points="19.1,1.9 4,15 19.1,28.2 "/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.7 81.36">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Uncut-Sans-VF-Regular, 'Uncut Sans VF';
+        font-size: 72px;
+        font-variation-settings: 'wght' 400, 'slnt' 0;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(60.69 20.16) rotate(-180)"><tspan x="0" y="0">→</tspan></text>
 </svg>

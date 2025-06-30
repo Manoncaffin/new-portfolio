@@ -13,13 +13,11 @@
     <meta property="description"
         content="Je suis Manon Caffin, designeuse interdisciplinaire installée à Saint-Étienne.">
     <meta property="og:url" content="https://wwww.manoncaffin.fr">
-    <meta property="og:image" content="https://manoncaffin.fr/images/Accueil.webp">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Manon Caffin">
     <meta name="twitter:description"
         content="Je suis Manon Caffin, designeuse interdisciplinaire installée à Saint-Étienne.">
-    <meta name="twitter:image" content="https://wwww.manoncaffin.fr/images/Accueil.jpg">
 
     <meta name="Keywords"
         content="webdesign, design graphique, conception web, développement web, designeuse indépendante, création site internet, design de service, Manon Caffin">
@@ -38,6 +36,8 @@
     <link rel="stylesheet" href="../appearance/style.css">
     <link href="https://api.fontshare.com/v2/css?f[]=excon@400,900,700,500,300,100,1&display=swap" rel="stylesheet">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="../appearance/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../appearance/favicons/favicon-16x16.png">
 
 </head>
 
@@ -46,9 +46,6 @@
     <div class="container_homepage">
 
         <header class="fixed-top navbar px-0">
-            <!-- Toggle + Label pour ouvrir le menu -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-
             <nav class="col-12 p-0 d-flex justify-content-between align-items-center">
                 <div class="infos-name">
                     <a href="/index.html" class="text-black text-decoration-none">
@@ -57,11 +54,9 @@
                 </div>
                 <!-- Label pour activer l'ouverture du menu -->
                 <label for="menu-toggle" class="menu-button">menu</label>
-                <div class="desktop-menu">
-                    <a href="./pages/projets.html">projets</a>
-                    <a href="./pages/infos.html">infos</a>
-                </div>
             </nav>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
             <!-- Menu mobile -->
             <div class="mobile-menu">
@@ -70,22 +65,38 @@
                 </div>
 
                 <ul>
-                    <li><a href="/pages/projets.html">projets</a></li>
-                    <li><a href="./pages/infos.html">infos</a></li>
-                    <li><a href="./pages/mentions-legales.html">mentions légales</a></li>
+                    <a href="./pages/recherche/recherche.html">recherche</a>
+                    <a href="./pages/graphisme-code/graphisme-code.html">graphisme & code</a>
+                    <a href="./pages/objet-espace/objet-espace.html">objet & espace</a>
+                    <a href="./pages/infos-contact.html">infos & contact</a>
+                    <a href="./pages/mentions-legales.html">mentions légales</a>
                 </ul>
             </div>
-        </header>
 
+            <div class="tags-mobile mobile-dropdown">
+
+                <div class="dropdown-menu">
+                    <a href="./pages/recherche/recherche.html" class="tag-mobile">recherche</a>
+                    <a href="./pages/graphisme-code/graphisme-code.html" class="tag-mobile">graphisme & code</a>
+                    <a href="./pages/objet-espace/objet-espace.html" class="tag-mobile">objet & espace</a>
+                    <a href="./pages/infos-contact.html" class="tag-mobile">infos & contact</a>
+                </div>
+            </div>
+
+            <div class="tags-desktop desktop-only">
+                <a href="./pages/recherche/recherche.html" class="tag-desktop">recherche</a>
+                <a href="./pages/graphisme-code/graphisme-code.html" class="tag-desktop">graphisme & code</a>
+                <a href="./pages/objet-espace/objet-espace.html" class="tag-desktop">objet & espace</a>
+                <a href="./pages/infos-contact.html" class="tag-desktop">infos & contact</a>
+            </div>
+        </header>
 
         <main class="container_homepage_one">
             <p class="text-first">
                 Ma pratique de designeuse s’inscrit dans une démarche interdisciplinaire.</p>
-            <p class="text-second">Elle constitue un espace d’enquête et de création, ancré dans les enjeux du design écosocial, où je m’attache à questionner les notions de <span class="highlight">durabilité</span>,</p>
-            <p class="text-third"><span class="highlight">d’inclusivité et d'autonomie</span>, en m’efforçant de proposer des solutions</p>
-            <p class="text-third">répondant aux <span class="highlight">besoins réels des usager·ères</span>.</p>
-            <p class="text-third">J'explore ces enjeux en mobilisant des outils et des méthodes,</p>
-            <p class="text-third"> issus à la fois du <span class="highlight">design d’espace et du design numérique</span>.</p>
+            <p class="text-second">Elle constitue un espace d’enquête et de création, ancré dans les enjeux du design
+                écosocial, où je m’attache à questionner les notions de <span class="highlight">durabilité, d’inclusivité et d'autonomie</span>.</p>
+            <p class="text-third">J'explore ces enjeux en mobilisant des outils et des méthodes, issus à la fois du <span class="highlight">design d’espace et du design numérique</span>.</p></p>
         </main>
     </div>
 
