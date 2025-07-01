@@ -134,11 +134,22 @@
         list-style: none;
         padding: 0;
         margin: 0;
+        font-size: 1.5rem;
+
     }
+
+    .mobile-menu li {
+        padding-left: 25px;
+    }
+
+    .mobile-menu li.sub-li {
+    padding-left: 0;
+    font-size: 1.5rem; 
+}
 
     .mobile-menu a {
         display: block;
-        padding: 15px 0 0 20px;
+        padding: 15px 0 0 30px;
         text-decoration: none;
         color: black;
         font-size: 1.5rem;
