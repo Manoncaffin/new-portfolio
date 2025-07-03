@@ -159,6 +159,23 @@
         z-index: 1000;
     }
 
+        .mobile-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 1.5rem;
+
+    }
+
+    .mobile-menu li {
+        padding-left: 25px;
+        font-size: 1.5rem; 
+    }
+
+    .mobile-menu li.sub-li {
+    padding-left: 0;
+}
+
     /* Menu coulissant */
 
     h1,

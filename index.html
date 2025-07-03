@@ -46,6 +46,7 @@
     <div class="container_homepage">
 
         <header class="fixed-top navbar px-0">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
             <nav class="col-12 p-0 d-flex justify-content-between align-items-center">
                 <div class="infos-name">
                     <a href="/index.html" class="text-black text-decoration-none">
@@ -63,20 +64,18 @@
                 <div class="close-btn-index">
                     <label for="menu-toggle" class="btn-close"></label>
                 </div>
-
                 <ul>
-                    <a href="./pages/recherche/recherche.html">recherche</a>
-                    <a href="./pages/graphisme-code/graphisme-code.html">graphisme & code</a>
-                    <a href="./pages/objet-espace/objet-espace.html">objet & espace</a>
-                    <a href="./pages/infos-contact.html">infos & contact</a>
-                    <a href="./pages/mentions-legales.html">mentions légales</a>
+                    <li>↪ projets</li>
+                    <li><a href="./pages/graphisme-code/graphisme-code.html">graphisme & code</a></li>
+                    <li><a href="./pages/objet-espace/objet-espace.html">objet & espace</a></li>
+                    <li class="sub-li"><a href="./pages/infos-contact.html">↪ infos & contact</a></li>
+                    <li class="sub-li"><a href="./pages/mentions-legales.html">↪ mentions légales</a></li>
                 </ul>
             </div>
 
             <div class="tags-mobile mobile-dropdown">
 
                 <div class="dropdown-menu">
-                    <a href="./pages/recherche/recherche.html" class="tag-mobile">recherche</a>
                     <a href="./pages/graphisme-code/graphisme-code.html" class="tag-mobile">graphisme & code</a>
                     <a href="./pages/objet-espace/objet-espace.html" class="tag-mobile">objet & espace</a>
                     <a href="./pages/infos-contact.html" class="tag-mobile">infos & contact</a>
@@ -84,7 +83,6 @@
             </div>
 
             <div class="tags-desktop desktop-only">
-                <a href="./pages/recherche/recherche.html" class="tag-desktop">recherche</a>
                 <a href="./pages/graphisme-code/graphisme-code.html" class="tag-desktop">graphisme & code</a>
                 <a href="./pages/objet-espace/objet-espace.html" class="tag-desktop">objet & espace</a>
                 <a href="./pages/infos-contact.html" class="tag-desktop">infos & contact</a>
@@ -100,7 +98,7 @@
         </main>
     </div>
 
-    <script src="./appearance/tag.js"></script>
+    <script src="./appearance/more.js"></script>
     <script src="./appearance/dropdown.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-5p8Fk9+P5CDu5PZfklO1R/hFUBn26Hb8jKlJ8A+2+L4=" crossorigin="anonymous"></script>
