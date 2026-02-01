@@ -545,12 +545,6 @@
         min-height: 100vh;
     }
 
-    .container_homepage_one {
-        p {
-            font-size: 2rem;
-        }
-    }
-
     .tags-desktop {
         top: 74px;
     }

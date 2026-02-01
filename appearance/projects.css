@@ -353,7 +353,7 @@
     }
 
     .col-2:hover {
-        background-color: #ff6236;
+        background-color: rgb(227,55,48);
     }
 
     .col-3:hover {
@@ -361,7 +361,7 @@
     }
 
     .col-4:hover {
-        background-color: #f6adf4;
+        background-color: rgb(40,55,198);
     }
 
     .col-5:hover {
